@@ -1,6 +1,0 @@
-{
-    "buildCommand": "npm run generate",
-    "framework": "nuxtjs",
-    "installCommand": "npm install",
-    "outputDirectory": "./dist"
-}
