@@ -24,6 +24,7 @@
     "eslint-plugin-vuetify": "^2.0.4",
     "nuxt": "^3.6.5",
     "prettier": "3.0.0",
+    "vite-plugin-vuetify": "^1.0.2",
     "vuetify": "^3.3.9"
   }
 }
