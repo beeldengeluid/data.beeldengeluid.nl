@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   eslint: {
     lintOnStart: false,
   },
+  experimental: {
+    payloadExtraction: false,
+  },
   vite: {
     ssr: {
       noExternal: ['vuetify'],
