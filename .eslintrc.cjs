@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     '@nuxt/eslint-config',
     'plugin:vue/vue3-recommended',
+    'plugin:vuetify/base',
     'plugin:nuxt/recommended',
     // put 'plugin:prettier/recommended' last, to avoid conflicting configuration
     // note that 'plugin:prettier/recommended' extends 'prettier' and sets up the 'prettier' plugin 
