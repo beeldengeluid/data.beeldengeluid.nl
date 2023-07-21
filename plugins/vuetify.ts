@@ -3,6 +3,10 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const vuetify = createVuetify()
+  const appConfig = useAppConfig()
+  const vuetify = createVuetify({
+    // @ts-ignore
+    ssr: appConfig.ssr,
+  })
   nuxtApp.vueApp.use(vuetify)
 })

@@ -2,10 +2,15 @@
 import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   devtools: { enabled: true },
   eslint: {
     lintOnStart: false,
+  },
+  vite: {
+    ssr: {
+      noExternal: ['vuetify'],
+    },
   },
   modules: [
     async (options, nuxt) => {
