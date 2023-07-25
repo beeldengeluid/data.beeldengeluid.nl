@@ -33,13 +33,10 @@
           v-for="item in menu"
           :key="item.to"
           :to="localePath(item.to)"
+          :prepend-icon="item.icon"
           router
           exact
         >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-
           <v-list-item-title class="text-uppercase">
             <h4>{{ $t(item.title) }}</h4>
           </v-list-item-title>
