@@ -117,7 +117,7 @@ const image = !props.card.image
     .v-image {
       width: 100% !important;
     }
-    .v-card__subtitle {
+    .v-card-subtitle {
       padding-bottom: 0;
     }
   }
@@ -125,7 +125,7 @@ const image = !props.card.image
   &.v-card--hover {
     transition: opacity 0.3s ease-out;
 
-    .v-image__image {
+    .v-image-image {
       transition: transform 4s ease-out;
     }
 
@@ -136,7 +136,7 @@ const image = !props.card.image
     &:hover {
       opacity: 0.95;
 
-      .v-image__image {
+      .v-image-image {
         transform: scale(1.05);
       }
 
@@ -146,11 +146,11 @@ const image = !props.card.image
     }
   }
 
-  .v-card__title {
+  .v-card-title {
     word-break: normal;
   }
 
-  .v-card__subtitle {
+  .v-card-subtitle {
     font-size: 0.95rem;
 
     &.line-clamp {
