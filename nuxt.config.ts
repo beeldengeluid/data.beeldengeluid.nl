@@ -99,5 +99,10 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  content: {
+    markdown: {
+      anchorLinks: false,
+    }
   }
 })

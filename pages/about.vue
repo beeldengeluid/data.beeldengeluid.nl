@@ -8,7 +8,7 @@
     <!-- Content -->
     <template #content>
       <section class="mt-4">
-        <nuxt-content :document="page" />
+        <ContentRenderer class="nuxt-content" :value="page" />
       </section>
     </template>
   </HeaderPage>
@@ -34,10 +34,10 @@ const { data: page } = await useAsyncData(async () => {
 })
 
 defineI18nRoute({
-    paths: {
-      en: '/about',
-      nl: '/over-ons',
-    },
+  paths: {
+    en: '/about',
+    nl: '/over-ons',
+  },
 })
 
 useHead({

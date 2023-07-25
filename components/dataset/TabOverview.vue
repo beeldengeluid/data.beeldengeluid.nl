@@ -19,7 +19,7 @@
       </v-row>
 
       <!-- Description -->
-      <nuxt-content :document="page" />
+      <ContentRenderer id="nuxt-content" :value="page" />
 
       <!-- Chiplist -->
       <v-row class="justify-center mt-5">
