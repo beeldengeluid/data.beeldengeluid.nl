@@ -12,7 +12,7 @@
       <!-- Filter button on mobile -->
       <v-btn
         class="ma-1 d-block d-sm-none mt-n1"
-        fab
+        icon
         theme="dark"
         size="small"
         color="primary"

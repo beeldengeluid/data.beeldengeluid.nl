@@ -64,7 +64,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn fab :color="color || 'blue lighten-2'" variant="text">
+      <v-btn icon :color="color || 'blue lighten-2'" variant="text">
         <v-icon>mdi-arrow-right</v-icon>
       </v-btn>
     </v-card-actions>

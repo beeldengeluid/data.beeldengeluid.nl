@@ -79,7 +79,7 @@
       <!-- Filter button on mobile -->
       <v-btn
         class="ma-1 d-block d-md-none"
-        fab
+        icon
         theme="dark"
         small
         color="primary"
