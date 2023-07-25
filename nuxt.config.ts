@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxt/image',
     async (options, nuxt) => {
@@ -45,5 +46,10 @@ export default defineNuxtConfig({
     // optimization feature (when deploying there).
     // see https://github.com/nuxt/image/issues/751#issuecomment-1436742167
     provider: 'ipx',
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    locales: ['en', 'nl'],
+    defaultLocale: 'en',
   },
 })
