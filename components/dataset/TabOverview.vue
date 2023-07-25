@@ -1,5 +1,5 @@
 <template>
-  <v-tab-item key="overview" value="overview">
+  <v-window-item key="overview" value="overview">
     <section class="mt-0">
       <!-- Stats -->
       <v-row
@@ -33,7 +33,7 @@
         </v-col>
       </v-row>
     </section>
-  </v-tab-item>
+  </v-window-item>
 </template>
 <script>
 import ArticleRelations from '../ArticleRelations'

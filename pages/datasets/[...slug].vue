@@ -24,7 +24,7 @@
     <v-row class="justify-center mb-3 pt-3 mt-0 bg-white">
       <v-col class="limit-width px-3 py-3 mb-3">
         <section class="px-3">
-          <v-tabs-items v-model="activeSubmenu">
+          <v-window v-model="activeSubmenu">
             <!-- Overview -->
             <TabOverview
               :dataset="dataset"
@@ -42,7 +42,7 @@
               :projects="projects"
               :blogs="blogs"
             />
-          </v-tabs-items>
+          </v-window>
         </section>
       </v-col>
     </v-row>

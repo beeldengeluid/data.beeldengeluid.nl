@@ -1,5 +1,5 @@
 <template>
-  <v-tab-item key="metadata" value="metadata">
+  <v-window-item key="metadata" value="metadata">
     <section>
       <!-- MetadataTable -->
       <div>
@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
     </section>
-  </v-tab-item>
+  </v-window-item>
 </template>
 <script>
 import MetadataTable from '../MetadataTable'
