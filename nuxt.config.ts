@@ -20,9 +20,22 @@ export default defineNuxtConfig({
       nuxt.hooks.hook(
         'vite:extendConfig',
         // @ts-ignore
-        (config) => config.plugins.push(vuetify()),
+        (config) =>
+          // @ts-ignore
+          config.plugins.push(
+            vuetify({
+              styles: { configFile: 'settings.scss' },
+            }),
+          ),
       )
     },
     '@nuxtjs/eslint-module',
   ],
+  // disable sourcemaps to work around 'sourcemap points to missing source files'
+  // errors.
+  // see https://github.com/vuetifyjs/vuetify-loader/issues/290
+  sourcemap: {
+    server: false,
+    client: false,
+  },
 })
