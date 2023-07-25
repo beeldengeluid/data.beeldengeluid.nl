@@ -4,14 +4,22 @@ Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v16.x.
+- [Node.js](https://nodejs.org/) v18.x.
 
 If you use [`nvm`](https://github.com/nvm-sh/nvm) to manage different Node versions, running `nvm use` will activate the required version through `.nvmrc`.
 
 ## Ingredients
+Frontend:
+- [Nuxt](https://nuxt.com) v3 as application framework, and for static site generation.
+- [Vuetify](https://vuetifyjs.com/en/) as component library.
+- [Nuxt Content](https://content.nuxtjs.org/) to fetch content, see the [`content/`](./content/) directory in this repository.
+- [Nuxt Image](https://image.nuxtjs.org/) to convert and include images in various formats.
+- [nuxtjs/i18n](https://i18n.nuxtjs.org/) for localization.
 
-- [Nuxt.js](https://nuxtjs.org)
-- [Forestry CMS](https://forestry.io/)
+Content Management:
+- ~~[Forestry CMS](https://forestry.io/) to manage [`./content`](./content/).~~ ) _Deprecated and waiting for replacement. Until that time content can be managed directly in this repository ._
+
+LOD DataCatalog:
 - Datasets from [DataCatalog](https://data.beeldengeluid.nl/id/datacatalog/0001), fetched during build
 
 ## Development Setup
@@ -22,19 +30,28 @@ NB: we've switched from Yarn to NPM after encountering [issues](https://github.c
 
 ```bash
 # install dependencies
-$ npm install
+npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# (optionally) fetch latest datacatalog in JSON-LD format
-$ npm run fetch
-
-# generate static project (does not include fetch)
-$ npm run generate
+# start the development server
+npm run dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+other commands, which might come in handy as needed
+```bash
+# fetching latest datacatalog in JSON-LD format
+npm run fetch
+
+# generate static project
+npm run generate
+
+# build app for production
+npm run build
+
+# locally preview production build
+npm run preview
+```
+
+For detailed explanation on how things work, the [Nuxt docs](https://nuxt.com) are a good starting point.
 
 ## Development Process
 
