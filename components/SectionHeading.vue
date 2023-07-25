@@ -8,7 +8,7 @@
             :to="localePath(actionPath)"
             class="text-decoration-none text-grey-darken-4"
           >
-            {{ title }}&nbsp;<span :class="color + '--text'">/</span>
+            {{ title }}&nbsp;<span :class="`text-${color}`">/</span>
           </component>
         </h1>
       </v-col>

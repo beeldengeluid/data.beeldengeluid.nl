@@ -37,7 +37,7 @@
               <!-- Stats -->
               <div
                 :style="{ fontSize: '0.8em' }"
-                class="text-uppercase grey--text lighten-4 title-font pb-4"
+                class="text-uppercase text-grey-lighten-4 title-font pb-4"
               >
                 <div
                   v-for="(stat, index) of stats"
@@ -49,7 +49,7 @@
                     textOverflow: 'ellipsis',
                   }"
                 >
-                  <v-icon size="17" color="grey lighten-4" class="pb-0 mr-2">
+                  <v-icon size="17" color="grey-lighten-4" class="pb-0 mr-2">
                     {{ stat.icon }}
                   </v-icon>
                   <strong> {{ stat.text }} </strong>
@@ -89,7 +89,7 @@
           v-if="tagsFilter.length > 0"
           :content="tagsFilter.length"
           :style="{ transform: 'translate(22px,-12px)' }"
-          color="red darken-1"
+          color="red-darken-1"
         />
 
         <v-icon dark>

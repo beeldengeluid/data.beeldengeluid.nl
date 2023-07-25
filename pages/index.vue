@@ -2,7 +2,7 @@
   <v-row>
     <v-col>
       <!-- Datasets / Visualization -->
-      <v-row class="justify-center white">
+      <v-row class="justify-center bg-white">
         <v-col class="pa-0">
           <VisualMain :datasets="datasets" />
         </v-col>
@@ -75,7 +75,7 @@
             :description="$t('about_description')"
           />
 
-          <v-row class="white mx-4 my-6 flex-column flex-md-row">
+          <v-row class="bg-white mx-4 my-6 flex-column flex-md-row">
             <v-col md="6" class="px-0 py-0">
               <v-img
                 max-height="400"

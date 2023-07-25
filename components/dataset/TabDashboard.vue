@@ -5,7 +5,7 @@
       <v-row
         v-if="dataset"
         :style="{ fontSize: '0.8em' }"
-        class="justify-start text-uppercase grey--text darken-4 title-font pb-2 mb-3 flex-wrap"
+        class="justify-start text-uppercase text-grey-darken-4 title-font pb-2 mb-3 flex-wrap"
       >
         <v-col
           v-for="(stat, index) of stats"
