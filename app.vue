@@ -132,7 +132,7 @@
 
     <v-main>
       <v-container fluid>
-        <nuxt />
+        <NuxtPage />
       </v-container>
     </v-main>
 
