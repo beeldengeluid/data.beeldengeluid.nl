@@ -65,8 +65,6 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Sound & Vision · Labs',
       title: 'Beeld & Geluid',
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'description', name: 'description', content: '' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'theme-color', content: '#ffffff' },
@@ -81,16 +79,15 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          size: '32x32',
+          sizes: '32x32',
           href: '/favicon-32x32.png',
         },
         {
           rel: 'icon',
           type: 'image/png',
-          size: '16x16',
+          sizes: '16x16',
           href: '/favicon-16x16.png',
         },
-        { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'manifest', href: '/site.webmanifest' },
       ],
     },
