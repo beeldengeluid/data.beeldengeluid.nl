@@ -1,21 +1,20 @@
-import axios from 'axios'
 import fs from 'fs'
 
 const datacatalogURL = 'https://data.beeldengeluid.nl/id/datacatalog/0001'
 const datacatalogPath = 'content/datacatalog0001.json'
 
-axios
-  .get(datacatalogURL)
-  .then(function (response) {
-    if (response.status === 200) {
-      fs.writeFile(datacatalogPath, JSON.stringify(response.data), (err) => {
-        if (err) throw err
-        console.log(`Data written to file: ${datacatalogPath}`)
-      })
+fetch(datacatalogURL)
+  .then((response) => {
+    if (response.status !== 200) {
+      throw `received response with status '${response.status}'`
     } else {
-      console.log('Invalid DataCatalog response: ', response)
+      return response
     }
   })
-  .catch(function (error) {
-    console.log(error)
+  .then((okResponse) => okResponse.json())
+  .then((dataCatalog) => {
+    const jsonText = JSON.stringify(dataCatalog)
+    fs.writeFileSync(datacatalogPath, jsonText)
+    console.log(`Data catalog written to file: ${datacatalogPath}`)
   })
+  .catch((err) => console.error(err))
