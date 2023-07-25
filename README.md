@@ -1,63 +1,41 @@
-# Nuxt 3 Minimal Starter
+# B&G Labs Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
-## Setup
+## Prerequisites
 
-Make sure to install the dependencies:
+- [Node.js](https://nodejs.org/) v16.x.
 
-```bash
-# npm
-npm install
+If you use [`nvm`](https://github.com/nvm-sh/nvm) to manage different Node versions, running `nvm use` will activate the required version through `.nvmrc`.
 
-# pnpm
-pnpm install
+## Ingredients
 
-# yarn
-yarn install
-```
+- [Nuxt.js](https://nuxtjs.org)
+- [Forestry CMS](https://forestry.io/)
+- Datasets from [DataCatalog](https://data.beeldengeluid.nl/id/datacatalog/0001), fetched during build
 
-## Development Server
+## Development Setup
 
-Start the development server on `http://localhost:3000`:
+The following commands require [Node.js](https://nodejs.org/) and NPM (ships with Node) to be installed globally.
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
+NB: we've switched from Yarn to NPM after encountering [issues](https://github.com/yarnpkg/berry/issues/3416#issuecomment-932397620) with dependabot updates.
 
 ```bash
-# npm
-npm run build
+# install dependencies
+$ npm install
 
-# pnpm
-pnpm run build
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# yarn
-yarn build
+# (optionally) fetch latest datacatalog in JSON-LD format
+$ npm run fetch
+
+# generate static project (does not include fetch)
+$ npm run generate
 ```
 
-Locally preview production build:
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-```bash
-# npm
-npm run preview
+## Development Process
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+We branch from `main` to work on changes to the labs website. Use the steps under _Development Setup_ to work on your changes locally. To share your changes with others, create a draft pull request on GitHub. This deploys your branch through [Vercel for Github](https://vercel.com/docs/concepts/git/vercel-for-github) to a new environment, and posts a shareable preview URL to the pull request. If your changes are ready to be released, set the pull request to 'ready for review' and ask someone for a code review. After review, the change is deployed by merging to `main`.
