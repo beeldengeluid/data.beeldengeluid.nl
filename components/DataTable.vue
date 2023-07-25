@@ -83,14 +83,14 @@
           <h2 v-else class="text-capitalize">{{ key }}</h2>
 
           <!-- Array of objects -->
-          <Fragment v-if="isObjectArray(value)">
+          <div v-if="isObjectArray(value)">
             <DataTable v-for="(v, index) in value" :key="index" :object="v" />
-          </Fragment>
+          </div>
 
           <!-- Object -->
-          <Fragment v-else-if="typeof value == 'object'">
+          <div v-else-if="typeof value == 'object'">
             <DataTable :object="value" />
-          </Fragment>
+          </div>
         </td>
       </tr>
     </tbody>

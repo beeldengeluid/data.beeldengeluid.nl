@@ -1,5 +1,5 @@
 <template>
-  <Fragment>
+  <div>
     <a
       v-if="isUrl(value)"
       :href="value"
@@ -8,11 +8,10 @@
       >{{ value }}</a
     >
     <span v-else>{{ value }}</span>
-  </Fragment>
+  </div>
 </template>
 
 <script>
-import { Fragment } from 'vue-fragment'
 import { isUrl } from '~/util/url'
 
 export default {
