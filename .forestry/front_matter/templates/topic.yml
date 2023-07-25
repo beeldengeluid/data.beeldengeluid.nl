@@ -1,0 +1,39 @@
+---
+label: Topic
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: file
+  name: image
+  label: Image
+- type: field_group_list
+  name: contacts
+  label: Contacts
+  fields:
+  - type: text
+    name: name
+    label: Name
+  - type: text
+    name: email
+    label: Email
+- name: sortOrder
+  type: number
+  description: Set order for sorting content items on index page (optional)
+  default: 9
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Sort Order
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Turn on to hide this content from index pages
+pages:
+- content/en/topics/meten-weten.md

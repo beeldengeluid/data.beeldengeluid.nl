@@ -1,0 +1,113 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: 2
+  description: An image representing the project, preferably landscape orientation,
+    max 2 MB
+- type: list
+  name: tags
+  label: Tags
+- type: list
+  name: datasets
+  label: Datasets
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: data-sets
+- name: lab
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: labs
+      file: 
+      path: 
+  label: Lab
+  description: A lab that this project belongs to
+- name: sortOrder
+  type: number
+  label: Sort Order
+  description: Set order for sorting content items on index page (optional)
+  default: 9
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+  description: A valid URL (incl "https://") of a project website
+- name: contacts
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Contacts
+- name: startDate
+  type: datetime
+  label: Start Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: endDate
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: hidden
+  type: boolean
+  description: Turn on to hide this content from index pages
+  label: Hidden
+pages:
+- content/en/projects/ai4media.md
+- content/en/projects/clariah-plus.md
+- content/en/projects/homed.md
+- content/en/projects/kind-in-gesprek-met-media.md
+- content/en/projects/mediaoorlog.md
+- content/en/projects/oh-smart.md
+- content/en/projects/podiumkunsten.md
+- content/en/projects/polifonia.md
+- content/en/projects/reframe.md
+- content/en/projects/sane.md
+- content/en/projects/tegenlicht-archief-voor-de-toekomst-archie.md
+- content/en/projects/twixl.md
+- content/en/projects/visxp.md

@@ -1,0 +1,86 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/static/admin"
+webhook_url: 
+sections:
+- type: heading
+  label: Content Collections
+- type: directory
+  path: content/en/labs
+  label: Labs
+  create: documents
+  match: "**/*.md"
+  templates:
+  - lab
+- type: directory
+  path: content/en/projects
+  label: Projects
+  create: documents
+  match: "**/*.md"
+  templates:
+  - project
+- type: directory
+  path: content/en/topics
+  label: Topics
+  create: documents
+  match: "**/*.md"
+  templates:
+  - topic
+- type: directory
+  path: content/en/datasets
+  label: Datasets (EN)
+  create: documents
+  match: "**/*.md"
+  templates:
+  - dataset
+- type: directory
+  path: content/nl/datasets
+  label: Datasets (NL)
+  create: documents
+  match: "**/*.md"
+  templates:
+  - dataset
+- type: directory
+  path: content/en/apis
+  label: APIs (EN)
+  create: documents
+  match: "**/*.md"
+  templates:
+  - api
+- type: directory
+  path: content/nl/apis
+  label: APIs (NL)
+  create: documents
+  match: "**/*.md"
+  templates:
+  - api
+- type: directory
+  path: content/en/blogs
+  label: Blog Posts
+  create: documents
+  match: "**/*.md"
+  templates:
+  - blog-post
+- type: directory
+  path: content/en/archive
+  label: Archive
+  create: documents
+  match: "**/*.md"
+- type: heading
+  label: Pages
+- type: document
+  path: content/en/about.md
+  label: About
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: dist
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run dev

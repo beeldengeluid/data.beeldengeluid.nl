@@ -1,0 +1,50 @@
+---
+label: Data set
+hide_body: false
+fields:
+- name: id
+  type: text
+  config:
+    required: true
+  label: Id
+  description: The full id of the dataset, corresponding to the '@id' field in the
+    DataCatalog. e.g. <a href="http://data.beeldengeluid.nl/id/dataset/0001" title="http://data.beeldengeluid.nl/id/dataset/0001"
+    target="_blank">http://data.beeldengeluid.nl/id/dataset/0001</a>
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: 2
+  description: Used as thumbnail on the visualisation
+- type: list
+  name: tags
+  label: Tags
+- name: color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - red.base
+    - pink.base
+    - purple.base
+    - indigo.base
+    - blue.base
+    - teal.base
+    - green.base
+    - lime.base
+    - yellow.base
+    - amber.base
+    - orange.base
+    - brown.base
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
+  description: Color to be used in home page visualisation
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Turn on to hide this content from index pages

@@ -1,0 +1,70 @@
+---
+label: Lab
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: file
+  name: image
+  label: Image
+- name: website_url
+  type: text
+  config:
+    required: false
+  label: Website URL
+  description: URL of the lab's website
+- name: partners
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Partners
+  description: Partners of the lab
+- name: funders
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Funders
+  description: Funders of the lab
+- name: sortOrder
+  type: number
+  label: Sort Order
+  description: Set order for sorting content items on index page (optional)
+  default: 9
+  required: true
+  config:
+    min: 
+    max: 
+    step: 1
+- name: startDate
+  type: datetime
+  label: Start Date
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: endDate
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Turn on to hide this content from index pages
+pages:
+- content/en/labs/benchmarking-ai.md
+- content/en/labs/media-suite-data-stories.md
+- content/en/labs/robot-interaction.md
