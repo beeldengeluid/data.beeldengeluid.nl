@@ -31,6 +31,7 @@
     "prettier": "3.0.0",
     "sass": "^1.64.0",
     "vite-plugin-vuetify": "^1.0.2",
+    "vue-panzoom": "^1.1.6",
     "vuetify": "^3.3.9"
   }
 }
