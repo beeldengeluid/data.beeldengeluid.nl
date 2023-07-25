@@ -17,7 +17,6 @@
           <v-btn
             v-if="actionTitle && actionPath"
             :to="localePath(actionPath)"
-            nuxt
             variant="plain"
           >
             {{ actionTitle }}

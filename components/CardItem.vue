@@ -6,7 +6,6 @@
     height="100%"
     hover
     link
-    nuxt
     :ripple="{ class: rippleClass }"
     :to="
       localePath({

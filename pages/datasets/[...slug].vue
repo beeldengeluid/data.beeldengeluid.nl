@@ -10,7 +10,7 @@
           <v-tabs v-model="activeSubmenu" class="light-background">
             <v-tabs-slider color="primary" />
 
-            <v-tab v-for="item in submenu" :key="item" :to="'#' + item" nuxt>
+            <v-tab v-for="item in submenu" :key="item" :to="'#' + item">
               {{ item }}
             </v-tab>
           </v-tabs>

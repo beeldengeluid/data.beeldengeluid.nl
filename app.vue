@@ -33,7 +33,6 @@
           v-for="item in menu"
           :key="item.to"
           :to="localePath(item.to)"
-          nuxt
           router
           exact
         >
@@ -55,7 +54,6 @@
           v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          nuxt
           router
           exact
         >
@@ -114,12 +112,7 @@
           class="v-tabs-slider-wrapper"
         />
         <v-tab :to="localePath(home.to)" class="d-none" />
-        <v-tab
-          v-for="item in tabMenu"
-          :key="item.to"
-          :to="localePath(item.to)"
-          nuxt
-        >
+        <v-tab v-for="item in tabMenu" :key="item.to" :to="localePath(item.to)">
           {{ $t(item.title) }}
         </v-tab>
       </v-tabs>
@@ -184,7 +177,6 @@
               v-for="item in menu"
               :key="item.to"
               :to="localePath(item.to)"
-              nuxt
               router
               exact
               theme="dark"

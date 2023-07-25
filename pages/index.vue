@@ -91,7 +91,7 @@
               class="pa-10 d-flex flex-column justify-center align-start"
             >
               <nuxt-content :document="{ body: aboutPage.excerpt }" />
-              <v-btn color="primary" :to="localePath('about')" nuxt>
+              <v-btn color="primary" :to="localePath('about')">
                 {{ $t('read_more') }}
               </v-btn>
             </v-col>

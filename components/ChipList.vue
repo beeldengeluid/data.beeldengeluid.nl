@@ -8,7 +8,6 @@
       label
       large
       link
-      nuxt
       :to="localePath('/' + path + '/' + chip.slug)"
       text-color="white"
       :style="{

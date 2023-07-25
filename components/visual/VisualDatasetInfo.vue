@@ -52,7 +52,6 @@
               params: { slug: dataset.slug },
             })
           "
-          nuxt
         >
           {{ $t('explore_dataset') }}
         </v-btn>
