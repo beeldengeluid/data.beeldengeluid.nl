@@ -80,7 +80,7 @@
       <v-btn
         class="ma-1 d-block d-md-none"
         fab
-        dark
+        theme="dark"
         small
         color="primary"
         @click.stop="showTags = !showTags"

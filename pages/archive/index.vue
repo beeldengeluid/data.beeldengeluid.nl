@@ -13,7 +13,7 @@
       <v-btn
         class="ma-1 d-block d-sm-none mt-n1"
         fab
-        dark
+        theme="dark"
         size="small"
         color="primary"
         @click.stop="showTypes = !showTypes"

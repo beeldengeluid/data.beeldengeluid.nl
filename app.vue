@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app theme="light">
     <!-- drawer menu -->
     <v-navigation-drawer
       v-model="drawer"
@@ -8,7 +8,7 @@
       disable-resize-watcher
       temporary
       floating
-      dark
+      theme="dark"
       class="d-sm-flex d-md-none"
     >
       <v-list-item>
@@ -74,7 +74,7 @@
     <v-app-bar
       fixed
       app
-      dark
+      theme="dark"
       elevate-on-scroll
       class="nisvdarkblue darken-4 text-white"
     >
@@ -187,7 +187,7 @@
               nuxt
               router
               exact
-              dark
+              theme="dark"
             >
               <v-list-item-title class="text-uppercase text-white">
                 <h4>{{ $t(item.title) }}</h4>
