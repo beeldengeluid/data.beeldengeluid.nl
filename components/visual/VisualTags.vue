@@ -1,0 +1,76 @@
+<template>
+  <div
+    class="tags d-flex align-end"
+    :class="[horizontal ? 'flex-row' : 'flex-column']"
+  >
+    <v-btn
+      v-for="tag in tags"
+      :key="tag"
+      :color="!filterActive || inFilter(tag) ? 'primary' : 'grey darken-3'"
+      :style="{
+        opacity: highlightActive && !inHighlight(tag) ? 0.7 : 1,
+      }"
+      class="tag ma-1 py-0 px-2 text-uppercase white--text"
+      depressed
+      small
+      label
+      @click.left.exact="$emit('toggle-tag', tag)"
+      @click.shift.left.exact="$emit('set-tag', tag)"
+    >
+      {{ tag.replace('_', ' ') }}
+    </v-btn>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    tags: {
+      type: Array,
+      required: true,
+      default: () => [],
+    },
+    filter: {
+      type: Array,
+      required: true,
+      default: () => [],
+    },
+    highlight: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    horizontal: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
+  computed: {
+    filterActive() {
+      return this.filter.length > 0
+    },
+    highlightActive() {
+      return this.highlight.length > 0
+    },
+  },
+  methods: {
+    inFilter(tag) {
+      return this.filter.includes(tag)
+    },
+    inHighlight(tag) {
+      return this.highlight.includes(tag)
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.tags {
+  position: relative;
+
+  .tag {
+    box-shadow: 1px 1px 5px rgba(black, 0.3);
+  }
+}
+</style>
