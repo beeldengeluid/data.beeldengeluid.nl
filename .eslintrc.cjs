@@ -15,4 +15,12 @@ module.exports = {
     'plugin:prettier/recommended',
     // NOTE: don't append here, 'plugin:prettier/recommended' should be last.
   ],
+  rules: {
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['default', 'index', 'error', 'about', '[...slug]'],
+      },
+    ],
+  },
 }
