@@ -1,0 +1,36 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+// overwriting doesn't work in variables.scss
+$heading-font-family: 'Assistant';
+
+.v-main {
+  background-color: $lightBackground;
+}
+
+.v-application {
+  .title,
+  .title-font,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .v-tab,
+  .v-avatar,
+  .v-toolbar__title,
+  .v-chip__content,
+  .v-card__title,
+  .v-btn {
+    // To pin point specific classes of some components
+    font-family: $heading-font-family, sans-serif !important;
+    font-weight: 700;
+  }
+
+  .v-tabs--right {
+    justify-content: flex-end;
+  }
+  .theme--dark.v-tabs .v-tab:hover::before {
+    opacity: 0.2;
+  }
+}
