@@ -3,13 +3,12 @@
     <v-chip
       v-for="chip of chips"
       :key="chip.slug"
-      class="ma-2 color-chip"
+      class="ma-2 color-chip text-white"
       :color="color"
       label
       large
       link
       :to="localePath('/' + path + '/' + chip.slug)"
-      text-color="white"
       :style="{
         backgroundImage: getImageOverlayCSS(
           getImageSrc(chip.image),
