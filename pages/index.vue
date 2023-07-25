@@ -4,7 +4,7 @@
       <!-- Datasets / Visualization -->
       <v-row class="justify-center white">
         <v-col class="pa-0">
-          <VisualMain :datasets="datasetPages" />
+          <VisualMain :datasets="datasets" />
         </v-col>
       </v-row>
 
@@ -81,7 +81,7 @@
                 max-height="400"
                 max-width="100%"
                 width="100%"
-                :src="$img('/images/about.jpg', { width: 700 })"
+                :src="img('/images/about.jpg', { width: 700 })"
                 class="float-right"
                 gradient="to top right, rgba(0,138,219,0.85), rgba(0,138,219,0.2)"
               ></v-img>
@@ -104,108 +104,136 @@
   </v-row>
 </template>
 
-<script>
-import CardGrid from '~/components/CardGrid'
-import SectionHeading from '~/components/SectionHeading'
-import VisualMain from '~/components/visual/VisualMain'
-import { getLocalePath } from '~/util/contentFallback'
-import icons from '~/config/icons'
-import { classColors } from '~/config/theme'
+<script setup>
 import { enrichDatasets, extendDatasetPagesWithDatasets } from '~/util/dataset'
 
-export default {
-  components: {
-    CardGrid,
-    SectionHeading,
-    VisualMain,
-  },
-  async asyncData({ $content, app }) {
-    const aboutPath = await getLocalePath({ $content, app, path: 'about' })
-    const aboutPage = await $content(aboutPath).fetch()
+const i18n = useI18n()
+const img = useImage()
 
-    // blogs
-    const blogsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'blogs',
+// about
+// get localized path
+const aboutPath = 'about'
+const { data: aboutPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${aboutPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const blogs = await $content(blogsPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('createdAt', 'asc')
-      .limit(4)
-      .fetch()
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${aboutPath}`
+})
+// get localized content
+const { data: aboutPage } = await useAsyncData(async () => {
+  return queryContent(aboutPathLocalized.value).findOne()
+})
 
-    // labs
-    const labsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'labs',
+// blogs
+const blogsPath = 'blogs'
+// get localizedpath
+const { data: blogsPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${blogsPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const labs = await $content(labsPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('sortOrder', 'asc')
-      .sortBy('startDate', 'asc')
-      .sortBy('createdAt', 'asc')
-      .limit(4)
-      .fetch()
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${blogsPath}`
+})
+// get localized content
+const { data: blogs } = await useAsyncData(async () => {
+  return queryContent(blogsPathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ createdAt: 1 })
+    .limit(4)
+    .find()
+})
 
-    // projects
-    const projectsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'projects',
+// labs
+const labsPath = 'labs'
+// get localized path
+const { data: labsPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${labsPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const projects = await $content(projectsPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('sortOrder', 'asc')
-      .sortBy('startDate', 'asc')
-      .sortBy('createdAt', 'asc')
-      .limit(4)
-      .fetch()
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${labsPath}`
+})
+const { data: labs } = await useAsyncData(async () => {
+  return queryContent(labsPathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ sortOrder: 1 })
+    .sort({ startDate: 1 })
+    .sort({ createdAt: 1 })
+    .limit(4)
+    .find()
+})
 
-    // datasets
-    // Custom markdown content for datasets
-    const mdPath = await getLocalePath({
-      $content,
-      app,
-      path: 'datasets',
+// projects
+const projectsPath = 'projects'
+const { data: projectsPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${projectsPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    let datasetPages = await $content(mdPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('size', 'desc')
-      .fetch()
-      .catch(() => {
-        // ignore error of missing page
-      })
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${projectsPath}`
+})
+const { data: projects } = await useAsyncData(async () => {
+  return queryContent(projectsPathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ sortOrder: 1 })
+    .sort({ startDate: 1 })
+    .sort({ createdAt: 1 })
+    .limit(4)
+    .find()
+})
 
-    // datasets from Datacatalog are not localized (yet)
-    const dataPath = 'datacatalog0001'
-    const data = await $content(dataPath).fetch()
-    const datacatalog = data['@graph']
-    const datasetsRaw = data['@graph'].filter(
-      (node) => node['@type'] === 'sdo:Dataset'
-    )
-    // enrich datasets with helper properties
-    const datasets = enrichDatasets(datasetsRaw, datacatalog)
-    datasetPages = extendDatasetPagesWithDatasets(datasetPages, datasets)
+// datasets (markdown content)
+const datasetsPath = 'datasets'
+const { data: datasetsPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${datasetsPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
+    })
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${datasetsPath}`
+})
+const { data: datasetPages } = await useAsyncData(async () => {
+  return queryContent(datasetsPathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ size: -1 })
+    .find()
+    .catch(() => {
+      // ignore error of missing page
+    })
+})
 
-    return {
-      aboutPage,
-      datasetPages,
-      blogs,
-      labs,
-      projects,
-    }
-  },
-  data: () => ({
-    icons,
-    classColors,
-  }),
-  head() {
-    const title = this.$t('home')
-    return {
-      title,
-    }
-  },
-}
+// datasets from Datacatalog are not localized (yet)
+const dataPath = 'datacatalog0001'
+const { data: datacatalogData } = await useAsyncData(async () => {
+  return queryContent(dataPath).findOne()
+})
+const datacatalog = datacatalogData.value['@graph']
+const datasetsRaw = datacatalog.filter(
+  (node) => node['@type'] === 'sdo:Dataset',
+)
+
+// enrich datasets with helper properties
+const datasets = computed(() => {
+  const enrichtedDatasets = enrichDatasets(datasetsRaw, datacatalog)
+  return extendDatasetPagesWithDatasets(datasetPages.value, enrichtedDatasets)
+})
+
+useHead({
+  title: i18n.t('home'),
+})
 </script>

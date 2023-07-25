@@ -7,40 +7,35 @@
   />
 </template>
 
-<script>
-import CardPage from '~/components/CardPage'
-import { getLocalePath } from '~/util/contentFallback'
+<script setup>
+const i18n = useI18n()
 
 const dataClass = 'project'
 
-export default {
-  components: { CardPage },
-  async asyncData({ $content, app }) {
-    const path = dataClass + 's'
-
-    const articlesPath = await getLocalePath({
-      $content,
-      app,
-      path,
+const path = dataClass + 's'
+const { data: pathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${path}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const articles = await $content(articlesPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('sortOrder', 'asc')
-      .sortBy('endDate', 'desc')
-      .sortBy('createdAt', 'asc')
-      .fetch()
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${path}`
+})
+const { data: cards } = await useAsyncData(async () => {
+  return queryContent(pathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ sortOrder: 1 })
+    .sort({ endDate: 1 })
+    .sort({ createdAt: 1 })
+    .find()
+})
 
-    return { cards: articles }
-  },
-  data: () => ({
-    title: dataClass + 's',
-    cardPath: dataClass + 's' + '-slug',
-    dataClass,
-  }),
-  head() {
-    return {
-      title: this.$t(dataClass + 's'),
-    }
-  },
-}
+const title = `${dataClass}s`
+const cardPath = `${dataClass}s-slug`
+
+useHead({
+  title: i18n.t(dataClass + 's'),
+})
 </script>

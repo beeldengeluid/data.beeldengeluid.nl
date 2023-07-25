@@ -51,78 +51,71 @@
   </div>
 </template>
 
-<script>
-import CardPage from '~/components/CardPage'
-import VisualTags from '~/components/visual/VisualTags'
-import { getLocalePath } from '~/util/contentFallback'
+<script setup>
+const i18n = useI18n()
 
 const dataClass = 'archive'
 
-export default {
-  components: { VisualTags, CardPage },
-  async asyncData({ $content, app }) {
-    const path = dataClass
-
-    const articlesPath = await getLocalePath({
-      $content,
-      app,
-      path,
+const path = dataClass
+const { data: pathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${path}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const articles = await $content(articlesPath)
-      .where({ hidden: { $ne: true } })
-      .sortBy('createdAt', 'desc')
-      .sortBy('title', 'asc')
-      .fetch()
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${path}`
+})
+const { data: cards } = await useAsyncData(async () => {
+  return queryContent(pathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ createdAt: -1 })
+    .sort({ title: 1 })
+    .find()
+})
 
-    return { cards: articles }
-  },
-  data: () => ({
-    title: dataClass,
-    cardPath: dataClass + '-slug',
-    dataClass,
-    types: ['project', 'example', 'application'],
-    typesFilter: [],
-    showTypes: false,
-  }),
-  head() {
-    return {
-      title: this.$t(dataClass),
-    }
-  },
-  computed: {
-    filteredCards() {
-      return this.typesFilter.length === 0
-        ? this.cards
-        : this.cards.filter(
-            (card) => card.type && this.typesFilter.includes(card.type),
-          )
-    },
-  },
-  mounted() {
-    // show tags on large screens
-    if (window.innerWidth > 500) {
-      this.showTypes = true
-    }
-  },
-  methods: {
-    toggleType(type) {
-      if (this.typesFilter.includes(type)) {
-        this.typesFilter = this.typesFilter.filter((t) => t !== type)
-      } else {
-        this.typesFilter = [...this.typesFilter, type]
-      }
+const title = dataClass
+const cardPath = `${dataClass}-slug`
+const types = ['project', 'example', 'application']
+const typesFilter = ref([])
+const showTypes = ref(false)
 
-      if (this.typesFilter.length === this.types.length) {
-        this.typesFilter = []
-      }
-    },
-    setType(type) {
-      if (this.typesFilter.includes(type)) {
-        this.typesFilter = []
-      } else {
-        this.typesFilter = [type]
-      }
-    },
-  },
+useHead({
+  title: i18n.t(dataClass),
+})
+
+const filteredCards = computed(() => {
+  return typesFilter.value.length === 0
+    ? cards.value
+    : cards.value.filter(
+        (card) => card.type && typesFilter.value.includes(card.type)
+      )
+})
+
+onMounted(() => {
+  if (window.innerWidth > 500) {
+    showTypes.value = true
+  }
+})
+
+const toggleType = (type) => {
+  if (typesFilter.value.includes(type)) {
+    typesFilter.value = typesFilter.value.filter((t) => t !== type)
+  } else {
+    typesFilter.value = [...typesFilter.value, type]
+  }
+
+  if (typesFilter.value.length === types.length) {
+    typesFilter.value = []
+  }
+}
+
+const setType = (type) => {
+  if (typesFilter.value.includes(type)) {
+    typesFilter.value = []
+  } else {
+    typesFilter.value = [type]
+  }
 }
 </script>

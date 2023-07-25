@@ -189,50 +189,45 @@
   </v-app>
 </template>
 
-<script>
+<script setup>
 import menu from '~/config/menu'
-import LogoMarkLabs from '~/components/LogoMarkLabs'
 
-export default {
-  components: { LogoMarkLabs },
-  data: () => ({
-    drawer: false,
-    fixed: false,
-    home: menu[0],
-    menu,
-    tabMenu: menu.filter((m) => m.title !== 'home'),
-    activeMenu: 'blogs',
-  }),
-  watch: {
-    // Listen for route change
-    $route() {
-      this.updateActiveTab()
-    },
-  },
-  mounted() {
-    this.updateActiveTab()
-  },
-  methods: {
-    updateActiveTab() {
-      // Active menu for to paths
-      const to = this.$route.name
-      switch (true) {
-        case to.startsWith('index'):
-          this.activeMenu = 'index'
-          break
-        case to.startsWith('blog-to'):
-          this.activeMenu = this.localePath('blogs')
-          break
-        case to.startsWith('dataset-to'):
-          this.activeMenu = this.localePath('datasets')
-          break
-        case to.startsWith('project-to'):
-          this.activeMenu = this.localePath('projects')
-          break
-      }
-    },
-  },
+const route = useRoute()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
+
+const drawer = ref(false)
+const fixed = ref(false)
+const home = menu[0]
+const tabMenu = menu.filter((m) => m.title !== 'home')
+const activeMenu = ref('blogs')
+
+const updateActiveTab = () => {
+  // Active menu for to paths
+  const to = route.name?.toString()
+  switch (true) {
+    case to.startsWith('index'):
+      activeMenu.value = 'index'
+      break
+    case to.startsWith('blog-to'):
+      activeMenu.value = localePath('blogs')
+      break
+    case to.startsWith('dataset-to'):
+      activeMenu.value = localePath('datasets')
+      break
+    case to.startsWith('project-to'):
+      activeMenu.value = localePath('projects')
+      break
+  }
 }
+
+onMounted(() => updateActiveTab())
+
+watch(route, () => updateActiveTab())
+
+useHead({
+  title: 'Beeld & Geluid',
+})
 </script>
 
 <style lang="scss" scoped>

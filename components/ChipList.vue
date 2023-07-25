@@ -22,42 +22,38 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import theme from '~/config/theme'
 import { getImageOverlayCSS } from '~/util/color'
 
-export default {
-  props: {
-    chips: {
-      type: Array,
-      required: true,
-    },
-    path: {
-      type: String,
-      required: true,
-    },
-    color: {
-      type: String,
-      required: false,
-      default: 'primary',
-    },
-    icon: {
-      type: String,
-      required: false,
-      default: '',
-    },
+const img = useImage()
+
+defineProps({
+  chips: {
+    type: Array,
+    required: true,
   },
-  data: () => ({ theme }),
-  methods: {
-    getImageOverlayCSS,
-    getImageSrc(chipImage) {
-      return !chipImage
-        ? ''
-        : chipImage.includes('/uploads/')
-        ? chipImage
-        : this.$img(`~/assets/images/${chipImage}`, { width: 200 })
-    },
+  path: {
+    type: String,
+    required: true,
   },
+  color: {
+    type: String,
+    required: false,
+    default: 'primary',
+  },
+  icon: {
+    type: String,
+    required: false,
+    default: '',
+  },
+})
+const getImageSrc = (chipImage) => {
+  return !chipImage
+    ? ''
+    : chipImage.includes('/uploads/')
+    ? chipImage
+    : img(`/images/${chipImage}`, { width: 200 })
 }
 </script>
 

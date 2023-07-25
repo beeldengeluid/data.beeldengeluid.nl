@@ -40,61 +40,45 @@
   </v-row>
 </template>
 
-<script>
+<script setup>
 import { classColorIndex, classColors } from '~/config/theme'
 import { getDarkenedImageOverlayCSS } from '~/util/color'
 import { formatDateAsYear } from '~/util/date'
 
-export default {
-  props: {
-    article: {
-      type: Object,
-      required: true,
-      default: null,
-      validator: (object) => {
-        return object && object.title && object.subtitle
-      },
-    },
-    dataClass: {
-      type: String,
-      required: true,
-      default: '',
-    },
-  },
+const img = useImage()
 
-  data() {
-    return {
-      imageSrc: !this.article.image
-        ? this.$img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
-        : this.article.image.includes('/uploads/')
-        ? this.article.image
-        : this.$img(`/images/${this.article.image}`, { width: 930 }),
-      colorClass: classColorIndex[this.dataClass],
-      id: 'article-heading',
-    }
-  },
-  computed: {
-    path() {
-      return this.article.dir?.split('/').pop()
-    },
-    color() {
-      return classColors[this.dataClass]
-    },
-    backgroundImageStyle() {
-      return {
-        backgroundImage: getDarkenedImageOverlayCSS(
-          this.imageSrc,
-          this.color,
-          0.9
-        ),
-      }
+const props = defineProps({
+  article: {
+    type: Object,
+    required: true,
+    default: null,
+    validator: (object) => {
+      return object && object.title && object.subtitle
     },
   },
-  methods: {
-    formatDateAsYear,
+  dataClass: {
+    type: String,
+    required: true,
+    default: '',
   },
-}
+})
+
+const imageSrc = !props.article.image
+  ? img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
+  : props.article.image.includes('/uploads/')
+  ? props.article.image
+  : img(`/images/${props.article.image}`, { width: 930 })
+
+const colorClass = ref(classColorIndex[props.dataClass])
+const id = ref('article-heading')
+
+const path = computed(() => props.article.slug)
+const color = computed(() => classColors[props.dataClass])
+const backgroundImageStyle = computed(() => ({
+  backgroundImage: getDarkenedImageOverlayCSS(imageSrc, color.value, 0.9),
+}))
 </script>
+
 <style scoped lang="scss">
 .article-heading {
   background-size: cover;

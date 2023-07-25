@@ -5,21 +5,18 @@
   </a>
 </template>
 
-<script>
+<script setup>
 import icons from '~/config/icons'
 
-export default {
-  props: {
-    iconKey: { type: String, required: true, default: 'link' },
-    href: { type: String, required: true, default: '#' },
-    name: { type: String, required: true, default: 'name' },
-  },
-  computed: {
-    icon() {
-      return icons[this.iconKey]
-    },
-  },
-}
+const props = defineProps({
+  iconKey: { type: String, required: true, default: 'link' },
+  href: { type: String, required: true, default: '#' },
+  name: { type: String, required: true, default: 'name' },
+})
+
+const icon = computed(() => {
+  return icons[props.iconKey]
+})
 </script>
 
 <style scoped lang="scss">

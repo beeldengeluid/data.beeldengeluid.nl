@@ -7,38 +7,34 @@
   />
 </template>
 
-<script>
-import CardPage from '~/components/CardPage'
-import { getLocalePath } from '~/util/contentFallback'
+<script setup>
+const i18n = useI18n()
 
 const dataClass = 'dataset'
+const title = `${dataClass}s`
+const cardPath = `${dataClass}s-slug`
 
-export default {
-  components: { CardPage },
-  async asyncData({ $content, app }) {
-    // Custom markdown content for datasets
-    const mdPath = await getLocalePath({
-      $content,
-      app,
-      path: 'datasets',
+const path = dataClass + 's'
+const { data: pathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${path}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
     })
-    const datasetPages = await $content(mdPath)
-      .where({ hidden: { $ne: true } })
-      .fetch()
-      .catch(() => {
-        // ignore error of missing page
-      })
-    return { datasetPages }
-  },
-  data: () => ({
-    title: dataClass + 's',
-    cardPath: dataClass + 's' + '-slug',
-    dataClass,
-  }),
-  head() {
-    return {
-      title: this.$t(dataClass + 's'),
-    }
-  },
-}
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${path}`
+})
+const { data: datasetPages } = await useAsyncData(async () => {
+  return queryContent(pathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .find()
+    .catch(() => {
+      // ignore error of missing page
+    })
+})
+
+useHead({
+  title: i18n.t(dataClass + 's'),
+})
 </script>

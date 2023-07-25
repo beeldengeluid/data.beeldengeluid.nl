@@ -11,20 +11,14 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { isUrl } from '~/util/url'
 
-export default {
-  components: { Fragment },
-  props: {
-    value: {
-      type: [String, Number, Object],
-      required: true,
-      default: '',
-    },
+defineProps({
+  value: {
+    type: [String, Number, Object],
+    required: true,
+    default: '',
   },
-  methods: {
-    isUrl,
-  },
-}
+})
 </script>

@@ -22,47 +22,37 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    tags: {
-      type: Array,
-      required: true,
-      default: () => [],
-    },
-    filter: {
-      type: Array,
-      required: true,
-      default: () => [],
-    },
-    highlight: {
-      type: Array,
-      required: false,
-      default: () => [],
-    },
-    horizontal: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
+<script setup>
+defineEmits(['toggle-tag', 'set-tag'])
+
+const props = defineProps({
+  tags: {
+    type: Array,
+    required: true,
+    default: () => [],
   },
-  computed: {
-    filterActive() {
-      return this.filter.length > 0
-    },
-    highlightActive() {
-      return this.highlight.length > 0
-    },
+  filter: {
+    type: Array,
+    required: true,
+    default: () => [],
   },
-  methods: {
-    inFilter(tag) {
-      return this.filter.includes(tag)
-    },
-    inHighlight(tag) {
-      return this.highlight.includes(tag)
-    },
+  highlight: {
+    type: Array,
+    required: false,
+    default: () => [],
   },
-}
+  horizontal: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+})
+
+const filterActive = computed(() => props.filter.length > 0)
+const highlightActive = computed(() => props.highlight.length > 0)
+
+const inFilter = (tag) => props.filter.includes(tag)
+const inHighlight = (tag) => props.highlight.includes(tag)
 </script>
 
 <style lang="scss" scoped>

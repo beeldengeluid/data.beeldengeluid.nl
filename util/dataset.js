@@ -1,6 +1,5 @@
 import { stripObject } from './objects'
 import { getRandomColor, parseColor } from './color'
-import { getLocalePath } from '~/util/contentFallback'
 import { filterUndefined } from '~/util/frontmatter'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
@@ -119,22 +118,11 @@ export function extendDatasetPagesWithDatasets(datasetPages, datasets) {
 }
 
 // extend datasets with frontmatter from markdown content
-export async function extendDatasetsWithFrontmatter(datasets, $content, app) {
+export async function extendDatasetsWithFrontmatter(datasets, pages) {
   for (let i = 0, len = datasets.length; i < len; i++) {
     const dataset = datasets[i]
 
     // Custom markdown content for dataset
-    const mdPath = await getLocalePath({
-      $content,
-      app,
-      path: 'datasets',
-    })
-    const pages = await $content(mdPath)
-      .where({ id: { $eq: dataset['@id'] } })
-      .fetch()
-      .catch(() => {
-        // ignore error of missing page
-      })
     if (pages.length === 1) {
       const page = pages[0]
       // assign defined page props to dataset, parse color vars (e.g. red.base)

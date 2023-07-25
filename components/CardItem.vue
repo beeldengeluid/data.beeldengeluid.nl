@@ -71,47 +71,38 @@
   </v-card>
 </template>
 
-<script>
+<script setup>
 import { formatDateAsYear } from '~/util/date'
 import { getRGBAColor } from '~/util/color'
 import { classColors, classColorIndex } from '~/config/theme'
 
-export default {
-  props: {
-    card: {
-      type: Object,
-      required: true,
-      default: () => ({ title: 'Empty card' }),
-    },
-    path: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    dataClass: {
-      type: String,
-      required: false,
-      default: '',
-    },
+const img = useImage()
+
+const props = defineProps({
+  card: {
+    type: Object,
+    required: true,
+    default: () => ({ title: 'Empty card' }),
   },
-  data() {
-    return {
-      color: classColors[this.dataClass],
-      rippleClass: classColorIndex[this.dataClass] + '--text',
-      image: !this.card.image
-        ? this.$img('/images/placeholders/placeholder-generic.jpg', {
-            width: 400,
-          })
-        : this.card.image.includes('/uploads/')
-        ? this.card.image
-        : this.$img(`/images/${this.card.image}`, { width: 400 }),
-    }
+  path: {
+    type: String,
+    required: true,
+    default: '',
   },
-  methods: {
-    formatDateAsYear,
-    getRGBAColor,
+  dataClass: {
+    type: String,
+    required: false,
+    default: '',
   },
-}
+})
+
+const color = classColors[props.dataClass]
+const rippleClass = classColorIndex[props.dataClass] + '--text'
+const image = !props.card.image
+  ? img('/images/placeholders/placeholder-generic.jpg', { width: 400 })
+  : props.card.image.includes('/uploads/')
+  ? props.card.image
+  : img(`/images/${props.card.image}`, { width: 400 })
 </script>
 
 <style lang="scss" scoped>

@@ -112,152 +112,122 @@
   </div>
 </template>
 
-<script>
-import VisualTags from './VisualTags'
-import VisualCircles from './VisualCircles'
-import VisualDatasetInfo from './VisualDatasetInfo'
+<script setup>
+const props = defineProps({
+  datasets: {
+    type: Array,
+    required: true,
+    default: () => [],
+  },
+})
 
-export default {
-  components: {
-    VisualTags,
-    VisualCircles,
-    VisualDatasetInfo,
-  },
-  props: {
-    datasets: {
-      type: Array,
-      required: true,
-      default: () => [],
-    },
-  },
-  data() {
-    return {
-      showInfo: false,
-      showTags: false,
-      width: process.client ? window.innerWidth : 800,
-      height: process.client
-        ? Math.min(700, Math.max(400, window.innerHeight - 150))
-        : 400,
-      tagsFilter: [],
-      tagsHighlight: [],
-      activeDataset: null,
-      activeId: '',
-      hoverDataset: null,
-      hoverId: '',
-      tags: Object.keys(
-        this.datasets.reduce((tags, dataset) => {
-          if (dataset.tags) {
-            dataset.tags.forEach((tag) => {
-              tags[tag] = true
-            })
-          }
-          return tags
-        }, {})
-      ),
-    }
-  },
-  computed: {
-    filteredDatasets() {
-      return this.tagsFilter.length === 0
-        ? this.datasets
-        : this.datasets.filter((dataset) =>
-            this.tagsFilter.some((tag) => dataset.tags?.includes(tag))
-          )
-    },
-    stats() {
-      return [
-        {
-          icon: 'mdi-database',
-          text: this.filteredDatasets.length + ' datasets',
-        },
-        {
-          icon: 'mdi-file-document-multiple',
-          text:
-            new Intl.NumberFormat().format(
-              this.filteredDatasets.reduce(
-                (sum, dataset) =>
-                  dataset.size ? sum + parseInt(dataset.size) : sum,
-                0
-              )
-            ) + ' records',
-        },
-        {
-          icon: 'mdi-calendar-range',
-          // 1877 is the Beeld & Geluid catalogus temporalCoverage start
-          text: '1877/' + new Date().getFullYear(),
-        },
-      ]
-    },
-  },
-  watch: {
-    activeId() {
-      this.activeDataset = this.datasets.find(
-        (dataset) => dataset.slug === this.activeId
-      )
-    },
-    hoverId() {
-      this.hoverDataset = this.datasets.find(
-        (dataset) => dataset.slug === this.hoverId
-      )
-
-      if (this.hoverDataset) {
-        this.tagsHighlight = this.hoverDataset.tags
-      } else {
-        this.tagsHighlight = []
-      }
-    },
-  },
-  mounted() {
-    // show tags on large screens
-    if (window.innerWidth > 500) {
-      this.showTags = true
-    }
-
-    // always show info on mount
-    this.showInfo = true
-  },
-  methods: {
-    toggleTag(tag) {
-      if (this.tagsFilter.includes(tag)) {
-        this.tagsFilter = this.tagsFilter.filter((t) => t !== tag)
-      } else {
-        this.tagsFilter = [...this.tagsFilter, tag]
-      }
-
-      if (this.tagsFilter.length === this.tags.length) {
-        this.tagsFilter = []
-      }
-    },
-    setTag(tag) {
-      if (this.tagsFilter.includes(tag)) {
-        this.tagsFilter = []
-      } else {
-        this.tagsFilter = [tag]
-      }
-    },
-    setActive(id) {
-      this.activeId = this.activeId === id ? '' : id
-      if (this.activeId) {
-        this.scrollToTop()
-      }
-    },
-    hideDetails() {
-      this.setActive('')
-    },
-    setHover(id) {
-      if (this.hoverId !== id) {
-        this.hoverId = id
-      }
-    },
-    scrollToTop() {
-      process.client &&
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth',
+const showInfo = useState('showInfo', () => false)
+const showTags = useState('showTags', () => false)
+const width = 800
+const height = 400
+const tagsFilter = useState('tagsFilter', () => [])
+const tagsHighlight = useState('tagsHighlight', () => [])
+const activeDataset = useState('activeDataset', () => null)
+const activeId = useState('activeId', () => '')
+const hoverDataset = useState('hoverDataset', () => null)
+const hoverId = useState('hoverId', () => '')
+const tags = useState('tags', () =>
+  Object.keys(
+    props.datasets.reduce((tags, dataset) => {
+      if (dataset.tags) {
+        dataset.tags.forEach((tag) => {
+          tags[tag] = true
         })
-    },
+      }
+      return tags
+    }, {})
+  )
+)
+
+const filteredDatasets = computed(() =>
+  tagsFilter.value.length === 0
+    ? props.datasets
+    : props.datasets.filter((dataset) =>
+        tagsFilter.value.some((tag) => dataset.tags?.includes(tag))
+      )
+)
+
+const stats = computed(() => [
+  {
+    icon: 'mdi-database',
+    text: filteredDatasets.value.length + ' datasets',
   },
+  {
+    icon: 'mdi-file-document-multiple',
+    text:
+      new Intl.NumberFormat().format(
+        filteredDatasets.value.reduce(
+          (sum, dataset) => (dataset.size ? sum + parseInt(dataset.size) : sum),
+          0
+        )
+      ) + ' records',
+  },
+  {
+    icon: 'mdi-calendar-range',
+    // 1877 is the Beeld & Geluid catalogus temporalCoverage start
+    text: '1877/' + new Date().getFullYear(),
+  },
+])
+
+watch(activeId, () => {
+  activeDataset.value = props.datasets.find(
+    (dataset) => dataset.slug === activeId.value
+  )
+})
+
+watch(hoverId, () => {
+  hoverDataset.value = props.datasets.find(
+    (dataset) => dataset.slug === hoverId.value
+  )
+
+  tagsHighlight.value = hoverDataset.value?.tags || []
+})
+
+onMounted(() => {
+  showTags.value = window.innerWidth > 500
+  showInfo.value = true
+})
+
+const toggleTag = (tag) => {
+  if (tagsFilter.value.includes(tag)) {
+    tagsFilter.value = tagsFilter.value.filter((t) => t !== tag)
+  } else {
+    tagsFilter.value = [...tagsFilter.value, tag]
+  }
+
+  if (tagsFilter.value.length === tags.value.length) {
+    tagsFilter.value = []
+  }
+}
+
+const setTag = (tag) => {
+  if (tagsFilter.value.includes(tag)) {
+    tagsFilter.value = []
+  } else {
+    tagsFilter.value = [tag]
+  }
+}
+
+const setActive = (id) => {
+  activeId.value = activeId.value === id ? '' : id
+  if (activeId) {
+    scrollToTop()
+  }
+}
+const hideDetails = () => setActive('')
+const setHover = (id) => (hoverId.value = id)
+const scrollToTop = () => {
+  process.client &&
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
 }
 </script>
 

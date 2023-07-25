@@ -29,82 +29,83 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { getImageOverlayCSS } from '~/util/color'
 
-export default {
-  props: {
-    node: {
-      type: Object,
-      required: true,
-      default: () => ({}),
-    },
-    dim: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
-    active: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
-  },
-  data() {
-    return {
-      touchStart: null,
-      touchActive: false,
-      touchClick: false,
-      imageSrc: !this.node.dataset.image
-        ? this.$img('/images/placeholders/placeholder-dataset.jpg', {
-            width: 300,
-          })
-        : this.node.dataset.image.includes('/uploads/')
-        ? this.node.dataset.image
-        : this.$img(`/images/${this.node.dataset.image}`, { width: 300 }),
-    }
-  },
-  methods: {
-    getImageOverlayCSS,
-    onTouchStart(e) {
-      if (!this.touchActive && e.touches?.length === 1) {
-        this.touchStart = { x: e.touches[0].screenX, y: e.touches[0].screenY }
-        this.touchClick = true
-        this.touchActive = true
-      } else {
-        this.touchClick = false
-      }
-    },
-    onTouchMove(e) {
-      if (this.touchClick && e.touches?.length === 1) {
-        const diff = { x: e.touches[0].screenX, y: e.touches[0].screenY }
-        const dx = diff.x - this.touchStart.x
-        const dy = diff.y - this.touchStart.y
+const emit = defineEmits(['click', 'hover'])
 
-        if (Math.sqrt(dx * dx + dy * dy) > 5) {
-          this.touchClick = false
-        }
-      }
-    },
-    onTouchEnd(e) {
-      if (this.touchActive && e.touches?.length === 0) {
-        this.touchActive = false
-        if (this.touchClick) {
-          this.$emit('click', this.node.id)
-        }
-      }
-      this.touchClick = false
-    },
-    onClick() {
-      this.$emit('click', this.node.id)
-    },
-    onStartHover() {
-      this.$emit('hover', this.node.id)
-    },
-    onStopHover() {
-      this.$emit('hover', '')
-    },
+const img = useImage()
+
+const props = defineProps({
+  node: {
+    type: Object,
+    required: true,
+    default: () => ({}),
   },
+  dim: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+  active: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+})
+
+const touchStart = useState('touchStart', () => null)
+const touchActive = useState('touchActive', () => false)
+const touchClick = useState('touchClick', () => false)
+
+const imageSrc = !props.node.dataset.image
+  ? img('/images/placeholders/placeholder-dataset.jpg', { width: 300 })
+  : props.node.dataset.image.includes('/uploads/')
+  ? props.node.dataset.image
+  : img(`/images/${props.node.dataset.image}`, { size: 300 })
+
+const onTouchStart = (e) => {
+  if (!touchActive && e.touches?.length === 1) {
+    touchStart.value = { x: e.touches[0].screenX, y: e.touches[0].screenY }
+    touchClick.value = true
+    touchActive.value = true
+  } else {
+    touchClick.value = false
+  }
+}
+
+const onTouchMove = (e) => {
+  if (touchClick && e.touches?.length === 1) {
+    const diff = { x: e.touches[0].screenX, y: e.touches[0].screenY }
+    const dx = diff.x - touchStart.value.x
+    const dy = diff.y - touchStart.value.y
+
+    if (Math.sqrt(dx * dx + dy * dy) > 5) {
+      touchClick.value = false
+    }
+  }
+}
+
+const onTouchEnd = (e) => {
+  if (touchActive && e.touches?.length === 0) {
+    touchActive.value = false
+    if (touchClick) {
+      emit('click', props.node.id)
+    }
+  }
+  touchClick.value = false
+}
+
+const onClick = () => {
+  emit('click', props.node.id)
+}
+
+const onStartHover = () => {
+  emit('hover', props.node.id)
+}
+
+const onStopHover = () => {
+  emit('hover', '')
 }
 </script>
 

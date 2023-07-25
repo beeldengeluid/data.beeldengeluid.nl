@@ -31,24 +31,19 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { classColorIndex } from '~/config/theme'
 
-export default {
-  props: {
-    title: { type: String, required: true, default: '' },
-    description: { type: String, required: false, default: '' },
-    dataClass: { type: String, required: false, default: 'dataset' },
-    actionTitle: { type: String, required: false, default: '' },
-    actionPath: { type: String, required: false, default: '' },
-    actionIcon: { type: String, required: false, default: 'mdi-arrow-right' },
-  },
-  data() {
-    return {
-      color: classColorIndex[this.dataClass],
-    }
-  },
-}
+const props = defineProps({
+  title: { type: String, required: true, default: '' },
+  description: { type: String, required: false, default: '' },
+  dataClass: { type: String, required: false, default: 'dataset' },
+  actionTitle: { type: String, required: false, default: '' },
+  actionPath: { type: String, required: false, default: '' },
+  actionIcon: { type: String, required: false, default: 'mdi-arrow-right' },
+})
+
+const color = classColorIndex[props.dataClass]
 </script>
 
 <style scoped lang="scss">

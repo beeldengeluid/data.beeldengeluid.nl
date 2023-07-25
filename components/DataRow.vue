@@ -8,23 +8,17 @@
   </tr>
 </template>
 
-<script>
-import DataTable from './DataTable'
-
-export default {
-  name: 'DataRow',
-  components: { DataTable },
-  props: {
-    title: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    value: {
-      type: [Number, String, Object, Array],
-      required: true,
-      default: null,
-    },
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    required: true,
+    default: '',
   },
-}
+  value: {
+    type: [Number, String, Object, Array],
+    required: true,
+    default: null,
+  },
+})
 </script>

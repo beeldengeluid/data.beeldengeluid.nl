@@ -60,81 +60,61 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { getRGBAColor } from '~/util/color'
 import { generateSrcset } from '~/util/srcset'
 import { classColors } from '~/config/theme'
 
-export default {
-  props: {
-    dataset: {
-      type: Object,
-      required: true,
-    },
+const i18n = useI18n()
+const img = useImage()
+
+const props = defineProps({
+  dataset: {
+    type: Object,
+    required: true,
   },
-  data() {
-    return {
-      color: classColors.dataset,
-      imageSrc: !this.dataset.image
-        ? this.$img('/images/placeholders/placeholder-dataset.jpg', {
-            width: 300,
-          })
-        : this.dataset.image.includes('/uploads/')
-        ? this.dataset.image
-        : this.$img(`/images/${this.dataset.image}`, { width: 300 }),
-      imageSrcset: !this.dataset.image
-        ? generateSrcset(
-            this.$img,
-            '/images/placeholders/placeholder-blog.jpg',
-            [300, 600]
-          )
-        : this.dataset.image.includes('/uploads/')
-        ? this.dataset.image
-        : generateSrcset(
-            this.$img,
-            `/images/${this.dataset.image}`,
-            [300, 600]
-          ),
-    }
-  },
-  computed: {
-    stats() {
-      return [
-        ...(this.dataset.publisher?.name || this.dataset.creator?.name
-          ? [
-              {
-                icon: 'mdi-domain',
-                text:
-                  this.dataset.publisher?.name || this.dataset.creator?.name,
-              },
-            ]
-          : []),
-        ...(this.dataset.size
-          ? [
-              {
-                icon: 'mdi-file-document-multiple',
-                text:
-                  new Intl.NumberFormat().format(this.dataset.size) +
-                  ' ' +
-                  this.$t('records'),
-              },
-            ]
-          : []),
-        ...(this.dataset['sdo:temporalCoverage']
-          ? [
-              {
-                icon: 'mdi-calendar-range',
-                text: this.dataset['sdo:temporalCoverage'],
-              },
-            ]
-          : []),
+})
+
+const color = classColors.dataset
+const imageSrc = !props.dataset.image
+  ? img(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`).src
+  : props.dataset.image.includes('/uploads/')
+  ? props.dataset.image
+  : img(`~/assets/images/${props.dataset.image}?size=300`).src
+const imageSrcset = !props.dataset.image
+  ? generateSrcset(img, '/images/placeholders/placeholder-blog.jpg', [300, 600])
+  : props.dataset.image.includes('/uploads/')
+  ? props.dataset.image
+  : generateSrcset(img, `/images/${props.dataset.image}`, [300, 600])
+const stats = computed(() => [
+  ...(props.dataset.publisher?.name || props.dataset.creator?.name
+    ? [
+        {
+          icon: 'mdi-domain',
+          text: props.dataset.publisher?.name || props.dataset.creator?.name,
+        },
       ]
-    },
-  },
-  methods: {
-    getRGBAColor,
-  },
-}
+    : []),
+  ...(props.dataset.size
+    ? [
+        {
+          icon: 'mdi-file-document-multiple',
+          text:
+            new Intl.NumberFormat().format(props.dataset.size) +
+            ' ' +
+            i18n.t('records'),
+        },
+      ]
+    : []),
+  ...(props.dataset['sdo:temporalCoverage']
+    ? [
+        {
+          icon: 'mdi-calendar-range',
+          text: props.dataset['sdo:temporalCoverage'],
+        },
+      ]
+    : []),
+])
 </script>
 
 <style lang="scss" scoped>

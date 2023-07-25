@@ -10,24 +10,19 @@
   </v-row>
 </template>
 
-<script>
-import DataTable from './DataTable'
-
-export default {
-  components: { DataTable },
-  props: {
-    object: {
-      type: Object,
-      required: true,
-      default: null,
-    },
-    title: {
-      type: String,
-      required: false,
-      default: '',
-    },
+<script setup>
+defineProps({
+  object: {
+    type: Object,
+    required: true,
+    default: null,
   },
-}
+  title: {
+    type: String,
+    required: false,
+    default: '',
+  },
+})
 </script>
 
 <style lang="scss">

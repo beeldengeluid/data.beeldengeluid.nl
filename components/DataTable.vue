@@ -97,12 +97,7 @@
   </table>
 </template>
 
-<script>
-import { Fragment } from 'vue-fragment'
-import ObjectLinkFromSchema from './ObjectLinkFromSchema'
-import ObjectLink from './ObjectLink'
-import DataTable from './DataTable'
-import LinkText from './LinkText'
+<script setup>
 import {
   isObjectWithIdTypeName,
   isObjectWithIdName,
@@ -118,49 +113,25 @@ import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 const isObjectArray = (value) =>
   Array.isArray(value) && value.length > 0 && typeof value[0] === 'object'
 
-export default {
-  name: 'DataTable',
-  components: {
-    DataTable,
-    Fragment,
-    LinkText,
-    ObjectLink,
-    ObjectLinkFromSchema,
+defineProps({
+  object: {
+    type: Object,
+    required: true,
+    default: null,
   },
-  props: {
-    object: {
-      type: Object,
-      required: true,
-      default: null,
-    },
-  },
-  methods: {
-    isObjectWithIdTypeName,
-    isObjectWithIdName,
-    isObjectWithIdOnly,
-    isObjectWithIdOnlyArray,
-    isObjectWithLanguageValueOnly,
-    isSchemaProp,
-    stripSchemaURL,
-    camel2title,
-    isEmailObject,
-    isLinkObject,
-    isObjectArray,
-    renderable(value) {
-      return (
-        isObjectWithIdTypeName(value) ||
-        isObjectWithIdName(value) ||
-        isObjectWithIdOnly(value) ||
-        isObjectWithLanguageValueOnly(value) ||
-        isObjectWithIdOnlyArray(value) ||
-        !isObjectArray(value) ||
-        typeof value !== 'object'
-      )
-    },
-    renderSchemaProp(string) {
-      return this.camel2title(this.stripSchemaURL(string))
-    },
-  },
+})
+
+const renderable = (value) =>
+  isObjectWithIdTypeName(value) ||
+  isObjectWithIdName(value) ||
+  isObjectWithIdOnly(value) ||
+  isObjectWithLanguageValueOnly(value) ||
+  isObjectWithIdOnlyArray(value) ||
+  !isObjectArray(value) ||
+  typeof value !== 'object'
+
+const renderSchemaProp = (string) => {
+  return camel2title(stripSchemaURL(string))
 }
 </script>
 

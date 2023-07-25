@@ -2,25 +2,18 @@
   <ObjectLink :icon-key="iconKey" :href="href" :name="name" />
 </template>
 
-<script>
-import ObjectLink from './ObjectLink'
+<script setup>
 import { isObjectWithIdName } from '~/util/objectsFromSchema'
 
-export default {
-  components: { ObjectLink },
-  props: {
-    value: {
-      type: Object,
-      required: true,
-      validator: isObjectWithIdName,
-    },
+const props = defineProps({
+  value: {
+    type: Object,
+    required: true,
+    validator: isObjectWithIdName,
   },
-  data() {
-    return {
-      iconKey: this.value['@type']?.toLowerCase() || 'link',
-      href: this.value['@id'],
-      name: this.value.name,
-    }
-  },
-}
+})
+
+const iconKey = computed(() => props.value['@type']?.toLowerCase() || 'link')
+const href = computed(() => props.value['@id'])
+const name = computed(() => props.value.name)
 </script>

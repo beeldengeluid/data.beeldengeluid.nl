@@ -34,84 +34,55 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { createLayout } from './pack'
-import VisualNode from './VisualNode'
 
-export default {
-  components: {
-    VisualNode,
-  },
-  props: {
-    datasets: {
-      type: Array,
-      required: true,
-      default: () => [],
-    },
-    width: {
-      type: Number,
-      required: true,
-      default: 800,
-    },
-    height: {
-      type: Number,
-      required: true,
-      default: 400,
-    },
-    activeId: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    hoverId: {
-      type: String,
-      required: false,
-      default: '',
-    },
-  },
-  data() {
-    return {
-      layout: [],
-      defaultSize: 111,
-    }
-  },
-  watch: {
-    datasets() {
-      this.updateLayout()
-    },
-  },
-  mounted() {
-    this.updateLayout()
-  },
-  methods: {
-    updateLayout() {
-      const { width, height } = this
+const emit = defineEmits(['active-dataset', 'hover-dataset'])
+const nodeClick = (id) => emit('active-dataset', id)
+const nodeHover = (id) => emit('hover-dataset', id)
+onErrorCaptured(() => false)
 
-      // prepare node data
-      const nodes = this.datasets.map((dataset, index) => ({
-        id: dataset.slug,
-        dataset,
-        color: dataset.color,
-        value: parseInt(dataset.size) || this.defaultSize,
-      }))
-
-      // calculate circle pack layout
-      const layout = createLayout({
-        nodes,
-        width,
-        height,
-      })
-
-      this.layout = layout
-    },
-    nodeClick(id) {
-      this.$emit('active-dataset', id)
-    },
-    nodeHover(id) {
-      this.$emit('hover-dataset', id)
-    },
+const props = defineProps({
+  datasets: {
+    type: Array,
+    required: true,
+    default: () => [],
   },
-}
+  width: {
+    type: Number,
+    required: true,
+    default: 800,
+  },
+  height: {
+    type: Number,
+    required: true,
+    default: 400,
+  },
+  activeId: {
+    type: String,
+    required: false,
+    default: '',
+  },
+  hoverId: {
+    type: String,
+    required: false,
+    default: '',
+  },
+})
+
+const defaultSize = 111
+const layout = computed(() =>
+  createLayout({
+    nodes: props.datasets.map((dataset) => ({
+      id: dataset.slug,
+      dataset,
+      color: dataset.color,
+      value: parseInt(dataset.size) || defaultSize,
+    })),
+    width: props.width,
+    height: props.height,
+  })
+)
 </script>
 
 <style lang="scss">

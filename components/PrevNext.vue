@@ -19,17 +19,15 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  props: {
-    prev: {
-      type: Object,
-      default: () => null,
-    },
-    next: {
-      type: Object,
-      default: () => null,
-    },
+<script setup>
+defineProps({
+  prev: {
+    type: Object,
+    default: () => null,
   },
-}
+  next: {
+    type: Object,
+    default: () => null,
+  },
+})
 </script>

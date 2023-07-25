@@ -5,7 +5,6 @@
     <section class="markdown-style pt-5">
       <v-img
         v-if="article.image"
-        position="top center"
         width="930px"
         class="header-image"
         :src="imageSrc"
@@ -26,7 +25,10 @@
       </ul>
     </nav> -->
 
-      <nuxt-content :document="article" />
+      <ContentRenderer :value="article">
+        <!-- Avoid error on pages without content -->
+        <template #empty />
+      </ContentRenderer>
 
       <v-divider class="my-5" />
 
@@ -51,8 +53,9 @@
 
       <v-divider class="my-5" />
 
-      <!-- hide update date until the updatedAt value is correct
-      see: https://github.com/beeldengeluid/labs.beeldengeluid.nl/issues/526
+      <!-- hide update date until the updatedAt value is available and correct, see
+        - https://github.com/nuxt/content/issues/1797
+        - https://github.com/beeldengeluid/labs.beeldengeluid.nl/issues/526
       <p v-if="article.updatedAt" class="caption">
         {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
       </p>
@@ -61,89 +64,74 @@
       <!-- <v-divider class="my-5" /> -->
 
       <!-- relations -->
-      <ArticleRelations
+      <!-- <ArticleRelations
         :datasets="article.datasets"
         :projects="article.projects"
         :blogs="article.blogs"
-      />
+      /> -->
 
       <PrevNext :prev="prev" :next="next" />
     </section>
   </div>
 </template>
 
-<script>
-import ArticleHeader from './ArticleHeader'
-import ArticleRelations from './ArticleRelations'
-import PrevNext from './PrevNext'
-import DataTable from './DataTable'
+<script setup>
 import { formatDate } from '~/util/date'
 import { generateSrcset } from '~/util/srcset'
 import { filterUndefined } from '~/util/frontmatter'
 
-export default {
-  components: { ArticleRelations, PrevNext, ArticleHeader, DataTable },
-  props: {
-    article: {
-      type: Object,
-      required: true,
-      default: () => ({
-        title: 'Empty article',
-        subtitle: '',
-        slug: '',
-        publishedOn: new Date(),
-        updatedAt: new Date(),
-        datasets: [],
-        tags: [],
-      }),
-    },
-    prev: {
-      type: Object,
-      required: false,
-      default: null,
-    },
-    next: {
-      type: Object,
-      required: false,
-      default: null,
-    },
-    dataClass: {
-      type: String,
-      required: true,
-      default: '',
-    },
+const img = useImage()
+
+const props = defineProps({
+  article: {
+    type: Object,
+    required: true,
+    default: () => ({
+      title: 'Empty article',
+      subtitle: '',
+      slug: '',
+      publishedOn: new Date(),
+      updatedAt: new Date(),
+      datasets: [],
+      tags: [],
+    }),
   },
-  data() {
-    return {
-      imageSrc: !this.article.image
-        ? this.$img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
-        : this.article.image.includes('/uploads/')
-        ? this.article.image
-        : this.$img(`/images/${this.article.image}`, { width: 930 }),
-      imageSrcset: !this.article.image
-        ? generateSrcset(
-            this.$img,
-            '/images/placeholders/placeholder-blog.jpg',
-            [620, 930, 1200, 1600],
-          )
-        : this.article.image.includes('/uploads/')
-        ? this.article.image
-        : generateSrcset(
-            this.$img,
-            `/images/${this.article.image}`,
-            [620, 930, 1200, 1600],
-          ),
-    }
+  prev: {
+    type: Object,
+    required: false,
+    default: null,
   },
-  computed: {
-    articleDefined() {
-      return filterUndefined(this.article)
-    },
+  next: {
+    type: Object,
+    required: false,
+    default: null,
   },
-  methods: {
-    formatDate,
+  dataClass: {
+    type: String,
+    required: true,
+    default: '',
   },
-}
+})
+
+const imageSrc = !props.article.image
+  ? img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
+  : props.article.image.includes('/uploads/')
+  ? props.article.image
+  : img(`/images/${props.article.image}`, { width: 930 })
+const imageSrcset = !props.article.image
+  ? generateSrcset(
+      img,
+      '/images/placeholders/placeholder-blog.jpg',
+      [620, 930, 1200, 1600],
+    )
+  : props.article.image.includes('/uploads/')
+  ? props.article.image
+  : generateSrcset(
+      img,
+      `/images/${props.article.image}`,
+      [620, 930, 1200, 1600],
+    )
+const articleDefined = computed(() => filterUndefined(props.article))
 </script>
 
 <style scoped lang="scss">
