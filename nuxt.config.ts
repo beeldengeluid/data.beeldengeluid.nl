@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxt/content',
     '@nuxt/image',
     async (options, nuxt) => {
       nuxt.hooks.hook(

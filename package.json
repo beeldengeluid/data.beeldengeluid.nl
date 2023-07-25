@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.2.96",
+    "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image": "^1.0.0-rc.1",
