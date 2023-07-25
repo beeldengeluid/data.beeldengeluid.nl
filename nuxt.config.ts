@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxt/image',
     async (options, nuxt) => {
       nuxt.hooks.hook(
         'vite:extendConfig',
@@ -37,5 +38,11 @@ export default defineNuxtConfig({
   sourcemap: {
     server: false,
     client: false,
+  },
+  image: {
+    // explicitly set provider to ipx to avoid fallback to Vercel's image
+    // optimization feature (when deploying there).
+    // see https://github.com/nuxt/image/issues/751#issuecomment-1436742167
+    provider: 'ipx',
   },
 })
