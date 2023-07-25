@@ -48,8 +48,16 @@ export default defineNuxtConfig({
     provider: 'ipx',
   },
   i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
     vueI18n: './i18n.config.ts',
-    locales: ['en', 'nl'],
+    locales: [
+      { code: 'en', iso: 'en-US' },
+      { code: 'nl', iso: 'nl-NL' },
+    ],
     defaultLocale: 'en',
   },
 })
