@@ -10,9 +10,9 @@
       :style="{
         opacity: highlightActive && !inHighlight(tag) ? 0.7 : 1,
       }"
-      class="tag ma-1 py-0 px-2 text-uppercase white--text"
-      depressed
-      small
+      class="tag ma-1 py-0 px-2 text-uppercase text-white"
+      variant="flat"
+      size="small"
       label
       @click.left.exact="$emit('toggle-tag', tag)"
       @click.shift.left.exact="$emit('set-tag', tag)"

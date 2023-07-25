@@ -13,7 +13,7 @@
       />
 
       <!-- Published date -->
-      <p v-if="article.publishedOn" class="caption text-right">
+      <p v-if="article.publishedOn" class="text-caption text-right">
         {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
       </p>
 
@@ -124,14 +124,14 @@ export default {
         ? generateSrcset(
             this.$img,
             '/images/placeholders/placeholder-blog.jpg',
-            [620, 930, 1200, 1600]
+            [620, 930, 1200, 1600],
           )
         : this.article.image.includes('/uploads/')
         ? this.article.image
         : generateSrcset(
             this.$img,
             `/images/${this.article.image}`,
-            [620, 930, 1200, 1600]
+            [620, 930, 1200, 1600],
           ),
     }
   },

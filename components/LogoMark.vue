@@ -93,13 +93,17 @@ export default {
 
   .tile {
     position: absolute;
-    transition: opacity 1.3s ease-out, background-color 5.6s ease-in-out;
+    transition:
+      opacity 1.3s ease-out,
+      background-color 5.6s ease-in-out;
   }
 
   &:hover {
     filter: brightness(1.2);
     .tile {
-      transition: opacity 0.5s ease-out, background-color 0.4s ease-out;
+      transition:
+        opacity 0.5s ease-out,
+        background-color 0.4s ease-out;
       animation-name: blink;
       animation-iteration-count: infinite;
       @for $i from 1 through 9 {

@@ -9,8 +9,8 @@
       <!-- Download button -->
       <v-row>
         <v-col>
-          <v-btn outlined color="primary" @click="downloadDataset">
-            <v-icon size="20" left>{{ icons.download }}</v-icon>
+          <v-btn variant="outlined" color="primary" @click="downloadDataset">
+            <v-icon size="20" start>{{ icons.download }}</v-icon>
             {{ $t('download_metadata') }}
           </v-btn>
         </v-col>
@@ -66,7 +66,7 @@ export default {
       download(
         JSON.stringify(data, null, 3),
         this.dataset.slug + '.jsonld',
-        'application/ld+json'
+        'application/ld+json',
       )
     },
   },

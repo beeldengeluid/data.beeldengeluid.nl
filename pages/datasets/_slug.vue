@@ -21,7 +21,7 @@
     </v-row>
 
     <!-- Tab Content -->
-    <v-row class="justify-center mb-3 pt-3 mt-0 white">
+    <v-row class="justify-center mb-3 pt-3 mt-0 bg-white">
       <v-col class="limit-width px-3 py-3 mb-3">
         <section class="px-3">
           <v-tabs-items v-model="activeSubmenu">
@@ -110,7 +110,7 @@ export default {
       const data = await $content(dataPath).fetch()
       const datacatalog = data['@graph']
       const datasetsRaw = data['@graph'].filter(
-        (node) => node['@type'] === 'sdo:Dataset'
+        (node) => node['@type'] === 'sdo:Dataset',
       )
       const datasets = enrichDatasets(datasetsRaw, datacatalog)
       dataset = datasets.find((dataset) => dataset['@id'] === datasetPage.id)

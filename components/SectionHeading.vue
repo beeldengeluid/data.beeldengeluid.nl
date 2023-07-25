@@ -6,7 +6,7 @@
           <component
             :is="actionPath ? 'NuxtLink' : 'span'"
             :to="localePath(actionPath)"
-            class="text-decoration-none grey--text text--darken-4"
+            class="text-decoration-none text-grey-darken-4"
           >
             {{ title }}&nbsp;<span :class="color + '--text'">/</span>
           </component>
@@ -18,7 +18,7 @@
             v-if="actionTitle && actionPath"
             :to="localePath(actionPath)"
             nuxt
-            plain
+            variant="plain"
           >
             {{ actionTitle }}
             <v-icon size="20" class="ml-3" :color="color">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Header -->
-    <v-row class="justify-center mb-0 white">
+    <v-row class="justify-center mb-0 bg-white">
       <v-col class="limit-width header-bar">
         <slot name="header"></slot>
       </v-col>

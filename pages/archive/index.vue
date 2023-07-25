@@ -14,7 +14,7 @@
         class="ma-1 d-block d-sm-none mt-n1"
         fab
         dark
-        small
+        size="small"
         color="primary"
         @click.stop="showTypes = !showTypes"
       >
@@ -22,7 +22,7 @@
           v-if="typesFilter.length > 0"
           :content="typesFilter.length"
           :style="{ transform: 'translate(22px,-12px)' }"
-          color="red darken-1"
+          color="red-darken-1"
         />
 
         <v-icon dark>
@@ -94,7 +94,7 @@ export default {
       return this.typesFilter.length === 0
         ? this.cards
         : this.cards.filter(
-            (card) => card.type && this.typesFilter.includes(card.type)
+            (card) => card.type && this.typesFilter.includes(card.type),
           )
     },
   },

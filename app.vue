@@ -12,19 +12,17 @@
       class="d-sm-flex d-md-none"
     >
       <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="pb-2">
-            <NuxtLink
-              :to="localePath('index')"
-              :style="{
-                textDecoration: 'none',
-              }"
-              class="black--text d-flex align-center"
-            >
-              <LogoMarkLabs />
-            </NuxtLink>
-          </v-list-item-title>
-        </v-list-item-content>
+        <v-list-item-title class="pb-2">
+          <NuxtLink
+            :to="localePath('index')"
+            :style="{
+              textDecoration: 'none',
+            }"
+            class="text-black d-flex align-center"
+          >
+            <LogoMarkLabs />
+          </NuxtLink>
+        </v-list-item-title>
       </v-list-item>
 
       <v-divider></v-divider>
@@ -42,11 +40,10 @@
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title class="text-uppercase">
-              <h4>{{ $t(item.title) }}</h4>
-            </v-list-item-title>
-          </v-list-item-content>
+
+          <v-list-item-title class="text-uppercase">
+            <h4>{{ $t(item.title) }}</h4>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
 
@@ -65,11 +62,10 @@
           <v-list-item-action>
             <v-icon>mdi-earth</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title class="text-uppercase">
-              <h4>{{ locale.code }}</h4>
-            </v-list-item-title>
-          </v-list-item-content>
+
+          <v-list-item-title class="text-uppercase">
+            <h4>{{ locale.code }}</h4>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -80,7 +76,7 @@
       app
       dark
       elevate-on-scroll
-      class="nisvdarkblue darken-4 white--text"
+      class="nisvdarkblue darken-4 text-white"
     >
       <v-app-bar-nav-icon
         class="d-sm-flex d-md-none"
@@ -106,7 +102,12 @@
       <v-spacer></v-spacer>
 
       <!-- Tab menu -->
-      <v-tabs v-model="activeMenu" class="d-none d-md-flex" right center-active>
+      <v-tabs
+        v-model="activeMenu"
+        class="d-none d-md-flex"
+        align-tabs="end"
+        center-active
+      >
         <v-tabs-slider
           v-if="activeMenu !== 'index'"
           color="nisvlightblue"
@@ -129,7 +130,7 @@
           v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-decoration-none grey--text text--lighten-1 text-uppercase"
+          class="text-decoration-none text-grey-lighten-1 text-uppercase"
           color="nisvdarkblue "
           rounded
           :style="{ minWidth: '36px', padding: '0' }"
@@ -149,7 +150,7 @@
 
     <v-footer
       :absolute="!fixed"
-      class="nisvdarkblue darken-4 white--text"
+      class="nisvdarkblue darken-4 text-white"
       app
       :style="{ minHeight: '400px' }"
     >
@@ -188,11 +189,9 @@
               exact
               dark
             >
-              <v-list-item-content>
-                <v-list-item-title class="text-uppercase white--text">
-                  <h4>{{ $t(item.title) }}</h4>
-                </v-list-item-title>
-              </v-list-item-content>
+              <v-list-item-title class="text-uppercase text-white">
+                <h4>{{ $t(item.title) }}</h4>
+              </v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>

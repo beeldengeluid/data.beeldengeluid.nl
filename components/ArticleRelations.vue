@@ -2,7 +2,7 @@
   <v-row class="relations">
     <v-col v-for="item of items" :key="item.path">
       <h3>
-        <v-icon dense color="blue-grey lighten-2" class="mr-2">{{
+        <v-icon size="small" color="blue-grey-lighten-2" class="mr-2">{{
           relatedIcon
         }}</v-icon>
         {{ $t(item.title) }}

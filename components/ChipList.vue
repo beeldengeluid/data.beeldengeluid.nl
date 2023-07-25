@@ -14,11 +14,11 @@
       :style="{
         backgroundImage: getImageOverlayCSS(
           getImageSrc(chip.image),
-          theme[color]
+          theme[color],
         ),
       }"
     >
-      <v-icon v-if="icon" left size="24">{{ icon }}</v-icon>
+      <v-icon v-if="icon" start size="24">{{ icon }}</v-icon>
       {{ chip.title }}
     </v-chip>
   </div>
