@@ -13,6 +13,8 @@
     "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
+    "@intlify/core-base": "^9.3.0-beta.22",
+    "@intlify/shared": "^9.3.0-beta.24",
     "@mdi/font": "^7.2.96",
     "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "latest",
