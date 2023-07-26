@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   },
   experimental: {
     payloadExtraction: false,
+    // inlineSSRStyles is needed (for now) to get styles working
+    // https://github.com/nuxt/nuxt/issues/19850#issuecomment-1480385239
+    inlineSSRStyles: false,
   },
   vite: {
     ssr: {
