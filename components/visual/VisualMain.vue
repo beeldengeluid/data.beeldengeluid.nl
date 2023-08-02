@@ -84,7 +84,7 @@
         class="ma-1 d-block d-md-none"
         icon
         theme="dark"
-        small
+        size="small"
         color="primary"
         @click.stop="showTags = !showTags"
       >

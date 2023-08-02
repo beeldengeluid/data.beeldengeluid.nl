@@ -6,7 +6,7 @@
     height="100%"
     hover
     link
-    :ripple="{ class: rippleClass }"
+    :v-ripple="{ class: rippleClass }"
     :to="
       localePath({
         name: path,
@@ -20,7 +20,7 @@
       height="180px"
       max-width="100%"
       max-height="180px"
-      position="top center"
+      cover
       :src="image"
       :gradient="
         color

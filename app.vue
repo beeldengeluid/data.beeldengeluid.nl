@@ -3,8 +3,7 @@
     <!-- drawer menu -->
     <v-navigation-drawer
       v-model="drawer"
-      fixed
-      app
+      position="fixed"
       disable-resize-watcher
       temporary
       floating
@@ -67,11 +66,10 @@
 
     <!-- site title -->
     <v-app-bar
-      fixed
-      app
+      position="fixed"
       theme="dark"
-      elevate-on-scroll
-      class="nisvdarkblue darken-4 text-white"
+      scroll-behavior="elevate"
+      class="bg-nisvdarkblue-darken-4 text-white px-4"
     >
       <v-app-bar-nav-icon
         class="d-sm-flex d-md-none"
@@ -120,8 +118,7 @@
           v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-decoration-none text-grey-lighten-1 text-uppercase"
-          color="nisvdarkblue "
+          class="bg-nisvdarkblue text-decoration-none text-grey-lighten-1 text-uppercase"
           rounded
           :style="{ minWidth: '36px', padding: '0' }"
         >
@@ -140,7 +137,7 @@
 
     <v-footer
       :absolute="!fixed"
-      class="nisvdarkblue darken-4 text-white"
+      class="bg-nisvdarkblue-darken-4 text-white"
       app
       :style="{ minHeight: '400px' }"
     >
@@ -167,7 +164,7 @@
           <!-- Footer menu -->
           <v-list
             v-model="activeMenu"
-            class="nisvdarkblue darken-4"
+            class="bg-nisvdarkblue-darken-4"
             color="white"
           >
             <v-list-item
