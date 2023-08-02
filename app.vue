@@ -76,7 +76,7 @@
         @click.stop="drawer = !drawer"
       />
 
-      <v-spacer></v-spacer>
+      <!-- <v-spacer></v-spacer> -->
 
       <NuxtLink
         :to="localePath('index')"
@@ -84,6 +84,7 @@
           textDecoration: 'none',
           color: 'white',
         }"
+        align-tabs="left"
       >
         <v-toolbar-title
           class="d-none d-md-flex align-items-center text-uppercase"
