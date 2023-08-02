@@ -20,9 +20,7 @@
             variant="plain"
           >
             {{ actionTitle }}
-            <v-icon size="20" class="ml-3" :color="color">
-              {{ actionIcon }}
-            </v-icon>
+            <v-icon size="20" class="ml-3" :color="color" :icon="actionIcon" />
           </v-btn>
         </slot>
       </v-col>

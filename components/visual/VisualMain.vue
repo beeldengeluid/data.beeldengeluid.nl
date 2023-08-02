@@ -49,9 +49,12 @@
                     textOverflow: 'ellipsis',
                   }"
                 >
-                  <v-icon size="17" color="grey-lighten-4" class="pb-0 mr-2">
-                    {{ stat.icon }}
-                  </v-icon>
+                  <v-icon
+                    size="17"
+                    color="grey-lighten-4"
+                    class="pb-0 mr-2"
+                    :icon="stat.icon"
+                  />
                   <strong> {{ stat.text }} </strong>
                 </div>
               </div>

@@ -13,7 +13,7 @@
           :style="{ borderBottom: '1px solid #eee' }"
           class="flex-shrink-0 text-no-wrap"
         >
-          <v-icon size="17" class="pb-0 mr-2">{{ stat.icon }}</v-icon>
+          <v-icon size="17" class="pb-0 mr-2" :icon="stat.icon" />
           <strong> {{ stat.text }} </strong>
         </v-col>
       </v-row>
