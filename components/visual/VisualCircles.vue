@@ -90,7 +90,7 @@ const layout = computed(() =>
 @import '~/assets/scss/vuetify/customizations';
 
 .circles {
-  font-family: $heading-font-family;
+  font-family: 'Assistant';
   color: white;
   position: absolute;
   left: 0;

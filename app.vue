@@ -228,8 +228,6 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/scss/vuetify/variables.scss';
-
 .v-tabs-slider-wrapper {
   height: 4px !important;
 }
@@ -244,5 +242,48 @@ useHead({
 
 .language-selector {
   margin-left: 10px;
+}
+</style>
+
+<style lang="scss">
+@use 'vuetify/settings';
+
+/* upgradefixup: Set Vuetify 2 margin we used before upgrade to Vuetify 3
+> Global styles previously included as .v-application p or .v-application 
+> ul are no longer included. If you need margin for p, or padding-left for
+> ul and ol, set it manually in your root component’s <style> tag.
+https://vuetifyjs.com/en/getting-started/upgrade-guide/#layout 
+*/
+p {
+  margin-bottom: 16px;
+}
+
+.title,
+.title-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+.v-tab,
+.v-avatar,
+.v-toolbar-title,
+.v-chip-content,
+.v-card-title,
+.v-btn {
+  /* To pin point specific classes of some components */
+  font-family: 'Assistant', sans-serif !important; //settings.$heading-font-family;
+  font-weight: 700;
+}
+
+.v-tabs--right {
+  justify-content: flex-end;
+}
+.theme--dark.v-tabs .v-tab:hover::before {
+  opacity: 0.2;
+}
+
+.v-main {
+  background-color: rgba(243, 248, 252); // backgroundcolorlight
 }
 </style>

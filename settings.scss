@@ -1,2 +1,32 @@
-// @use 'vuetify/settings' with (
-// )
+@use 'vuetify/settings' with (
+  $font-size-root: 15.5px,
+  
+  $card-elevation: 1,
+  $card-hover-elevation: 4,
+  $card-actions-padding: 10px,
+  $card-subtitle-padding: 20px,
+  $card-title-font-weight: 600,
+  $card-title-line-height: 1.55rem,
+  $card-title-font-size: 1.4rem,
+  $card-title-word-break: break-word,
+
+  $heading-font-family: 'Assistant, sans-serif !important;',
+  $tab-slider-size: 4px, // todo: only for header
+  $border-radius-root: 3px,
+  
+  // upgradefixup
+  // ideally use calc(3 * $spacer)
+  $container-padding-x: 12px //settings.$spacer,
+
+//   $material-light: (
+//     'states': (
+//       'hover': 0.15
+//     )
+//   ),
+
+//   $material-dark: (
+//     'states': (
+//       'hover': 0.15
+//     )
+//   ),
+);
