@@ -97,15 +97,12 @@
       <!-- Tab menu -->
       <v-tabs
         v-model="activeMenu"
-        class="d-none d-md-flex"
+        class="d-none d-md-flex tab-slider-tall"
         align-tabs="end"
         center-active
+        slider-color="nisvlightblue"
+        :hide-slider="activeMenu === 'index'"
       >
-        <v-tabs-slider
-          v-if="activeMenu !== 'index'"
-          color="nisvlightblue"
-          class="v-tabs-slider-wrapper"
-        />
         <v-tab :to="localePath(home.to)" class="d-none" />
         <v-tab v-for="item in tabMenu" :key="item.to" :to="localePath(item.to)">
           {{ $t(item.title) }}
@@ -228,10 +225,6 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-.v-tabs-slider-wrapper {
-  height: 4px !important;
-}
-
 .v-tab--home {
   min-width: 5px;
 }
@@ -285,5 +278,8 @@ h5,
 
 .v-main {
   background-color: rgba(243, 248, 252); // backgroundcolorlight
+}
+.tab-slider-tall .v-tab__slider {
+  height: 4px !important;
 }
 </style>
