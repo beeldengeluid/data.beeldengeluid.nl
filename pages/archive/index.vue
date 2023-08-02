@@ -5,7 +5,7 @@
       class="filter d-flex flex-column align-end ma-2"
       :style="{
         position: 'absolute',
-        top: '18px',
+        top: '82px',
         right: '0',
       }"
     >
