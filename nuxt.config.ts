@@ -4,7 +4,7 @@ import vuetify from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   css: ['~/assets/scss/layout/index.scss'],
   ssr: true,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   eslint: {
     lintOnStart: false,
   },
@@ -36,7 +36,6 @@ export default defineNuxtConfig({
           ),
       )
     },
-    '@nuxtjs/eslint-module',
   ],
   // disable sourcemaps to work around 'sourcemap points to missing source files'
   // errors.
