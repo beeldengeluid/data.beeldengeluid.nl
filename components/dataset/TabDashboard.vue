@@ -18,8 +18,14 @@
         </v-col>
       </v-row>
 
+      <span> Boven de grafiekjes </span>
+
+      <div id='viz'></div>
+
       <!-- Description -->
       <ContentRenderer :value="page" />
+
+      <span> Onder de grafiekjes </span>
 
       <!-- Chiplist -->
       <v-row class="justify-center mt-5">
@@ -36,6 +42,8 @@
   </v-window-item>
 </template>
 <script setup>
+
+
 const i18n = useI18n()
 
 defineProps({
@@ -68,4 +76,20 @@ const stats = ref(() => [
       }
     : {},
 ])
+
+
+</script>
+
+<script>
+import embed from 'vega-embed'
+import MOZSpec001 from '../../content/en/dashboards/MOZ-concertsovertime.json'
+import BarchartSpec from '../../content/en/dashboards/chart01.json'
+
+export default {
+  async mounted(){
+   await embed('#viz', BarchartSpec)
+   await embed('#MOZ-chart-01', MOZSpec001,{})
+  }
+}
+
 </script>
