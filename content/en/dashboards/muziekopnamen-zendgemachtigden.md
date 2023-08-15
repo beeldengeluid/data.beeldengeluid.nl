@@ -7,6 +7,8 @@ tags: []
 showDashboard: true
 ---
 
+<div id='MOZ-chart-01'></div>
+<span> Info </span>
 
 **The concerts**
 
