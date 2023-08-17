@@ -1,5 +1,5 @@
 <template>
-  <v-window-item key="dashboard" value="dashboard">
+  <v-window-item key="dashboard" value="dashboard" :eager="true">
     <section class="mt-0">
       <!-- Stats -->
       <v-row
