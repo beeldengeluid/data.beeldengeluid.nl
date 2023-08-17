@@ -41,16 +41,18 @@
     </section>
   </v-window-item>
 </template>
-<script setup>
 
+<script setup>
+import embed from 'vega-embed'
 
 const i18n = useI18n()
 
-defineProps({
+const props = defineProps({
   projects: { type: Array, required: false, default: () => [] },
   blogs: { type: Array, required: false, default: () => [] },
   page: { type: Object, required: false, default: null },
   dataset: { type: Object, required: true, default: null },
+  dashboardData: { type: Object, required: true, default: {} },
 })
 
 // reactive data
@@ -77,19 +79,9 @@ const stats = ref(() => [
     : {},
 ])
 
-
-</script>
-
-<script>
-import embed from 'vega-embed'
-import MOZSpec001 from '../../content/en/dashboards/MOZ-concertsovertime.json'
-import BarchartSpec from '../../content/en/dashboards/chart01.json'
-
-export default {
-  async mounted(){
-   await embed('#viz', BarchartSpec)
-   await embed('#MOZ-chart-01', MOZSpec001,{})
-  }
-}
+onMounted(() => {
+  embed("#viz", 'https://vega.github.io/vega/examples/bar-chart.vg.json')
+    .then(() => {console.log('mounted')})
+})
 
 </script>
