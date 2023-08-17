@@ -41,6 +41,7 @@
               :page="dashboardPage[0]"
               :projects="projects"
               :blogs="blogs"
+              :dashboardData="dashboardData"
             />
           </v-window>
         </section>
@@ -98,6 +99,14 @@ const { data: localizedDashboardPath } = await useAsyncData(async () => {
 const { data: dashboardPage } = await useAsyncData(async () => {
   return queryContent(localizedDashboardPath.value)
     .where({ hidden: { $ne: true } })
+    .find()
+    .catch(() => {
+      // throw createError({ statusCode: 404, message: 'Page not found' })
+    })
+})
+
+const { data: dashboardData } = await useAsyncData(async () => {
+  return queryContent("en/dashboards/moz-over-time")
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
