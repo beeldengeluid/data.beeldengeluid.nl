@@ -105,9 +105,10 @@ const { data: dashboardPage } = await useAsyncData(async () => {
     })
 })
 
+// note: nuxt-content adds some content metadata prefixed by '_'
 const { data: dashboardData } = await useAsyncData(async () => {
   return queryContent("en/dashboards/moz-over-time")
-    .find()
+    .findOne()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
     })

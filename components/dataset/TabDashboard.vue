@@ -1,5 +1,5 @@
 <template>
-  <v-window-item key="dashboard" value="dashboard" :eager="true">
+  <v-window-item key="dashboard" value="dashboard">
     <section class="mt-0">
       <!-- Stats -->
       <v-row
@@ -20,7 +20,7 @@
 
       <span> Boven de grafiekjes </span>
 
-      <div id='viz'></div>
+      <VegaView :spec="dashboardData"/>
 
       <!-- Description -->
       <ContentRenderer :value="page" />
@@ -43,8 +43,6 @@
 </template>
 
 <script setup>
-import embed from 'vega-embed'
-
 const i18n = useI18n()
 
 const props = defineProps({
@@ -78,10 +76,5 @@ const stats = ref(() => [
       }
     : {},
 ])
-
-onMounted(() => {
-  embed("#viz", 'https://vega.github.io/vega/examples/bar-chart.vg.json')
-    .then(() => {console.log('mounted')})
-})
 
 </script>
