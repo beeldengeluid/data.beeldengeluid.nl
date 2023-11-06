@@ -5,7 +5,7 @@ const theme = {
   nisvdarkblue: '#0f238c',
   primary: '#0f238c', // colors.blue.darken2, // dataset
   secondary: colors.amber.darken3,
-  tertiary: colors.pink.darken1, // blog
+  tertiary: colors.pink.darken1, // showcase
   quaternary: colors.purple.darken1, // theme
   quinary: colors.teal.darken1,
   senary: colors.green.darken1, // api
@@ -18,13 +18,13 @@ const theme = {
 
 export const classColorIndex = {
   dataset: 'primary',
-  blog: 'tertiary',
+  showcase: 'tertiary',
   api: 'senary',
 }
 
 export const classColors = {
   dataset: theme[classColorIndex.dataset],
-  blog: theme[classColorIndex.blog],
+  showcase: theme[classColorIndex.showcase],
   api: theme[classColorIndex.api],
 }
 

@@ -20,10 +20,10 @@ export default [
     color: classColors.api,
   },
   {
-    icon: icons.blog,
-    title: 'blogs',
-    to: 'blogs',
-    color: classColors.blog,
+    icon: icons.showcase,
+    title: 'showcases',
+    to: 'showcases',
+    color: classColors.showcase,
   },
   {
     icon: icons.about,

@@ -1,7 +1,7 @@
 ---
 title: First results of the Open Data Lab
 subtitle: An open endpoint to the Sound & Vision catalogue
-image: placeholders/placeholder-blog.jpg
+image: placeholders/placeholder-showcase.jpg
 tags: Metadata, Linked Open Data
 datasets: []
 ---

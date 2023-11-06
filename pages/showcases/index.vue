@@ -10,7 +10,7 @@
 <script setup>
 const i18n = useI18n()
 
-const dataClass = 'blog'
+const dataClass = 'showcase'
 const title = i18n.t(`${dataClass}s`)
 const cardPath = `${dataClass}s-slug`
 

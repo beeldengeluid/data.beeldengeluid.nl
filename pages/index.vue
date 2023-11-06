@@ -8,20 +8,20 @@
         </v-col>
       </v-row>
 
-      <!-- Blogs -->
+      <!-- Showcases -->
       <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
           <SectionHeading
-            :title="$t('blogs')"
-            :description="$t('blogs_description')"
-            data-class="blog"
-            :action-path="'blogs'"
-            :action-title="$t('all_blogs')"
+            :title="$t('showcases')"
+            :description="$t('showcases_description')"
+            data-class="showcase"
+            :action-path="'showcases'"
+            :action-title="$t('all_showcases')"
           />
           <CardGrid
-            :cards="blogs"
-            path="blogs-slug"
-            data-class="blog"
+            :cards="showcases"
+            path="showcases-slug"
+            data-class="showcase"
             row-class="justify-center justify-md-start px-5"
           />
         </v-col>
@@ -92,22 +92,22 @@ const { data: aboutPage } = await useAsyncData(async () => {
   return queryContent(aboutPathLocalized.value).findOne()
 })
 
-// blogs
-const blogsPath = 'blogs'
+// showcases
+const showcasesPath = 'showcases'
 // get localizedpath
-const { data: blogsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${blogsPath}`)
+const { data: showcasesPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${showcasesPath}`)
     .find()
     .catch(() => {
       // ignore 404s
     })
   const locale =
     content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${blogsPath}`
+  return `${locale}/${showcasesPath}`
 })
 // get localized content
-const { data: blogs } = await useAsyncData(async () => {
-  return queryContent(blogsPathLocalized.value)
+const { data: showcases } = await useAsyncData(async () => {
+  return queryContent(showcasesPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .limit(4)

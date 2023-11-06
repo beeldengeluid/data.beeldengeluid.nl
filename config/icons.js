@@ -1,7 +1,7 @@
 export default {
   home: 'mdi-home',
   dataset: 'mdi-database',
-  blog: 'mdi-post',
+  showcase: 'mdi-post',
   api: 'mdi-power-plug',
   archive: 'mdi-archive',
   about: 'mdi-information',

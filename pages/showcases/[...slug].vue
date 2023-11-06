@@ -6,8 +6,8 @@
 const i18n = useI18n()
 const route = useRoute()
 
-const source = 'blogs'
-const dataClass = 'blog'
+const source = 'showcases'
+const dataClass = 'showcase'
 
 // slug in params can be an array, handle that
 const slug = computed(() =>

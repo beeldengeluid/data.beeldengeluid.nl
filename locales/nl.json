@@ -1,9 +1,9 @@
 {
   "site_name": "Beeld & Geluid · Labs",
   "site_author": "Nederlands Instituut voor Beeld & Geluid",
-  "blogs": "Artikelen",
-  "all_blogs": "Alle artikelen",
-  "blogs_description": "Het laatste nieuws en achtergrondinformatie",
+  "showcases": "Showcases",
+  "all_showcases": "Alle showcases",
+  "showcases_description": "Showcases voor het B&G Dataplatform",
   "datasets": "Datasets",
   "all_datasets": "Alle datasets",
   "records": "Objecten",

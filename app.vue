@@ -195,7 +195,7 @@ const drawer = ref(false)
 const fixed = ref(false)
 const home = menu[0]
 const tabMenu = menu.filter((m) => m.title !== 'home')
-const activeMenu = ref('blogs')
+const activeMenu = ref('showcases')
 
 const updateActiveTab = () => {
   // Active menu for to paths
@@ -204,8 +204,8 @@ const updateActiveTab = () => {
     case to.startsWith('index'):
       activeMenu.value = 'index'
       break
-    case to.startsWith('blog-to'):
-      activeMenu.value = localePath('blogs')
+    case to.startsWith('showcase-to'):
+      activeMenu.value = localePath('showcases')
       break
     case to.startsWith('dataset-to'):
       activeMenu.value = localePath('datasets')

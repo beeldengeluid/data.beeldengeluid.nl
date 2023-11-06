@@ -72,7 +72,7 @@
       <!-- relations -->
       <!-- <ArticleRelations
         :datasets="article.datasets"
-        :blogs="article.blogs"
+        :showcases="article.showcases"
       /> -->
 
       <PrevNext :prev="prev" :next="next" />
@@ -119,14 +119,14 @@ const props = defineProps({
 })
 
 const imageSrc = !props.article.image
-  ? img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
+  ? img('/images/placeholders/placeholder-showcase.jpg', { width: 930 })
   : props.article.image.includes('/uploads/')
     ? props.article.image
     : img(`/images/${props.article.image}`, { width: 930 })
 const imageSrcset = !props.article.image
   ? generateSrcset(
       img,
-      '/images/placeholders/placeholder-blog.jpg',
+      '/images/placeholders/placeholder-showcase.jpg',
       [620, 930, 1200, 1600]
     )
   : props.article.image.includes('/uploads/')
