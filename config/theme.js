@@ -19,14 +19,12 @@ const theme = {
 export const classColorIndex = {
   dataset: 'primary',
   blog: 'tertiary',
-  topic: 'quaternary',
   api: 'senary',
 }
 
 export const classColors = {
   dataset: theme[classColorIndex.dataset],
   blog: theme[classColorIndex.blog],
-  topic: theme[classColorIndex.topic],
   api: theme[classColorIndex.api],
 }
 

@@ -2,7 +2,6 @@ export default {
   home: 'mdi-home',
   dataset: 'mdi-database',
   blog: 'mdi-post',
-  topic: 'mdi-shape',
   api: 'mdi-power-plug',
   archive: 'mdi-archive',
   about: 'mdi-information',

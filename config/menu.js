@@ -8,12 +8,6 @@ export default [
     to: 'index',
   },
   {
-    icon: icons.topic,
-    title: 'topics',
-    to: 'topics',
-    color: classColors.topic,
-  },
-  {
     icon: icons.dataset,
     title: 'datasets',
     to: 'datasets',
