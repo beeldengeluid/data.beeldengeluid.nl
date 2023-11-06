@@ -28,26 +28,6 @@
         </v-col>
       </v-row>
 
-      <!-- Projects -->
-      <v-row class="justify-center light-background my-3 pb-3">
-        <v-col class="limit-width px-3 py-4 mb-2">
-          <SectionHeading
-            :title="$t('projects')"
-            :description="$t('projects_description')"
-            data-class="project"
-            :action-path="'projects'"
-            :action-title="$t('all_projects')"
-          />
-
-          <CardGrid
-            :cards="projects"
-            path="projects-slug"
-            data-class="project"
-            row-class="justify-center justify-md-start px-5"
-          />
-        </v-col>
-      </v-row>
-
       <!-- Blogs -->
       <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
@@ -169,28 +149,6 @@ const { data: labsPathLocalized } = await useAsyncData(async () => {
 })
 const { data: labs } = await useAsyncData(async () => {
   return queryContent(labsPathLocalized.value)
-    .where({ hidden: { $ne: true } })
-    .sort({ sortOrder: 1 })
-    .sort({ startDate: 1 })
-    .sort({ createdAt: 1 })
-    .limit(4)
-    .find()
-})
-
-// projects
-const projectsPath = 'projects'
-const { data: projectsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${projectsPath}`)
-    .find()
-    .catch(() => {
-      // ignore 404s
-    })
-  const locale =
-    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${projectsPath}`
-})
-const { data: projects } = await useAsyncData(async () => {
-  return queryContent(projectsPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ sortOrder: 1 })
     .sort({ startDate: 1 })

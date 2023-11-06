@@ -72,7 +72,6 @@
       <!-- relations -->
       <!-- <ArticleRelations
         :datasets="article.datasets"
-        :projects="article.projects"
         :blogs="article.blogs"
       /> -->
 

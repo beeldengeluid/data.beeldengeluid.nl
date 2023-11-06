@@ -29,7 +29,6 @@
             <DatasetTabOverview
               :dataset="dataset"
               :page="datasetPage"
-              :projects="projects"
               :blogs="blogs"
             />
             <!-- Metadata -->
@@ -39,7 +38,6 @@
               v-if="datasetPage.showDashboard"
               :dataset="dataset"
               :page="dashboardPage[0]"
-              :projects="projects"
               :blogs="blogs"
             />
           </v-window>
@@ -142,23 +140,6 @@ const { data: localizedBlogsPath } = await useAsyncData(async () => {
 })
 const { data: blogs } = await useAsyncData(async () => {
   return queryContent(localizedBlogsPath.value)
-    .where({ datasets: { $contains: dataset['@id'] } })
-    .find()
-})
-
-// projects that refer to this dataset
-const projectsPath = 'projects'
-const { data: localizedProjectsPath } = await useAsyncData(async () => {
-  const content = await queryContent(
-    `${i18n.locale.value}/${blogsPath}/${slug.value}`
-  )
-    .find()
-    .catch(() => {})
-  const locale = content.length > 0 ? i18n.locale : i18n.fallbackLocale
-  return `${locale.value}/${projectsPath}/${slug.value}`
-})
-const { data: projects } = await useAsyncData(async () => {
-  return queryContent(localizedProjectsPath.value)
     .where({ datasets: { $contains: dataset['@id'] } })
     .find()
 })

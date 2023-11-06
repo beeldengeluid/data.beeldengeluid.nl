@@ -14,12 +14,6 @@ export default [
     color: classColors.lab,
   },
   {
-    icon: icons.project,
-    title: 'projects',
-    to: 'projects',
-    color: classColors.project,
-  },
-  {
     icon: icons.topic,
     title: 'topics',
     to: 'topics',
@@ -42,12 +36,6 @@ export default [
     title: 'blogs',
     to: 'blogs',
     color: classColors.blog,
-  },
-  {
-    icon: icons.archive,
-    title: 'archive',
-    to: 'archive',
-    color: classColors.archive,
   },
   {
     icon: icons.about,

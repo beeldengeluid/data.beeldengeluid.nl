@@ -210,9 +210,6 @@ const updateActiveTab = () => {
     case to.startsWith('dataset-to'):
       activeMenu.value = localePath('datasets')
       break
-    case to.startsWith('project-to'):
-      activeMenu.value = localePath('projects')
-      break
   }
 }
 

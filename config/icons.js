@@ -1,7 +1,6 @@
 export default {
   home: 'mdi-home',
   dataset: 'mdi-database',
-  project: 'mdi-rocket-launch',
   blog: 'mdi-post',
   topic: 'mdi-shape',
   lab: 'mdi-flask',

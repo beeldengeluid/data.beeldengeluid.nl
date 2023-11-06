@@ -4,7 +4,7 @@ const theme = {
   nisvlightblue: '#05c8f0',
   nisvdarkblue: '#0f238c',
   primary: '#0f238c', // colors.blue.darken2, // dataset
-  secondary: colors.amber.darken3, // project
+  secondary: colors.amber.darken3,
   tertiary: colors.pink.darken1, // blog
   quaternary: colors.purple.darken1, // theme
   quinary: colors.teal.darken1, // lab
@@ -18,22 +18,18 @@ const theme = {
 
 export const classColorIndex = {
   dataset: 'primary',
-  project: 'secondary',
   blog: 'tertiary',
   topic: 'quaternary',
   lab: 'quinary',
   api: 'senary',
-  archive: 'accent',
 }
 
 export const classColors = {
   dataset: theme[classColorIndex.dataset],
-  project: theme[classColorIndex.project],
   blog: theme[classColorIndex.blog],
   topic: theme[classColorIndex.topic],
   lab: theme[classColorIndex.lab],
   api: theme[classColorIndex.api],
-  archive: theme[classColorIndex.archive],
 }
 
 export default theme

@@ -22,20 +22,12 @@ import icons from '~/config/icons'
 import { classColorIndex } from '~/config/theme'
 
 const props = defineProps({
-  projects: { type: Array, required: false, default: null },
   blogs: { type: Array, required: false, default: null },
   datasets: { type: Array, required: false, default: null },
 })
 
 const relatedIcon = 'mdi-vector-link'
 const items = [
-  {
-    title: 'projects',
-    path: 'projects',
-    color: classColorIndex.project,
-    chips: props.projects,
-    icon: icons.project,
-  },
   {
     title: 'blogs',
     path: 'blogs',
