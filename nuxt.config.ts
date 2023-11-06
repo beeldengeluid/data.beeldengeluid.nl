@@ -63,7 +63,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: '%s - Sound & Vision · Labs',
+      titleTemplate: '%s - Sound & Vision · Data',
       title: 'Beeld & Geluid',
       meta: [
         { hid: 'description', name: 'description', content: '' },
