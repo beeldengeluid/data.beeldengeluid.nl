@@ -187,6 +187,7 @@
 <script setup>
 import menu from '~/config/menu'
 
+const i18n = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
@@ -197,6 +198,14 @@ const home = menu[0]
 const tabMenu = menu.filter((m) => m.title !== 'home')
 const activeMenu = ref('showcases')
 
+useHead({
+  meta: [
+    {
+      name: 'description',
+      content: i18n.t('page_description'),
+    },
+  ],
+})
 const updateActiveTab = () => {
   // Active menu for to paths
   const to = route.name?.toString()

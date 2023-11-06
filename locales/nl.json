@@ -13,5 +13,6 @@
   "published_on": "Gepubliceerd op",
   "read_more": "Lees meer",
   "explore_dataset": "Dataset verkennen",
-  "intro_text": "Welkom bij het Beeld & Geluid Dataplatform! Hier vind je informatie over onze datasets, APIs en hoe je ze kunt gebruiken."
+  "intro_text": "Welkom bij het Beeld & Geluid Dataplatform! Hier vind je informatie over onze datasets, APIs en hoe je ze kunt gebruiken.",
+  "page_description": "Beeld & Geluid maakt de metadata van meer dan 2,5 miljoen items uit de collectie beschikbaar voor ontwikkelaars, onderzoekers en liefhebbers. We streven ernaar dat derde partijen onze collectiedata kunnen (her)gebruiken en daarmee de vindbaarheid, contextualisering en het bereik van onze collecties onder verschillende doelgroepen kunnen verbeteren."
 }
