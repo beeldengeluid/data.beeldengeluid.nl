@@ -4,7 +4,6 @@ subtitle: Van Mozart tot Metallica - een kijk in de rijke aanbod van concerten o
 image: datasets/moz.jpg
 imageCaption: Foto door Danny Howe op Unsplash
 tags: Metadata, Linked Open Data, Muziek
-lab: opendatalab
 publishedOn: "2023-04-03"
 datasets: []
 ---

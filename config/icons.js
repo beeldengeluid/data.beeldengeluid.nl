@@ -3,7 +3,6 @@ export default {
   dataset: 'mdi-database',
   blog: 'mdi-post',
   topic: 'mdi-shape',
-  lab: 'mdi-flask',
   api: 'mdi-power-plug',
   archive: 'mdi-archive',
   about: 'mdi-information',

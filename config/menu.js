@@ -8,12 +8,6 @@ export default [
     to: 'index',
   },
   {
-    icon: icons.lab,
-    title: 'labs',
-    to: 'labs',
-    color: classColors.lab,
-  },
-  {
     icon: icons.topic,
     title: 'topics',
     to: 'topics',

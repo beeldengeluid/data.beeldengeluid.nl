@@ -7,7 +7,7 @@ const theme = {
   secondary: colors.amber.darken3,
   tertiary: colors.pink.darken1, // blog
   quaternary: colors.purple.darken1, // theme
-  quinary: colors.teal.darken1, // lab
+  quinary: colors.teal.darken1,
   senary: colors.green.darken1, // api
   accent: colors.grey.darken3,
   info: colors.teal.lighten1,
@@ -20,7 +20,6 @@ export const classColorIndex = {
   dataset: 'primary',
   blog: 'tertiary',
   topic: 'quaternary',
-  lab: 'quinary',
   api: 'senary',
 }
 
@@ -28,7 +27,6 @@ export const classColors = {
   dataset: theme[classColorIndex.dataset],
   blog: theme[classColorIndex.blog],
   topic: theme[classColorIndex.topic],
-  lab: theme[classColorIndex.lab],
   api: theme[classColorIndex.api],
 }
 
