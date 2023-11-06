@@ -27,6 +27,25 @@
         </v-col>
       </v-row>
 
+      <!-- APIs -->
+      <v-row class="justify-center light-background pb-3">
+        <v-col class="limit-width px-3 py-3 mb-2">
+          <SectionHeading
+            :title="$t('apis')"
+            :description="$t('apis_description')"
+            data-class="api"
+            :action-path="'apis'"
+            :action-title="$t('all_apis')"
+          />
+          <CardGrid
+            :cards="apis"
+            path="apis-slug"
+            data-class="api"
+            row-class="justify-center justify-md-start px-5"
+          />
+        </v-col>
+      </v-row>
+
       <!-- About -->
       <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width mb-4">
@@ -108,6 +127,28 @@ const { data: showcasesPathLocalized } = await useAsyncData(async () => {
 // get localized content
 const { data: showcases } = await useAsyncData(async () => {
   return queryContent(showcasesPathLocalized.value)
+    .where({ hidden: { $ne: true } })
+    .sort({ createdAt: 1 })
+    .limit(4)
+    .find()
+})
+
+// apis
+const apisPath = 'apis'
+// get localizedpath
+const { data: apisPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${apisPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
+    })
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${apisPath}`
+})
+// get localized content
+const { data: apis } = await useAsyncData(async () => {
+  return queryContent(apisPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .limit(4)
