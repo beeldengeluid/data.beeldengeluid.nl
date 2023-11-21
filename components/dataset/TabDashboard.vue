@@ -20,7 +20,7 @@
 
       <span> Boven de grafiekjes </span>
 
-      <VegaView :spec="dashboardData"/>
+      <VegaView :spec="dashboardData" />
 
       <!-- Description -->
       <ContentRenderer :value="page" />
@@ -50,7 +50,7 @@ const props = defineProps({
   blogs: { type: Array, required: false, default: () => [] },
   page: { type: Object, required: false, default: null },
   dataset: { type: Object, required: true, default: null },
-  dashboardData: { type: Object, required: true, default: {} },
+  dashboardData: { type: Object, required: true, default: () => ({}) },
 })
 
 // reactive data
@@ -76,5 +76,4 @@ const stats = ref(() => [
       }
     : {},
 ])
-
 </script>

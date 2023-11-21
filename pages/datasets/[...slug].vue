@@ -41,7 +41,7 @@
               :page="dashboardPage[0]"
               :projects="projects"
               :blogs="blogs"
-              :dashboardData="dashboardData"
+              :dashboard-data="dashboardData"
             />
           </v-window>
         </section>
@@ -107,7 +107,7 @@ const { data: dashboardPage } = await useAsyncData(async () => {
 
 // note: nuxt-content adds some content metadata prefixed by '_'
 const { data: dashboardData } = await useAsyncData(async () => {
-  return queryContent("en/dashboards/moz-over-time")
+  return queryContent('en/dashboards/moz-over-time')
     .findOne()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
