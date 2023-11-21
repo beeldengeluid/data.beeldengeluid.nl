@@ -10,6 +10,6 @@ const props = defineProps({
 })
 
 onMounted(() => {
-  embed('#vis', props.spec)
+  embed('#vis', JSON.parse(JSON.stringify(props.spec)))
 })
 </script>
