@@ -137,7 +137,7 @@
       :absolute="!fixed"
       class="bg-nisvdarkblue-darken-4 text-white"
       app
-      :style="{ minHeight: '400px' }"
+      :style="{ minHeight: '300px' }"
     >
       <v-row>
         <!-- Column left -->
