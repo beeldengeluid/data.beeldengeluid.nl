@@ -1,5 +1,5 @@
 <template>
-  <div id="vis" />
+  <div :id="vegachartId"></div>
 </template>
 
 <script setup>
@@ -7,9 +7,10 @@ import embed from 'vega-embed'
 
 const props = defineProps({
   spec: { type: Object, required: true, default: () => ({}) },
+  vegachartId: String
 })
 
 onMounted(() => {
-  embed('#vis', JSON.parse(JSON.stringify(props.spec)))
+  embed('#' + props.vegachartId, JSON.parse(JSON.stringify(props.spec)))
 })
 </script>
