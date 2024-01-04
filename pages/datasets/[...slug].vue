@@ -107,7 +107,7 @@ const { data: dashboardPage } = await useAsyncData(async () => {
 
 // note: nuxt-content adds some content metadata prefixed by '_'
 const { data: dashboardSpecs } = await useAsyncData(async () => {
-  return queryContent('en/dashboards/moz/specs')
+  return queryContent(`en/dashboards/${slug.value}/specs`)
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
