@@ -18,14 +18,12 @@
         </v-col>
       </v-row>
 
-      <span> Boven de grafiekjes </span>
-
-      <VegaView :spec="dashboardData" />
+      <div v-for="(spec, index) in dashboardSpecs" :key="index">
+        <VegaView :spec="spec" :vegachart-id="'vegachart' + index" />
+      </div>
 
       <!-- Description -->
       <ContentRenderer :value="page" />
-
-      <span> Onder de grafiekjes </span>
 
       <!-- Chiplist -->
       <v-row class="justify-center mt-5">
@@ -50,7 +48,7 @@ const props = defineProps({
   blogs: { type: Array, required: false, default: () => [] },
   page: { type: Object, required: false, default: null },
   dataset: { type: Object, required: true, default: null },
-  dashboardData: { type: Object, required: true, default: () => ({}) },
+  dashboardSpecs: { type: Object, required: true, default: () => ({}) },
 })
 
 // reactive data
