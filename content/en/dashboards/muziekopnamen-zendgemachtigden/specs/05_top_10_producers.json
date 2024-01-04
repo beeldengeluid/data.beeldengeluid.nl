@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "The top ten creators, based on number of concerts",
+  "description": "The top ten creators, based on number of concerts",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Production company": "Omroep MAX","Number of concerts": 617},
+      {"Production company": "AVRO","Number of concerts": 561},
+      {"Production company": "NPS","Number of concerts": 504},
+      {"Production company": "NTR","Number of concerts": 347},
+      {"Production company": "KRO","Number of concerts": 223},
+      {"Production company": "AVROTROS","Number of concerts": 175},
+      {"Production company": "Corrino Media Group","Number of concerts": 117},
+      {"Production company": "Radio 6","Number of concerts": 113},
+      {"Production company": "TROS","Number of concerts": 81},
+      {"Production company": "Mojo Concerts","Number of concerts": 66}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Creator","type": "nominal","title": "Creator", "sort": "-y"},
+    "y": {
+      "field": "Number of concerts",
+      "type": "quantitative",
+      "title": "Number of concerts"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  
