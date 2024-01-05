@@ -1,6 +1,6 @@
 {   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "The top ten creators, based on number of concerts",
-  "description": "The top ten creators, based on number of concerts",
+  "title": "The top ten production companies, based on number of concerts",
+  "description": "The top ten production companies, based on number of concerts",
   "width": 500,
   "height": 400,
   "data": {
@@ -19,7 +19,7 @@
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
   "encoding": {
-    "x": {"field": "Creator","type": "nominal","title": "Creator", "sort": "-y"},
+    "x": {"field": "Production company","type": "nominal","title": "Production company", "sort": "-y"},
     "y": {
       "field": "Number of concerts",
       "type": "quantitative",
