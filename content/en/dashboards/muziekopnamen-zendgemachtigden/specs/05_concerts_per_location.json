@@ -19,6 +19,38 @@
         "encoding": {
           "tooltip": {"field": "properties.GEMEENTENAAM"}
         }
+      },
+      {
+        "data": {
+          "values": [
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q849957","Location":"Concertgebouw","Longitude":4.879083333,"Latitude":52.356305555,"Counts":8787},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q2429975","Location":"Geertekerk","Longitude":5.120556,"Latitude":52.084444,"Counts":3134},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q17599865","Location":"Sint-Joriskerk","Longitude":5.390278,"Latitude":52.156667,"Counts":2090},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q2237396","Location":"Kurhaus","Longitude":4.281667,"Latitude":52.113333,"Counts":1355},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q17463960","Location":"Tivolicomplex","Longitude":5.1216,"Latitude":52.08725,"Counts":1224},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q116870434","Location":"VARA","Longitude":5.16385,"Latitude":52.23258,"Counts":1285},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q1535378","Location":"Paradiso","Longitude":4.883872,"Latitude":52.362144,"Counts":917},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q111724001","Location":"De Doelen","Longitude":4.473056,"Latitude":51.921667,"Counts":826},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q17463961","Location":"Koningskerk","Longitude":4.93612,"Latitude":52.3484,"Counts":709},
+              {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q2637994","Location":"Thomaskerk","Longitude":4.87472,"Latitude":52.3422,"Counts":416}]
+        },
+        "mark": {
+          "type":"circle"
+        },
+        "encoding": {
+            "latitude": {"field": "Latitude"},
+            "longitude": {"field": "Longitude"},
+            "tooltip": [
+        {"field": "Location", "type": "nominal"},
+        {"field": "Counts", "type": "quantitative", "title":"# Concerts"}
+      ],
+            "size": {
+              "field": "Counts",
+              "type": "quantitative",
+              "scale": {"rangeMax": 10000},
+              "legend": null
+            }        
+        }
       }
     ]
   }
