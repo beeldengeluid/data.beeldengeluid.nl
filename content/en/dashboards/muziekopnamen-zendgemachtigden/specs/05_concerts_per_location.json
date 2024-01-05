@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 600,
+    "title": "Number of concerts per location",
+    "description": "Number of concerts per location. Note: Only locations mapped to Wikidata are included, and only on a concert level (no locations for clips within concerts)",
+    "layer": [
+      {
+        "mark": {
+          "type": "geoshape",
+          "fill": "#ddd",
+          "stroke": "#fff",
+          "strokeWidth": 0.4
+        },
+        "data": {
+          "url": "https://raw.githubusercontent.com/beeldengeluid/labs.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/muziekopnamen-zendgemachtigden/specs/gemeentes_NL_CBS.json",
+          "format": {"type": "json", "property": "features"}
+          },
+        "encoding": {
+          "tooltip": {"field": "properties.GEMEENTENAAM"}
+        }
+      }
+    ]
+  }
