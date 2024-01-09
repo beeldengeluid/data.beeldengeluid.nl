@@ -13,11 +13,11 @@
           "strokeWidth": 0.4
         },
         "data": {
-          "url": "https://raw.githubusercontent.com/beeldengeluid/labs.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/muziekopnamen-zendgemachtigden/specs/gemeentes_NL_CBS.json",
+          "url": "https://raw.githubusercontent.com/beeldengeluid/labs.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
           "format": {"type": "json", "property": "features"}
           },
         "encoding": {
-          "tooltip": {"field": "properties.GEMEENTENAAM"}
+          "tooltip": {"field": "properties.statnaam"}
         }
       },
       {
@@ -35,7 +35,10 @@
               {"WikidataID":"http:\/\/www.wikidata.org\/entity\/Q2637994","Location":"Thomaskerk","Longitude":4.87472,"Latitude":52.3422,"Counts":416}]
         },
         "mark": {
-          "type":"circle"
+          "type":"circle",
+          "fill": "#0F238C",
+          "stroke": "#fff",
+          "strokeWidth": 0.4
         },
         "encoding": {
             "latitude": {"field": "Latitude"},
