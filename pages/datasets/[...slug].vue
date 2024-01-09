@@ -114,7 +114,6 @@ const { data: dashboardSpecs } = await useAsyncData(async () => {
     })
 })
 
-
 const dataPath = 'datacatalog0001'
 const { data: datacatalogData } = await useAsyncData(() => {
   // datasets from Datacatalog are not localized (yet)
