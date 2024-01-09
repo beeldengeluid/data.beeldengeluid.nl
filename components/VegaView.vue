@@ -7,7 +7,7 @@ import embed from 'vega-embed'
 
 const props = defineProps({
   spec: { type: Object, required: true, default: () => ({}) },
-  vegachartId: String
+  vegachartId: { type: String, required: true, default: '99' },
 })
 
 onMounted(() => {
