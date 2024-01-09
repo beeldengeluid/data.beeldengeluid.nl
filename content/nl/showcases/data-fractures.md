@@ -2,14 +2,14 @@
 title: Metadatabreuken - laat ze jouw werk niet afbreken! 
 subtitle: Een introductie tot metadatabreuken in een archief - wat ze zijn en hoe je ermee om kunt gaan
 image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
+imageCaption: "'Virtual Human' door Alan Warburton. © BBC / Better Images of AI, gebruik onder CC-BY 4.0 licentie."
 tags: Metadata
 lab: opendatalab
 publishedOn: "2024-01-12"
 datasets: []
 ---
-<span>Beeld: <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
 
-Artikel: Tim Manders (Beeld en Geluid), Mari Wigham (Beeld en Geluid)
+Door Tim Manders (Beeld en Geluid) en Mari Wigham (Beeld en Geluid).
 
 Het Beeld & Geluid archief bevat meer dan 2 miljoen items (programma’s, documenten en fysieke objecten) verspreid over meer dan 150 jaar. Dat representeert een enorme schat van kennis. 
 

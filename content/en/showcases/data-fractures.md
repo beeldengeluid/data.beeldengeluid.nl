@@ -2,14 +2,14 @@
 title: Metadata fractures - don't let them undermine your work! 
 subtitle: An introduction to metadata fractures in an archive - what they are and how you can deal with them
 image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
+imageCaption: "'Virtual Human' by Alan Warburton. © BBC / Better Images of AI, licenced under CC-BY 4.0."
 tags: Metadata
 lab: opendatalab
 publishedOn: "2024-01-12"
 datasets: []
 ---
-<span>Image: <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
 
-Article: Tim Manders (Sound & Vision), Mari Wigham (Sound & Vision)
+By Tim Manders (Sound & Vision) and Mari Wigham (Sound & Vision).
 
 The Sound & Vision archive contains more than 2 million items (programmes, documents and physical objects) spread over more than 150 years. This represents an enormous treasure trove of knowledge. 
 
