@@ -22,14 +22,9 @@
       <ContentRenderer id="nuxt-content" :value="page" />
 
       <!-- Chiplist -->
-      <v-row class="justify-center mt-5">
-        <v-col class="limit-width px-3 py-3 mb-2">
-          <ArticleRelations :projects="projects" />
-        </v-col>
-      </v-row>
       <v-row class="justify-center">
         <v-col class="limit-width px-3 py-3 mb-2">
-          <ArticleRelations :blogs="blogs" />
+          <ArticleRelations :showcases="showcases" />
         </v-col>
       </v-row>
     </section>
@@ -38,8 +33,7 @@
 
 <script setup>
 const props = defineProps({
-  projects: { type: Array, required: false, default: () => [] },
-  blogs: { type: Array, required: false, default: () => [] },
+  showcases: { type: Array, required: false, default: () => [] },
   page: { type: Object, required: false, default: null },
   dataset: { type: Object, required: true, default: null },
 })

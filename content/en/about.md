@@ -2,37 +2,29 @@
 title: About
 ---
 
-## What about LABS?
+## Sound & Vision Data
 
-Sound & Vision LABS represent our _Research & Innovation_ activities. On a wide range of topics, we put media innovation into practice by connecting new technologies and innovative ideas to **real data** ("big multimedia data") and evaluating them in **real-life use scenarios** in _media_, _cultural heritage_, _research_, _education_ and _journalism_, together with **real users**.
+Sound & Vision makes available the metadata of more than 2.5 million collection items to developers, researchers and enthusiasts. We aim to enable third parties to (re)use our collection data and in doing so improve discoverability, contextualisation and increase engagement with various audiences.
 
 <!--more-->
 
-By doing so, we have been facilitating (inter)national researchers to help bring forward innovations in the media domain for many years. At the same time, working with great minds with great ideas and by testing those ideas in practice helps us to remain a modern-day archive that persistently finds useful ways to open up, explore and exploit the multifaceted richness of our large multimedia archives.
+The Sound & Vision Data Platform offers access to the data and provides information, documentation and examples of reuse of Sound & Vision data.
 
-The labs.beeldengeluid.nl website serves as the umbrella website for all our LABS activities, the ones from the past and LABS that are currently active. You will find showcases of tools, demos and prototypes that have been developed in the past years with our (inter)national partners in research and industry. Please note that in some cases the showcases require authentication for access. You can request access via the contact details on the application page.
-
-We are delighted to be able to collaborate with our partners in academia and higher education in a variety of research and innovation projects funded by national and European funding schemes. Check-out our research pages to get an impression on what we are doing and how to collaborate with us.
-
-For more information about Sound & Vision Lab activities, please contact: [rordelman@beeldengeluid.nl](mailto:rordelman@beeldengeluid.nl)
+The digital collections and metadata of Sound & Vision are available as linked data, as data dump, through APIs or Wikimedia Commons. If intellectual property allows, everyone can use the data for free. If the material is protected by copyright, access to the data for scientific research or non-profit uses can be possible. 
 
 ## What about Sound & Vision?
 
 ![Sound & Vision](/uploads/images/B&G_logo_RGB_liggend_RL.png)
 
-[The Netherlands Institute for Sound & Vision](https://www.beeldengeluid.nl) is one of Europe's largest audiovisual archives that is progressively making its way into the digital realm. It maintains and provides access to over 1 million hours of television, radio, music, film and web video. Sound & Vision provides access to its collections online for various end-user services, including dedicated services for the creative industries, education and research. The institute operates as a visitor attraction aimed at the general public and is visited by over 250.000 people annually.
-
-Read about our activities on our [blog](https://www.beeldengeluid.nl/kennis/blog) or follow us on Twitter via [@benglabs](https://twitter.com/benglabs)
+[Sound & Vision](https://www.beeldengeluid.nl/en) is the leading institute for media in the Netherlands and one of the largest audio visual archives in the world. It is an inspiring, creative and welcoming meeting place for professionals  and others interested in the industry; online, in our physical museum and sometimes on location. We preserve and provide access to different types of media, including radio and television programmes, video games, written print media, political cartoons, GIFs, websites and historical objects. Sound & Vision is one of the leading authorities when it comes to providing insight into the Dutch media landscape and interpreting current developments from the perspective of media history. We do this with the aim of showing how media impacts everyday life.
 
 ### Visiting Address
 
-Netherland Institute for Sound & Vision  
 Media Parkboulevard 1  
 1217 WE Hilversum
 
-### Postal Addres
+### Postal Address
 
-Nederlands Instituut voor Beeld & Geluid  
 Postbus 1060  
 1200 BB Hilversum
 
@@ -40,6 +32,6 @@ Postbus 1060
 
 +31 (0)35 677 5555
 
-In case you have any questions or requests, please do not hesitate to contact us at [rd@beeldengeluid.nl](mailto:rd@beeldengeluid.nl) or on Twitter via [@benglabs](https://twitter.com/benglabs)
+In case you have any questions or requests, please do not hesitate to contact us at [data@beeldengeluid.nl](mailto:data@beeldengeluid.nl).
 
 ![Sound & Vision](/uploads/images/about.jpg)

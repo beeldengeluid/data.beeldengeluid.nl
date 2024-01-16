@@ -84,7 +84,11 @@ const imageSrc = !props.dataset.image
     ? props.dataset.image
     : img(`~/assets/images/${props.dataset.image}?size=300`).src
 const imageSrcset = !props.dataset.image
-  ? generateSrcset(img, '/images/placeholders/placeholder-blog.jpg', [300, 600])
+  ? generateSrcset(
+      img,
+      '/images/placeholders/placeholder-showcase.jpg',
+      [300, 600]
+    )
   : props.dataset.image.includes('/uploads/')
     ? props.dataset.image
     : generateSrcset(img, `/images/${props.dataset.image}`, [300, 600])

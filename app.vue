@@ -137,7 +137,7 @@
       :absolute="!fixed"
       class="bg-nisvdarkblue-darken-4 text-white"
       app
-      :style="{ minHeight: '400px' }"
+      :style="{ minHeight: '300px' }"
     >
       <v-row>
         <!-- Column left -->
@@ -187,6 +187,7 @@
 <script setup>
 import menu from '~/config/menu'
 
+const i18n = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
@@ -195,8 +196,16 @@ const drawer = ref(false)
 const fixed = ref(false)
 const home = menu[0]
 const tabMenu = menu.filter((m) => m.title !== 'home')
-const activeMenu = ref('blogs')
+const activeMenu = ref('showcases')
 
+useHead({
+  meta: [
+    {
+      name: 'description',
+      content: i18n.t('page_description'),
+    },
+  ],
+})
 const updateActiveTab = () => {
   // Active menu for to paths
   const to = route.name?.toString()
@@ -204,14 +213,11 @@ const updateActiveTab = () => {
     case to.startsWith('index'):
       activeMenu.value = 'index'
       break
-    case to.startsWith('blog-to'):
-      activeMenu.value = localePath('blogs')
+    case to.startsWith('showcase-to'):
+      activeMenu.value = localePath('showcases')
       break
     case to.startsWith('dataset-to'):
       activeMenu.value = localePath('datasets')
-      break
-    case to.startsWith('project-to'):
-      activeMenu.value = localePath('projects')
       break
   }
 }
