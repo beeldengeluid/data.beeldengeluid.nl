@@ -5,7 +5,7 @@ image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
 imageCaption: "'Virtual Human' by Alan Warburton. © BBC / Better Images of AI, licenced under CC-BY 4.0."
 tags: Metadata
 lab: opendatalab
-publishedOn: "2024-01-12"
+publishedOn: "2024-01-24"
 datasets: []
 ---
 
