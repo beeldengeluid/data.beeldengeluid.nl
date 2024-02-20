@@ -16,5 +16,6 @@
   "read_more": "Lees meer",
   "explore_dataset": "Dataset verkennen",
   "intro_text": "Welkom bij het Beeld & Geluid Dataplatform! Hier vind je informatie over onze datasets, APIs en hoe je ze kunt gebruiken.",
-  "page_description": "Beeld & Geluid maakt de metadata van meer dan 2,5 miljoen items uit de collectie beschikbaar voor ontwikkelaars, onderzoekers en liefhebbers. We streven ernaar dat derde partijen onze collectiedata kunnen (her)gebruiken en daarmee de vindbaarheid, contextualisering en het bereik van onze collecties onder verschillende doelgroepen kunnen verbeteren."
+  "page_description": "Beeld & Geluid maakt de metadata van meer dan 2,5 miljoen items uit de collectie beschikbaar voor ontwikkelaars, onderzoekers en liefhebbers. We streven ernaar dat derde partijen onze collectiedata kunnen (her)gebruiken en daarmee de vindbaarheid, contextualisering en het bereik van onze collecties onder verschillende doelgroepen kunnen verbeteren.",
+  "working_definition_datasets": "Op deze pagina vind je de datasets die het Beeld & Geluid data team beschikbaar maakt. Daarbij definieren wij een dataset set als de verzameling van gegevens (data en/of metadata), gegroepeerd volgens een logische as (bv. thematisch, licentie etc.), gezamenlijk beschreven en gepubliceerd. (Verwijzingen naar) de daadwerkelijke objecten kunnen al dan niet deel uitmaken van een dataset. De dataset als geheel is voorzien van additionele metadata, zoals een titel, een beschrijving en licentie."
 }

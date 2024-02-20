@@ -1,10 +1,18 @@
 <template>
-  <CardPage
-    :cards="datasetPages"
-    :title="title"
-    :card-path="cardPath"
-    :data-class="dataClass"
-  />
+  <div>
+    <HeaderPage>
+      <!-- SectionHeading -->
+      <template #header>
+        <SectionHeading :title="$t(title)" :data-class="dataClass" />
+      </template>
+
+      <!-- Content -->
+      <template #content>
+        <v-alert :text="$t('working_definition_datasets')"> </v-alert>
+        <CardGrid :cards="cards" :path="cardPath" :data-class="dataClass" />
+      </template>
+    </HeaderPage>
+  </div>
 </template>
 
 <script setup>
