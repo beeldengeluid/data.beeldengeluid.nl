@@ -146,8 +146,8 @@ const { data: showcases } = await useAsyncData(async () => {
 
 const submenu = computed(() =>
   datasetPage.value.showDashboard
-    ? ['overview', 'metadata', 'dashboard']
-    : ['overview', 'metadata']
+    ? ['overview', 'facts', 'dashboard']
+    : ['overview', 'facts']
 )
 
 const activeSubmenu = ref('overview')
