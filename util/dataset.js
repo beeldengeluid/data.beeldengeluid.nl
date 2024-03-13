@@ -3,9 +3,14 @@ import { getRandomColor, parseColor } from './color'
 import { filterUndefined } from '~/util/frontmatter'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
+  console.log("DATASET");
+  console.log(dataset);
   // Enrichments
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
   dataset.size = dataset['sdo:size']
+
+  // Link to page
+  dataset.metadataLink = dataset['@id']
 
   // Augmentations
   const creatorId = dataset['sdo:creator']?.['@id']
