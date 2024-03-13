@@ -7,6 +7,9 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
   dataset.size = dataset['sdo:size']
 
+  // Link to page
+  dataset.metadataLink = dataset['@id']
+
   // Augmentations
   const creatorId = dataset['sdo:creator']?.['@id']
   if (creatorId) {
