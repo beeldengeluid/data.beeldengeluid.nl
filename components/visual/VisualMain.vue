@@ -72,7 +72,7 @@
           class="close-button d-flex justify-center align-center d-md-none"
           @click.stop="hideDetails"
         >
-          <v-icon dark> mdi-close </v-icon>
+          <v-icon theme="dark"> mdi-close </v-icon>
         </div>
       </div>
     </transition>
@@ -95,7 +95,7 @@
           color="red-darken-1"
         />
 
-        <v-icon dark>
+        <v-icon theme="dark">
           {{ showTags ? 'mdi-close' : 'mdi-filter-variant' }}
         </v-icon>
       </v-btn>
