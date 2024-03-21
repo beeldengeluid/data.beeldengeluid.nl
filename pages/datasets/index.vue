@@ -8,8 +8,10 @@
 
       <!-- Content -->
       <template #content>
-        <v-alert :text="$t('working_definition_datasets')"> </v-alert>
-        <CardGrid :cards="cards" :path="cardPath" :data-class="dataClass" />
+        <div>
+          <v-alert :text="$t('working_definition_datasets')"> </v-alert>
+          <CardGrid :cards="cards" :path="cardPath" :data-class="dataClass" />
+        </div>
       </template>
     </HeaderPage>
   </div>
