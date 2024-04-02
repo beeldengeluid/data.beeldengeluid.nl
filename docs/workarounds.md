@@ -1,7 +1,9 @@
 # Workarounds
+
 Some issues that arose during the Nuxt3 Upgrade were worked around. These should be undone, but until that time we at least document them here:
 
 ## sourcemap points to missing sourcefiles
+
 This error occurred (at least) in dev mode.
 
 Worked around this by disabling sourcemaps in `nuxt.config.ts``
@@ -13,10 +15,11 @@ Worked around this by disabling sourcemaps in `nuxt.config.ts``
   }
 ```
 
-According to: 
+According to:
 https://github.com/vuetifyjs/vuetify-loader/issues/290
 
 ## invalid requests when using custimizing vuetify using sass
+
 Using SASS variables with Vuetify caused invalid requests to be made. Worked around this by adding a server plugin that removes the offending null character in these requests.
 
 See [`server/plugins/vuetify.fix.ts`](server/plugins/vuetify.fix.ts)
