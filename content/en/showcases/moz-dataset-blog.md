@@ -4,12 +4,12 @@ subtitle: From Mozart to Metallica - a look at the rich variety of concerts reco
 image: datasets/moz.jpg
 imageCaption: Photo by Danny Howe on Unsplash
 tags: Metadata, Linked Open Data, Music
-publishedOn: "2023-04-03"
+publishedOn: '2023-04-03'
 datasets: []
 ---
 
-**From Mozart to Metallica, from Pinkpop to The Big Sing. The MOZ (Muziekopnamen Zendgemachtigden = Music recordings of licensed broadcasters) collection contains recordings of concerts intended for broadcast on the Dutch public service broadcasters, on TV and radio. 
-This collection has been made available as Linked Data, with the support of the <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
+**From Mozart to Metallica, from Pinkpop to The Big Sing. The MOZ (Muziekopnamen Zendgemachtigden = Music recordings of licensed broadcasters) collection contains recordings of concerts intended for broadcast on the Dutch public service broadcasters, on TV and radio.
+This collection has been made available as Linked Data, with the support of the <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a>
 and <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> projects.**
 
 **The concerts**
@@ -34,14 +34,14 @@ An interesting question is, where do the recordings take place? Are these spread
 We cannot answer this question with the data in its original form. There we see the same locations recurring multiple times, only written slightly differently.
 To be able to say something meaningful about the geographical distribution of concerts, we have cleaned this data by mapping a large number of locations to Wikidata. Now 30,634 (approximately a third)
 of the MOZ concerts have a standardised location at concert or clip level. As we have not been able to map all locations, the picture is still not complete. However, we can already give a better
-idea of the distribution of concerts over recording locations.  The 'Randstad' indeed dominates. However, concerts have been recorded all over the country, often in churches.
+idea of the distribution of concerts over recording locations. The 'Randstad' indeed dominates. However, concerts have been recorded all over the country, often in churches.
 
 <iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _Distribution of concerts over recording location_
 
 Concerts are often linked to certain events. Top are the festivals linked to certain times of the day, e.g. 'avondconcert (evening concert)' and 'zondagochtendconcert (Sunday morning concert)'.
-Christmas is a popular time for concerts - 'Gelegenheid: Kerst, Advent, Oud en Nieuw, Driekoningen (Occasional: Christmas, Advent, New Year and Epiphany)'. Some annual events appear less prominently, because the event has a new name every year, e.g. 'Pinkpop 2022'. 
+Christmas is a popular time for concerts - 'Gelegenheid: Kerst, Advent, Oud en Nieuw, Driekoningen (Occasional: Christmas, Advent, New Year and Epiphany)'. Some annual events appear less prominently, because the event has a new name every year, e.g. 'Pinkpop 2022'.
 
 <iframe src='https://flo.uri.sh/visualisation/12159010/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12159010/?utm_source=embed&utm_campaign=visualisation/12159010' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
@@ -56,10 +56,10 @@ For most concerts we have information about the artists involved. Be aware that 
 _Percentage of concerts with information about artists_
 
 There is a large number of artists featured in total:
- 
+
 <iframe src='https://flo.uri.sh/visualisation/13400413/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400413/?utm_source=embed&utm_campaign=visualisation/13400413' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-Artists can participate in a concert as a performer or creator. (NB: the data also contains some persons with the role 'guest' or simply 'person', 
+Artists can participate in a concert as a performer or creator. (NB: the data also contains some persons with the role 'guest' or simply 'person',
 but this is due to a conversion error, so these are excluded here).
 
 <iframe src='https://flo.uri.sh/visualisation/13400434/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400434/?utm_source=embed&utm_campaign=visualisation/13400434' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
@@ -98,6 +98,7 @@ Linking the instruments to other ontologies allows us to incorporate more inform
 _Profiles of the top ten most frequently occuring instruments, including audio samples from Wikidata_
 
 ### From Mozart to Metallica
+
 The most frequently occurring creator in the metadata is Mozart. But which other creators and performers are associated with concerts with music from Mozart? This network shows his top ten connections, and per connection in turn their top ten connections.
 Hover over the dots to see the names.
 
@@ -128,7 +129,7 @@ _The top ten broadcasters, on the basis of number of concerts_
 **Links with other collections**
 
 Many of the persons in the MOZ collection are linked to other collections. For example, Mozart is represented in the collection by <a target="_blank" href="https://data.beeldengeluid.nl/gtaa/134672">his identifier in the GTAA thesaurus</a>.
-But he is also linked to <a target="_blank" href="https://api.discogs.com/artists/95546">his identifier in the Discogs collection</a>, 
+But he is also linked to <a target="_blank" href="https://api.discogs.com/artists/95546">his identifier in the Discogs collection</a>,
 and to <a target="_blank" href="https://www.wikidata.org/wiki/Q254"> his Wikidata page</a>. In this way, the MOZ collection is enriched.
 
 The Netherlands Institute for Sound and Vision also manages the Muziekweb collection of albums. Some of the top ten creators and performers in the MOZ collection
@@ -144,6 +145,6 @@ _The number of music albums on Muziekweb for the top ten performers in MOZ_
 
 **Finding the collection**
 
-The MOZ collection is registered in the NDE and Clariah data registries. It can be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=6688eee0-db29-4f6e-9eae-fdc28d38cc64">Media Suite</a>  (metadata available for everyone, users with a Media Suite account can
+The MOZ collection is registered in the NDE and Clariah data registries. It can be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=6688eee0-db29-4f6e-9eae-fdc28d38cc64">Media Suite</a> (metadata available for everyone, users with a Media Suite account can
 also play audio/video of some concerts), and as Linked Data on the Sound & Vision <a target="_blank" href="https://cat.apis.beeldengeluid.nl/#transientDatasources=https%3A%2F%2Fcat.apis.beeldengeluid.nl%2Fsparql&query=PREFIX%20sdo%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0A%0A%23%20Show%20the%20ID%20and%20title%20of%20all%20concerts%20that%20are%20part%20of%20the%20Dutch%20Broadcast%20Concert%20%0A%23%20(MOZ)%20collection%2C%20in%20alphabetical%20order%0A%0ASELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%0AWHERE%0A%7B%0A%20%23%20Filter%20for%20programmes%20belonging%20to%20the%20series%20%22Muziekopnamen%20Zendgemachtigden%20(MOZ)%22%2C%20using%20its%20ID%0A%20%3FprogramUri%20sdo%3ApartOfSeason%2Fsdo%3ApartOfSeries%20%3Chttp%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fseries%2F2101608030025711131%3E%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20sdo%3Aname%20%3FprogramName%20.%20%0A%7D%20ORDER%20BY%20%3FprogramName">linked data endpoint</a>.
 An interactive overview of the collection statistics can be found in <a target="_blank" href="https://github.com/mwigham/linked_data_notebooks/blob/main/MOZ%20Linked%20Data%20visualisations.ipynb">this Jupyter Notebook</a>, which you can run locally. Alternatively, you can try it out online in <a target="_blank" href="https://colab.research.google.com/github/mwigham/linked_data_notebooks/blob/main/MOZ%20Linked%20Data%20visualisations.ipynb">Google Colab</a> (disclaimer: this is hosted by a third party).

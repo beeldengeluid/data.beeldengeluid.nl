@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: '2022',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   extends: [
     '@nuxt/eslint-config',
@@ -10,14 +10,14 @@ module.exports = {
     'plugin:vuetify/base',
     'plugin:nuxt/recommended',
     // put 'plugin:prettier/recommended' last, to avoid conflicting configuration
-    // note that 'plugin:prettier/recommended' extends 'prettier' and sets up the 'prettier' plugin 
+    // note that 'plugin:prettier/recommended' extends 'prettier' and sets up the 'prettier' plugin
     // see https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
     'plugin:prettier/recommended',
     // NOTE: don't append here, 'plugin:prettier/recommended' should be last.
   ],
   ignorePatterns: [
     // use exact code given by Matomo, to track changes
-    "**/matomo-tracking-code.js",
+    '**/matomo-tracking-code.js',
   ],
   rules: {
     'vue/multi-word-component-names': [
