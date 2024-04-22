@@ -22,7 +22,6 @@
             :cards="showcases"
             path="showcases-slug"
             data-class="showcase"
-            row-class="justify-center justify-md-start px-5"
           />
         </v-col>
       </v-row>
@@ -37,12 +36,7 @@
             :action-path="'apis'"
             :action-title="$t('all_apis')"
           />
-          <CardGrid
-            :cards="apis"
-            path="apis-slug"
-            data-class="api"
-            row-class="justify-center justify-md-start px-5"
-          />
+          <CardGrid :cards="apis" path="apis-slug" data-class="api" />
         </v-col>
       </v-row>
 

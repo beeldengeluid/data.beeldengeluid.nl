@@ -1,5 +1,5 @@
 <template>
-  <v-row :class="rowClass">
+  <v-row class="justify-center justify-md-start px-5">
     <v-col
       v-for="card in cards"
       :key="card.slug"
@@ -16,10 +16,5 @@ defineProps({
   cards: { type: Array, required: true, default: () => [] },
   path: { type: String, required: true, default: '' },
   dataClass: { type: String, required: true, default: '' },
-  rowClass: {
-    type: String,
-    required: false,
-    default: 'justify-center justify-md-start',
-  },
 })
 </script>
