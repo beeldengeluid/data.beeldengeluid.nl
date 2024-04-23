@@ -53,8 +53,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
+      useCookie: false,
       redirectOn: 'root', // recommended
     },
     vueI18n: './i18n.config.ts',
