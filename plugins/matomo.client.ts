@@ -10,7 +10,8 @@ export default defineNuxtPlugin(() => {
       _paq.push(['deleteCustomVariables', 'page'])
       _paq.push(['deleteCustomDimension', 1])
       _paq.push(['setReferrerUrl', origin + from.path])
-      _paq.push(['setCustomUrl', origin + to.path])
+      _paq.push(to.meta.name ? ['setCustomUrl', to.meta.name] : [])
+      _paq.push(['setDocumentTitle', document.title])
       _paq.push(['trackPageView'])
       console.debug(`trackPageView ${from.path}->${to.path}`)
     }
