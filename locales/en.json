@@ -24,5 +24,6 @@
   "explore_dataset": "Explore dataset",
   "intro_title": "Sound & Vision Data",
   "intro_text": "Welcome to the Sound & Vision Data Platform! Here we offer you information about our datasets, APIs and how to use them.",
-  "page_description": "Sound & Vision makes available the metadata of more than 2.5 million collection items to developers, researchers and enthusiasts. We aim to enable third parties to (re)use our collection data and in doing so improve discoverability, contextualisation and increase engagement with various audiences."
+  "page_description": "Sound & Vision makes available the metadata of more than 2.5 million collection items to developers, researchers and enthusiasts. We aim to enable third parties to (re)use our collection data and in doing so improve discoverability, contextualisation and increase engagement with various audiences.",
+  "defining_datasets": "Definition Datasets"
 }
