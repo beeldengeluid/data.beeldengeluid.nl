@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0029
 title: Amateurfilms
-subtitle: 
+subtitle: Familiefilms, reisfilms, fictiefilms en animatie
 color: ''
 image: /uploads/amateurfilms-1.jpg
 tags: []
