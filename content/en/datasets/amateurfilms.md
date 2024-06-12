@@ -1,16 +1,17 @@
 ---
-id: http://data.beeldengeluid.nl/id/dataset/xxx
+id: http://data.beeldengeluid.nl/id/dataset/0029
 title: Amateurfilms
 subtitle: 
 color: ''
-image: ''
+image: /uploads/amateurfilms-1.jpg
 tags: []
 showDashboard: false
 ---
 
 ### Summary
 
-...
+The amateurfilm collection contains films recorded from the 1910’s until now. It consists of family films, travelogues, fiction films and animation. It was intended for screenings at home or at the filmclubs in the Netherlands. Nowadays they are loved by historians and filmmakers.  
+
 See [below for more details](#details) about this collection.
 
 ### Access
@@ -31,15 +32,17 @@ The metadata (descriptive information) for this dataset is published using <a hr
 
 <ul>
 <li> - View this dataset in the <a href="https://datasetregister.netwerkdigitaalerfgoed.nl/show.php?lang=nl&uri=http%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fdataset%2Fxxx">NDE dataregister</a></li>
-<li> - Discover some statistics about this collection in this <a href="https://colab.research.google.com/github/mwigham/linked_data_notebooks/blob/main/xxx">interactive notebook</a>
-<li> - Discover more about the MOZ collection in <a href="/showcases/xxx">this article</a></li>
 </ul>
 <br>
 
 ### Details
-...
+The first amateur filmmaker in the Netherlands was Dick Laan, author of the famous children’s books Pinkeltje. He made fictional films in the 1910s about the Boy Scouts. But amateur film only really started in the 1920s with the arrival of the smaller film formats 9.5mm and 16mm and later in the 1930s with the 8mm format. 
+
+The collection of amateur films from Beeld & Geluid shows a history of domestic life in the Netherlands and its former colonies. These are often images that were never captured with a professional camera and now prove so valuable to our history. The collection also includes films made by the film hobbyist. These are films that have been recorded with a script and often provided with titles or music. These filmmakers were usually affiliated with one of the many film clubs in the country. 
+
+The collection contains a few thousand amateur films and also a number of videos.
 
 This dataset is part of the dataset [Sound & Vision catalog Open Data](/nl/datasets/nisv-media-catalog).
-This collection has been made available as Linked Data, with support from the [...](#a) and [...](#b) projects. It can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=xxx">Media Suite</a> (metadata available for everyone, users with a Media Suite account can also play certain concerts)
+This collection has been made available as Linked Data, with support from [DC4EU](https://www.dc4eu.eu/) and [CLARIAH](https://clariah.nl/). It can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=xxx">Media Suite</a> (metadata available for everyone, users with a Media Suite account can also play certain concerts)
 
-Don't forget to take a look at the 'Facts' en 'Dashboard' tabs on this page.
+Don't forget to take a look at the 'Facts' tab on this page.
