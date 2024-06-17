@@ -61,8 +61,8 @@ const touchClick = useState('touchClick', () => false)
 const imageSrc = !props.node.dataset.image
   ? img('/images/placeholders/placeholder-dataset.jpg', { width: 300 })
   : props.node.dataset.image.includes('/uploads/')
-  ? props.node.dataset.image
-  : img(`/images/${props.node.dataset.image}`, { size: 300 })
+    ? props.node.dataset.image
+    : img(`/images/${props.node.dataset.image}`, { size: 300 })
 
 const onTouchStart = (e) => {
   if (!touchActive && e.touches?.length === 1) {

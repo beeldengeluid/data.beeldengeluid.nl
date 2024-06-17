@@ -1,5 +1,5 @@
 <template>
-  <v-window-item key="metadata" value="metadata">
+  <v-window-item key="metadata" value="facts">
     <section>
       <!-- MetadataTable -->
       <div>

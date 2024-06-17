@@ -53,8 +53,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
+      useCookie: false,
       redirectOn: 'root', // recommended
     },
     vueI18n: './i18n.config.ts',
@@ -63,10 +62,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: '%s - Sound & Vision · Labs',
+      titleTemplate: '%s - Sound & Vision · Data',
       title: 'Beeld & Geluid',
       meta: [
-        { hid: 'description', name: 'description', content: '' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'theme-color', content: '#ffffff' },
       ],

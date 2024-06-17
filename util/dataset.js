@@ -7,6 +7,9 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
   dataset.size = dataset['sdo:size']
 
+  // Link to page
+  dataset.metadataLink = dataset['@id']
+
   // Augmentations
   const creatorId = dataset['sdo:creator']?.['@id']
   if (creatorId) {
@@ -142,8 +145,8 @@ const getValueFromObjectOrArray = (objectOrArray) => {
   return objectOrArray?.['@value']
     ? objectOrArray?.['@value']
     : objectOrArray?.filter((d) => d['@language'] === 'nl').length
-    ? objectOrArray?.filter((d) => d['@language'] === 'nl')[0]['@value']
-    : objectOrArray?.filter((d) => d['@language'] === 'en')[0]['@value']
+      ? objectOrArray?.filter((d) => d['@language'] === 'nl')[0]['@value']
+      : objectOrArray?.filter((d) => d['@language'] === 'en')[0]['@value']
 }
 
 export const enrichDatasets = (datasets, datacatalog = []) => {

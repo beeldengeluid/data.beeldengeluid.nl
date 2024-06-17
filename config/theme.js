@@ -1,13 +1,13 @@
-import colors from 'vuetify/lib/util/colors'
+import colors from 'vuetify/util/colors'
 
 const theme = {
   nisvlightblue: '#05c8f0',
   nisvdarkblue: '#0f238c',
   primary: '#0f238c', // colors.blue.darken2, // dataset
-  secondary: colors.amber.darken3, // project
-  tertiary: colors.pink.darken1, // blog
+  secondary: colors.amber.darken3,
+  tertiary: colors.pink.darken1, // showcase
   quaternary: colors.purple.darken1, // theme
-  quinary: colors.teal.darken1, // lab
+  quinary: colors.teal.darken1,
   senary: colors.green.darken1, // api
   accent: colors.grey.darken3,
   info: colors.teal.lighten1,
@@ -18,22 +18,14 @@ const theme = {
 
 export const classColorIndex = {
   dataset: 'primary',
-  project: 'secondary',
-  blog: 'tertiary',
-  topic: 'quaternary',
-  lab: 'quinary',
+  showcase: 'tertiary',
   api: 'senary',
-  archive: 'accent',
 }
 
 export const classColors = {
   dataset: theme[classColorIndex.dataset],
-  project: theme[classColorIndex.project],
-  blog: theme[classColorIndex.blog],
-  topic: theme[classColorIndex.topic],
-  lab: theme[classColorIndex.lab],
+  showcase: theme[classColorIndex.showcase],
   api: theme[classColorIndex.api],
-  archive: theme[classColorIndex.archive],
 }
 
 export default theme

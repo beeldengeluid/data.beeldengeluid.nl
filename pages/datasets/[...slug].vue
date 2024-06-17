@@ -29,8 +29,7 @@
             <DatasetTabOverview
               :dataset="dataset"
               :page="datasetPage"
-              :projects="projects"
-              :blogs="blogs"
+              :showcases="showcases"
             />
             <!-- Metadata -->
             <DatasetTabMetadata v-if="dataset" :dataset="dataset" />
@@ -42,6 +41,7 @@
               :projects="projects"
               :blogs="blogs"
               :dashboard-specs="dashboardSpecs"
+              :showcases="showcases"
             />
           </v-window>
         </section>
@@ -139,44 +139,27 @@ const datasetPage = computed(() => {
   return datasetContentPage.value
 })
 
-// blogs that refer to this dataset
-const blogsPath = 'blogs'
-const { data: localizedBlogsPath } = await useAsyncData(async () => {
+// showcases that refer to this dataset
+const showcasesPath = 'showcases'
+const { data: localizedShowcasesPath } = await useAsyncData(async () => {
   const content = await queryContent(
-    `${i18n.locale.value}/${blogsPath}/${slug.value}`
+    `${i18n.locale.value}/${showcasesPath}/${slug.value}`
   )
     .find()
     .catch(() => {})
   const locale = content.length > 0 ? i18n.locale : i18n.fallbackLocale
-  return `${locale.value}/${blogsPath}/${slug.value}`
+  return `${locale.value}/${showcasesPath}/${slug.value}`
 })
-const { data: blogs } = await useAsyncData(async () => {
-  return queryContent(localizedBlogsPath.value)
-    .where({ datasets: { $contains: dataset['@id'] } })
-    .find()
-})
-
-// projects that refer to this dataset
-const projectsPath = 'projects'
-const { data: localizedProjectsPath } = await useAsyncData(async () => {
-  const content = await queryContent(
-    `${i18n.locale.value}/${blogsPath}/${slug.value}`
-  )
-    .find()
-    .catch(() => {})
-  const locale = content.length > 0 ? i18n.locale : i18n.fallbackLocale
-  return `${locale.value}/${projectsPath}/${slug.value}`
-})
-const { data: projects } = await useAsyncData(async () => {
-  return queryContent(localizedProjectsPath.value)
+const { data: showcases } = await useAsyncData(async () => {
+  return queryContent(localizedShowcasesPath.value)
     .where({ datasets: { $contains: dataset['@id'] } })
     .find()
 })
 
 const submenu = computed(() =>
   datasetPage.value.showDashboard
-    ? ['overview', 'metadata', 'dashboard']
-    : ['overview', 'metadata']
+    ? ['overview', 'facts', 'dashboard']
+    : ['overview', 'facts']
 )
 
 const activeSubmenu = ref('overview')

@@ -2,76 +2,76 @@
 label: Archive
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-- type: text
-  name: subtitle
-  label: Subtitle
-- name: type
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - project
-    - example
-    - application
-    source:
-      type: simple
-      section: archive
-      file: 
-      path: 
-  label: Type
-  description: The type of archive item
-- type: file
-  name: image
-  label: Image
-- name: website_url
-  type: text
-  config:
-    required: false
-  label: Website URL
-  description: The URL of the archive item's website
-- name: project
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: archive
-      file: 
-      path: 
-  label: Project
-  description: Project this archive item belongs to
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: Tags of this archive item
-- type: list
-  name: themes
-  label: Themes
-- type: list
-  name: contenttypes
-  label: Contenttypes
-- name: startDate
-  type: datetime
-  label: Start Date
-  description: ''
-  config:
-    required: false
-    date_format: DD-MM-YYYY
-    time_format: 
-    display_utc: false
-- name: endDate
-  type: datetime
-  label: End Date
-  description: ''
-  config:
-    required: false
-    date_format: DD-MM-YYYY
-    time_format: 
-    display_utc: false
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: subtitle
+    label: Subtitle
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+        - project
+        - example
+        - application
+      source:
+        type: simple
+        section: archive
+        file:
+        path:
+    label: Type
+    description: The type of archive item
+  - type: file
+    name: image
+    label: Image
+  - name: website_url
+    type: text
+    config:
+      required: false
+    label: Website URL
+    description: The URL of the archive item's website
+  - name: project
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: archive
+        file:
+        path:
+    label: Project
+    description: Project this archive item belongs to
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
+    description: Tags of this archive item
+  - type: list
+    name: themes
+    label: Themes
+  - type: list
+    name: contenttypes
+    label: Contenttypes
+  - name: startDate
+    type: datetime
+    label: Start Date
+    description: ''
+    config:
+      required: false
+      date_format: DD-MM-YYYY
+      time_format:
+      display_utc: false
+  - name: endDate
+    type: datetime
+    label: End Date
+    description: ''
+    config:
+      required: false
+      date_format: DD-MM-YYYY
+      time_format:
+      display_utc: false

@@ -39,7 +39,7 @@
       <v-chip
         :color="'primary'"
         class="text-uppercase"
-        small
+        size="small"
         label
         variant="outlined"
       >
@@ -101,8 +101,8 @@ const rippleClass = classColorIndex[props.dataClass] + '--text'
 const image = !props.card.image
   ? img('/images/placeholders/placeholder-generic.jpg', { width: 400 })
   : props.card.image.includes('/uploads/')
-  ? props.card.image
-  : img(`/images/${props.card.image}`, { width: 400 })
+    ? props.card.image
+    : img(`/images/${props.card.image}`, { width: 400 })
 </script>
 
 <style lang="scss" scoped>

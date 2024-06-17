@@ -4,7 +4,7 @@
     <v-icon class="v-mid text-subtitle-2" :style="{ color: '#05c8f0' }"
       >mdi-circle</v-icon
     >
-    <span class="v-mid"> LABS</span>
+    <span class="v-mid"> DATA</span>
   </div>
 </template>
 

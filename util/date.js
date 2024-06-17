@@ -1,6 +1,7 @@
-export const formatDate = (date) => {
+export const formatDate = (date, language = 'en') => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }
-  return new Date(date).toLocaleDateString('en', options)
+  const locale = new Intl.Locale('en', { language })
+  return new Date(date).toLocaleDateString(locale, options)
 }
 
 export const formatDateAsYear = (date) => {

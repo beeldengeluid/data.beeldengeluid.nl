@@ -1,1 +1,1202 @@
-{"@context":{"owl":"http://www.w3.org/2002/07/owl#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","sdo":"https://schema.org/","xsd":"http://www.w3.org/2001/XMLSchema#"},"@graph":[{"@id":"http://data.beeldengeluid.nl/id/datadownload/0029","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"As met geografische namen in de GTAA. Bevat namen van steden, gemeenten, provincies, snelwegen, landen, enz. Elke geografische naam, inclusief labels en notes, is een SKOS Concept en is gegroepeerd in een ConceptScheme."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Geografische namen"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0004","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=stichting_natuurbeelden&metadataPrefix=oai_oi"},"sdo:description":{"@language":"nl","@value":"www.natuurbeelden.nl"},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/licenses/by-sa/3.0/"},"sdo:name":{"@language":"nl","@value":"Natuurbeelden op Open Beelden"},"sdo:usageInfo":{"@id":"https://www.openbeelden.nl/api/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0013","@type":"sdo:Dataset","sdo:creator":{"@id":"http://www.wikidata.org/entity/Q94482770"},"sdo:description":{"@language":"nl","@value":"Het relatief nieuwe medium film was van groot belang in de propagandamachine van de NSB. Dit wordt duidelijk aan de hand van de NSB-filmcollectie die Beeld en Geluid in samenwerking met het Netwerk Oorlogsbronnen online beschikbaar stelt binnen het project WO2 Open Data Depot."},"sdo:distribution":[{"@id":"http://data.beeldengeluid.nl/id/datadownload/0021"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0020"}],"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://www.beeldengeluid.nl/nieuws/beeld-en-geluid-stelt-propagandafilms-nsb-online-beschikbaar"},"sdo:name":{"@language":"nl","@value":"NSB propagandafilms"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:temporalCoverage":"1941/1944"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0010","@type":"sdo:Dataset","sdo:creator":{"@id":"https://www.beeldengeluid.nl"},"sdo:description":{"@language":"nl","@value":"Het Nederlands Instituut voor Beeld en Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus."},"sdo:distribution":[{"@id":"http://data.beeldengeluid.nl/id/datadownload/0015"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0016"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0029"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0027"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0018"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0026"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0019"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0014"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0013"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0017"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0031"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0030"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0028"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0032"}],"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"http://opendatacommons.org/licenses/odbl/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://labs.beeldengeluid.nl/datasets/gtaa"},"sdo:name":{"@language":"nl","@value":"GTAA (Gemeenschappelijke Thesaurus Audiovisuele Archieven)"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"434290"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0031","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"Onderwerpen of wel begrippen (bijv. 'zwemmen', 'daklozen', 'binnenvaartschepen', 'audiovisuele archieven'). Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Onderwerpen"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"https://www.beeldengeluid.nl","@type":"sdo:Organization","sdo:alternateName":{"@language":"nl","@value":"Beeld en Geluid"},"sdo:name":{"@language":"nl","@value":"Nederlands Instituut voor Beeld en Geluid"},"sdo:sameAs":[{"@id":"https://data.overheid.nl/community/organization/nlpo12345678"},{"@id":"http://www.wikidata.org/entity/Q1131877"},{"@id":"https://grid.ac/institutes/grid.425952.d"},{"@id":"http://www.openbeelden.nl/users/beeldengeluid"},{"@id":"https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"},{"@id":"https://data.overheid.nl/community/organization/beeld-en-geluid"}]},{"@id":"http://data.beeldengeluid.nl/id/dataset/0001","@type":"sdo:Dataset","sdo:creator":{"@id":"https://www.beeldengeluid.nl"},"sdo:description":{"@language":"en","@value":"Metadata for the catalogue objects that are provided by Netherlands Institue for Sound and Vision."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0001"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://www.beeldengeluid.nl/collectie"},"sdo:name":{"@language":"nl","@value":"Beeld en Geluid catalogus"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"2126454","sdo:temporalCoverage":"1877/2021"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0016","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Genre"},"sdo:description":{"@language":"nl","@value":"Genre informatie uit de GTAA. Elk genre, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Genres"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0023","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://euscreen.eu/series.html?id=EUS_513F04B47411BCDD8C80532EE577FAC4&activeItem=EUS_003399A7DB2D2A6B14313EF963DE4421"},"sdo:description":{"@language":"nl","@value":"Actuele dagelijkse talkshow van Frits Barend en Henk van Dorp. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen."},"sdo:encodingFormat":"text/html","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"http://rightsstatements.org/vocab/InC/1.0/"},"sdo:name":{"@language":"nl","@value":"Barend & van Dorp op EUScreen"},"sdo:usageInfo":{"@id":"https://euscreen.eu/about.html"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0006","@type":"sdo:Dataset","sdo:description":{"@language":"en","@value":"The collection of broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0008"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:keywords":"Audio, Radio broadcasts, WWII","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://soundcloud.com/beeldengeluid/sets/radio-oranje"},"sdo:name":{"@language":"nl","@value":"Radio Oranje"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"76","sdo:temporalCoverage":"1940/1945"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0032","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"As voor onderwerpstermen, bevat naast de begrippen uit de as Onderwerpen toegevoegde concepten voor specifiek beeld (shots en stockshots) en geluid. Voorbeelden: 'dorpsbeelden', 'blaffen', 'begroetingen', 'gapen', enz. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA OnderwerpenBenG"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0003","@type":"sdo:Dataset","sdo:creator":{"@id":"https://natuurbeelden.openbeelden.nl/"},"sdo:description":{"@language":"nl","@value":"Een verzameling van ruwe videoregistraties van Nederlandse flora en fauna onder een Creative Commons licentie, afkomstig van Stichting Natuurbeelden. "},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0004"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"http://rightsstatements.org/vocab/UND/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://natuurbeelden.openbeelden.nl/media"},"sdo:name":{"@language":"nl","@value":"Natuurbeelden"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"2371","sdo:temporalCoverage":"1999/2020"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0022","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://euscreen.eu/series.html?id=EUS_A7EA1AAE8B1ACA16BA27220CCD8ECB9A&activeItem=EUS_001C5F5FD42207F46FBCFEF30EE80D94"},"sdo:description":{"@language":"nl","@value":"Open Beelden is een open mediaplatform dat toegang biedt tot audiovisuele collecties die eenvoudig hergebruikt kunnen worden."},"sdo:encodingFormat":"text/html","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/licenses/by-sa/3.0/"},"sdo:name":{"@language":"nl","@value":"Open Beelden op EUScreen"},"sdo:usageInfo":{"@id":"https://euscreen.eu/about.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0019","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:OnderwerpenBenG"},"sdo:description":{"@language":"nl","@value":"As voor onderwerpstermen die slechts voor shots/clips/geluiden worden toegepast. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA OnderwerpenBenG"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0026","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"Persoonsnamenas uit de GTAA. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Persoonsnamen"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0012","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"},"sdo:description":{"@language":"en","@value":"On july 10th 1941 Radio De Brandaris began transmitting alongside Radio Orange. The broadcasts of Radio De Brandaris were meant for Dutch allied seafarers and other ships from Holland. In the beginning of november 1942 Radio de Brandaris became part of Radio Orange."},"sdo:encodingFormat":"audio/wav","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/mark/1.0/"},"sdo:name":{"@language":"nl","@value":"Radio de Brandaris op SoundCloud"},"sdo:usageInfo":{"@id":"https://developers.soundcloud.com/docs/api/guide"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0013","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Persoonsnamen"},"sdo:description":{"@language":"nl","@value":"Persoonsnamenas uit de GTAA. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Persoonsnamen"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0025","@type":"sdo:Dataset","sdo:description":{"@language":"nl","@value":"Open Beelden items die ook op Europeana Sounds zijn gepubliceerd."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0010"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"https://creativecommons.org/licenses/by-sa/3.0/"},"sdo:mainEntityOfPage":{"@id":"https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"},"sdo:name":{"@language":"nl","@value":"Open Beelden op Europeana Sounds"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"100","sdo:temporalCoverage":"1921/1974"},{"@id":"https://www.muziekweb.nl/","@type":"sdo:Organization","sdo:name":{"@language":"nl","@value":"Muziekweb"},"sdo:sameAs":{"@id":"http://www.wikidata.org/entity/Q18088607"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0028","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"Genres en programmasoorten: deze termen geven een typering of aanduiding van de productie als geheel, ze verwijzen naar de vorm, het genre of het type programma (bijvoorbeeld: 'korte film', 'lifestyleprogramma', 'hoorspel', 'politieserie'). Elk genre, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Genres"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001","@type":"sdo:DataCatalog","sdo:dataset":[{"@id":"http://data.beeldengeluid.nl/id/dataset/0028"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0003"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0026"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0007"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0013"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0006"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0005"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0002"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0025"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0001"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0024"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0010"}],"sdo:description":{"@language":"nl","@value":"Alle open data beschikbaar gesteld door het Nederlands Instituut voor Beeld en Geluid."},"sdo:name":{"@language":"nl","@value":"Open Data van Beeld en Geluid"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0010","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://www.openbeelden.nl/users/europeanasounds"},"sdo:description":{"@language":"nl","@value":"Selectie van Open Beelden videos die op Europeana Sounds te zien zijn."},"sdo:encodingFormat":"text/html","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/mark/1.0/"},"sdo:name":{"@language":"nl","@value":"Europeana Sounds op Open Beelden"},"sdo:usageInfo":{"@id":"https://www.openbeelden.nl/api/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0002","@type":"sdo:Dataset","sdo:creator":{"@id":"https://www.beeldengeluid.nl"},"sdo:description":{"@language":"nl","@value":"Een verzameling van videomateriaal dat Beeld en Geluid onder een Creative Commons licentie vrijgeeft, of reeds in het Publiek Domein valt. De beeldengeluid dataset op Open Beelden bevat meer dan 7000 videos. Het bestaat uit Polygoon journaals en andere films uit de 20ste eeuw. De videos beslaan een breed scala van Nederlandse (nieuws) onderwerpen, zoals kunst, cultuur, transport, gezondheid, onderwijs, natuur, politiek, sport, huisdieren, mode en curiosa. De metadata zijn beschikbaar in het Nederlands en Engels. Open Beelden bevat ook datasets van andere leveranciers en ook content (remixes) toegevoegd door gebruikers. Toegang tot het materiaal op Open Beelden wordt verleend onder het creative Commons licentiemodel. De Beeld en Geluid dataset op Open Beelden is harvestable via de Open Beelden OAI-PMH data provider. De dataset is ook beschikbaar via de europeana API."},"sdo:distribution":[{"@id":"http://data.beeldengeluid.nl/id/datadownload/0022"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0003"}],"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:keywords":"Video; Open","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://www.openbeelden.nl/users/beeldengeluid"},"sdo:name":{"@language":"nl","@value":"Open Beelden"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"7092","sdo:temporalCoverage":"1912/2018"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0015","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Onderwerpen"},"sdo:description":{"@language":"nl","@value":"Onderwerpen uit de GTAA. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Onderwerpen"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0001","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://cat.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"Bevraag de Beeld en Geluid media catalogus in schema.org formaat in SPARQL."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:name":{"@language":"nl","@value":"Beeld en Geluid Catalogus als Open Data"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0028","@type":"sdo:Dataset","sdo:creator":{"@id":"https://www.beeldengeluid.nl"},"sdo:description":{"@language":"nl","@value":"Original concert and studio recordings made by public broadcasters. Integral recordings across many genres."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0034"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:keywords":"music, recording","sdo:license":{"@id":"http://rightsstatements.org/vocab/UND/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://zoeken.beeldengeluid.nl/series/urn:vme:default:series:2101608030025711131"},"sdo:name":{"@language":"nl","@value":"Muziekopnamen Zendgemachtigden"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"78781","sdo:temporalCoverage":"1900/2022"},{"@id":"http://data.beeldengeluid.nl/id/dataset/0024","@type":"sdo:Dataset","sdo:description":{"@language":"nl","@value":"Politiek, cultuur en sport, kortom alle facetten van het leven komen aan bod aan de tafel van Frits Barend en Henk van Dorp, immer bijgestaan door oud-voetballer en columnist Jan Mulder. Naast Jan Mulder zijn schrijver Boudewijn Büch en politiek verslaggever Frits Wester vaste gasten; ze schuiven regelmatig aan de tafel aan. Aanvankelijk wordt het programma in een café/restaurant in Eemnes opgenomen. Later verhuizen de opnamen naar Gooiland en sinds 2002 komen de uitzendingen vanaf het Media Park. In een gezellige sfeer, met nootjes op tafel. Spraakmakende gasten, emotionele onderwerpen en opvallende uitspraken maken dat je Barend & Van Dorp gezien moet hebben. In totaal worden er 960 afleveringen gemaakt. In 2008 dragen Frits Barend en Henk van Dorp alle afleveringen van de talkshow over aan Beeld en Geluid."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0023"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"http://rightsstatements.org/vocab/InC/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://wiki.beeldengeluid.nl/index.php/Barend_%26_Van_Dorp_(praatprogramma)"},"sdo:name":{"@language":"nl","@value":"Barend & van Dorp"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"910","sdo:temporalCoverage":"2002/2006"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0017","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:GeografischeNamen"},"sdo:description":{"@language":"nl","@value":"As met geografische namen in de GTAA. Elke geografische naam, inclusief labels en notes, is een SKOS Concept en is gegroepeerd in een ConceptScheme."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Geografische namen"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0025","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql"},"sdo:description":{"@language":"nl","@value":"Bevraag Muziekweb via SPARQL."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/by/"},"sdo:name":{"@language":"nl","@value":"Muziekweb als linked data"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0003","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=beeldengeluid&metadataPrefix=oai_oi"},"sdo:description":{"@language":"en","@value":"Creative Commons licensed audiovisual heritage from the Netherlands Institute for Sound and Vision"},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:name":{"@language":"nl","@value":"Beeld en Geluid op Open Beelden"},"sdo:usageInfo":{"@id":"https://www.openbeelden.nl/api/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0006","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"},"sdo:description":{"@language":"en","@value":"The collection of Broadcasts from Radio Herrijzend Nederland (Radio 'The Netherlands Revived') contains a selection of the radio broadcasts that were transmitted between 1944 and 1946. They were broadcasted by the military authorities from Eindhoven after its liberation in September 1944, to encourage and inform the people of the still occupied north of the Netherlands. After the liberation it continued to broadcast untill January 1946."},"sdo:encodingFormat":"audio/wav","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/mark/1.0/"},"sdo:name":{"@language":"nl","@value":"Radio Herrijzend Nederland op Soundcloud"},"sdo:usageInfo":{"@id":"https://developers.soundcloud.com/docs/api/guide"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0021","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://bit.ly/2sbJT6q"},"sdo:description":{"@language":"nl","@value":"De set films van de Filmdienst de NSB staat klaar voor laagdrempelig hergebruik op Open Beelden."},"sdo:encodingFormat":"video/mp4","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:name":{"@language":"nl","@value":"Films van de Filmdienst der NSB"},"sdo:usageInfo":{"@id":"https://www.openbeelden.nl/api/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0007","@type":"sdo:Dataset","sdo:description":{"@language":"en","@value":"The collection of broadcasts from Radio Herrijzend Nederland (Radio \"The Netherlands Revived\") contains a selection of the radio broadcasts that were transmitted between 1944 and 1946. They were broadcasted by the military authorities from Eindhoven after its liberation in September 1944, to encourage and inform the people of the still occupied north of the Netherlands. After the liberation it continued to broadcast untill January 1946. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0006"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:keywords":"Audio, Radio broadcasts, WWII","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"},"sdo:name":{"@language":"nl","@value":"Radio Herrijzend Nederland"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"79","sdo:temporalCoverage":"1944/1946"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0020","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://commons.wikimedia.org/wiki/Category:Films_by_Filmdienst_der_NSB"},"sdo:description":{"@language":"nl","@value":"Deze categorie bevat materiaal dat is geproduceerd door de NSB, de Nationaal-Socialistische Beweging. Deze video's kunnen daardoor onjuiste, eenzijdige en politiek extreme ideeën bevatten."},"sdo:encodingFormat":"video/webm","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:name":{"@language":"nl","@value":"Category:Films by Filmdienst der NSB"},"sdo:usageInfo":{"@id":"https://www.mediawiki.org/wiki/API:Tutorial"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0018","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Classificatie"},"sdo:description":{"@language":"nl","@value":"Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Classificatie"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0030","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Namen"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0005","@type":"sdo:Dataset","sdo:description":{"@language":"en","@value":"The collection Radio De Brandaris contains radio broadcasts that were transmitted between 1944 and 1946 by Radio de Brandaris. The broadcasts of Radio De Brandaris were meant for Dutch allied seafarers and other ships from Holland. On July 10th, 1941 Radio De Brandaris began transmitting alongside Radio Oranje. In the beginning of november 1942 Radio de Brandaris became part of Radio Oranje. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API. "},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0012"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:keywords":"Audio, Radio broadcasts, WWII","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:mainEntityOfPage":{"@id":"https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"},"sdo:name":{"@language":"nl","@value":"Radio de Brandaris"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"14","sdo:temporalCoverage":"1941/1942"},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0027","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/sparql"},"sdo:description":{"@language":"nl","@value":"Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen."},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Classificatie"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0034","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://cat.apis.beeldengeluid.nl/sparql?query=PREFIX%20sdo%3A%20%3Chttps%3A//schema.org/%3E%20SELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%20WHERE%20%7B%3Fseries%20sdo%3Aname%20%22Muziekopnamen%20Zendgemachtigden%20%28MOZ%29%22%5E%5Exsd%3Astring%20.%20%3FprogramUri%20sdo%3ApartOfSeason/sdo%3ApartOfSeries%20%3Fseries%20%3B%20sdo%3Aname%20%3FprogramName%20.%20%7D"},"sdo:description":{"@language":"en","@value":"Selection from the Sound & Vision open data catalog that is registered under the series Music recordings broadcasting agents (MOZ)"},"sdo:encodingFormat":"application/sparql-query","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/zero/1.0/"},"sdo:name":{"@language":"nl","@value":"Muziekopnamen Zendgemachtigden"},"sdo:usageInfo":{"@id":"https://www.w3.org/TR/rdf-sparql-query/"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0008","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://commons.wikimedia.org/wiki/Category:Radio_broadcasts_by_Radio_Herrijzend_Nederland"},"sdo:description":{"@language":"nl","@value":"Radio uitzendingen Radio Herrijzend Nederland van Beeld en Geluid op Wikimedia Commons."},"sdo:encodingFormat":"audio/wav","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://creativecommons.org/publicdomain/mark/1.0/"},"sdo:name":{"@language":"nl","@value":"Radio uitzendingen Radio Herrijzend Nederland van Beeld en Geluid op Wikimedia Commons"},"sdo:usageInfo":{"@id":"https://www.mediawiki.org/wiki/API:Tutorial"}},{"@id":"https://natuurbeelden.openbeelden.nl/","@type":"sdo:Organization","sdo:name":{"@language":"nl","@value":"Stichting Natuurbeelden"}},{"@id":"http://www.wikidata.org/entity/Q94482770","@type":"sdo:Organization","sdo:name":{"@language":"nl","@value":"Filmdienst der NSB"},"sdo:sameAs":{"@id":"https://wiki.beeldengeluid.nl/index.php/Filmdienst_der_NSB"}},{"@id":"http://data.beeldengeluid.nl/id/datadownload/0014","@type":"sdo:DataDownload","sdo:contentUrl":{"@id":"https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Namen"},"sdo:description":{"@language":"nl","@value":"As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept."},"sdo:encodingFormat":"text/xml","sdo:inLanguage":"nl-NL","sdo:license":{"@id":"https://opendatacommons.org/licenses/odbl/"},"sdo:name":{"@language":"nl","@value":"GTAA Namen"},"sdo:usageInfo":{"@id":"http://www.openarchives.org/OAI/openarchivesprotocol.html"}},{"@id":"http://data.beeldengeluid.nl/id/dataset/0026","@type":"sdo:Dataset","sdo:creator":{"@id":"https://www.muziekweb.nl/"},"sdo:description":{"@language":"nl","@value":"Muziekweb is de muziekbibliotheek van Nederland. Ons doel is om muziek en de informatie over muziek voor iedereen laagdrempelig aan te bieden. Muziekweb heeft sinds 1961 een collectie opgebouwd van 600.000 cd’s, 300.000 lp’s en 30.000 muziek-dvd’s (dat is samen goed voor zo'n zeven miljoen tracks!). De site is een bron van informatie over muziek die de afgelopen vijftig jaar in Nederland is uitgebracht, en een ideale plek om meer muziek te leren kennen. Deze dataset beschikt over de laatste linked data versie van het muziekweb. Hier vind je een linked data view waarin alle albums van het muziekweb zijn weergegeven."},"sdo:distribution":{"@id":"http://data.beeldengeluid.nl/id/datadownload/0025"},"sdo:inLanguage":"nl-NL","sdo:includedInDataCatalog":{"@id":"http://data.beeldengeluid.nl/id/datacatalog/0001"},"sdo:license":{"@id":"https://opendatacommons.org/licenses/by/"},"sdo:mainEntityOfPage":{"@id":"https://data.muziekweb.nl/"},"sdo:name":{"@language":"nl","@value":"Muziekweb"},"sdo:publisher":{"@id":"https://www.beeldengeluid.nl"},"sdo:size":"930000"}]}
+{
+  "@context": {
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001",
+      "@type": "sdo:DataCatalog",
+      "sdo:dataset": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0025"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
+        }
+      ],
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Alle open data beschikbaar gesteld door het Nederlands Instituut voor Beeld en Geluid."
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Open Data van Beeld en Geluid"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0001",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Bevraag de Beeld en Geluid media catalogus in schema.org formaat in SPARQL."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid Catalogus als Open Data"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0003",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=beeldengeluid&metadataPrefix=oai_oi"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "Creative Commons licensed audiovisual heritage from the Netherlands Institute for Sound and Vision"
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid op Open Beelden"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0004",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=stichting_natuurbeelden&metadataPrefix=oai_oi"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "www.natuurbeelden.nl"
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Natuurbeelden op Open Beelden"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0006",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "The collection of Broadcasts from Radio Herrijzend Nederland (Radio 'The Netherlands Revived') contains a selection of the radio broadcasts that were transmitted between 1944 and 1946. They were broadcasted by the military authorities from Eindhoven after its liberation in September 1944, to encourage and inform the people of the still occupied north of the Netherlands. After the liberation it continued to broadcast untill January 1946."
+      },
+      "sdo:encodingFormat": "audio/wav",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio Herrijzend Nederland op Soundcloud"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0009",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "The collection of Broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation."
+      },
+      "sdo:encodingFormat": "audio/wav",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio Oranje op SoundCloud"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0010",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://www.openbeelden.nl/users/europeanasounds"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selectie van Open Beelden videos die op Europeana Sounds te zien zijn."
+      },
+      "sdo:encodingFormat": "text/html",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Europeana Sounds op Open Beelden"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0012",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "On july 10th 1941 Radio De Brandaris began transmitting alongside Radio Orange. The broadcasts of Radio De Brandaris were meant for Dutch allied seafarers and other ships from Holland. In the beginning of november 1942 Radio de Brandaris became part of Radio Orange."
+      },
+      "sdo:encodingFormat": "audio/wav",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio de Brandaris op SoundCloud"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0013",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Persoonsnamen"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Persoonsnamenas uit de GTAA. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Persoonsnamen"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0014",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Namen"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Namen"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0015",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Onderwerpen"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Onderwerpen uit de GTAA. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Onderwerpen"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0016",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Genre"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Genre informatie uit de GTAA. Elk genre, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Genres"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0017",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:GeografischeNamen"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As met geografische namen in de GTAA. Elke geografische naam, inclusief labels en notes, is een SKOS Concept en is gegroepeerd in een ConceptScheme."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Geografische namen"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0018",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:Classificatie"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Classificatie"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0019",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:OnderwerpenBenG"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As voor onderwerpstermen die slechts voor shots/clips/geluiden worden toegepast. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "text/xml",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA OnderwerpenBenG"
+      },
+      "sdo:usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0020",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://commons.wikimedia.org/wiki/Category:Films_by_Filmdienst_der_NSB"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Deze categorie bevat materiaal dat is geproduceerd door de NSB, de Nationaal-Socialistische Beweging. Deze video's kunnen daardoor onjuiste, eenzijdige en politiek extreme ideeën bevatten."
+      },
+      "sdo:encodingFormat": "video/webm",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Category:Films by Filmdienst der NSB"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.mediawiki.org/wiki/API:Tutorial"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0021",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://bit.ly/2sbJT6q"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "De set films van de Filmdienst de NSB staat klaar voor laagdrempelig hergebruik op Open Beelden."
+      },
+      "sdo:encodingFormat": "video/mp4",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Films van de Filmdienst der NSB"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0022",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://euscreen.eu/series.html?id=EUS_A7EA1AAE8B1ACA16BA27220CCD8ECB9A&activeItem=EUS_001C5F5FD42207F46FBCFEF30EE80D94"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Open Beelden is een open mediaplatform dat toegang biedt tot audiovisuele collecties die eenvoudig hergebruikt kunnen worden."
+      },
+      "sdo:encodingFormat": "text/html",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Open Beelden op EUScreen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://euscreen.eu/about.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0023",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://euscreen.eu/series.html?id=EUS_513F04B47411BCDD8C80532EE577FAC4&activeItem=EUS_003399A7DB2D2A6B14313EF963DE4421"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Actuele dagelijkse talkshow van Frits Barend en Henk van Dorp. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen."
+      },
+      "sdo:encodingFormat": "text/html",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Barend & van Dorp op EUScreen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://euscreen.eu/about.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0025",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Bevraag Muziekweb via SPARQL."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/by/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekweb als linked data"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0026",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Persoonsnamenas uit de GTAA. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Persoonsnamen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0027",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Classificatie"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0028",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Genres en programmasoorten: deze termen geven een typering of aanduiding van de productie als geheel, ze verwijzen naar de vorm, het genre of het type programma (bijvoorbeeld: 'korte film', 'lifestyleprogramma', 'hoorspel', 'politieserie'). Elk genre, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Genres"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0029",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As met geografische namen in de GTAA. Bevat namen van steden, gemeenten, provincies, snelwegen, landen, enz. Elke geografische naam, inclusief labels en notes, is een SKOS Concept en is gegroepeerd in een ConceptScheme."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Geografische namen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0030",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Namen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0031",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Onderwerpen of wel begrippen (bijv. 'zwemmen', 'daklozen', 'binnenvaartschepen', 'audiovisuele archieven'). Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Onderwerpen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0032",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://gtaa.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "As voor onderwerpstermen, bevat naast de begrippen uit de as Onderwerpen toegevoegde concepten voor specifiek beeld (shots en stockshots) en geluid. Voorbeelden: 'dorpsbeelden', 'blaffen', 'begroetingen', 'gapen', enz. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA OnderwerpenBenG"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0034",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql?query=PREFIX%20sdo%3A%20%3Chttps%3A//schema.org/%3E%20SELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%20WHERE%20%7B%3Fseries%20sdo%3Aname%20%22Muziekopnamen%20Zendgemachtigden%20%28MOZ%29%22%5E%5Exsd%3Astring%20.%20%3FprogramUri%20sdo%3ApartOfSeason/sdo%3ApartOfSeries%20%3Fseries%20%3B%20sdo%3Aname%20%3FprogramName%20.%20%7D"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "Selection from the Sound & Vision open data catalog that is registered under the series Music recordings broadcasting agents (MOZ)"
+      },
+      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekopnamen Zendgemachtigden"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0001",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:description": {
+        "@language": "en",
+        "@value": "Metadata for the catalogue objects from the Netherlands Institute for Sound and Vision."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0001"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://www.beeldengeluid.nl/collectie"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid catalogus"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "2126454",
+      "sdo:temporalCoverage": "1877/2023"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0002",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Een verzameling van videomateriaal dat Beeld en Geluid onder een Creative Commons licentie vrijgeeft, of reeds in het Publiek Domein valt. De beeldengeluid dataset op Open Beelden bevat meer dan 7000 videos. Het bestaat uit Polygoon journaals en andere films uit de 20ste eeuw. De videos beslaan een breed scala van Nederlandse (nieuws) onderwerpen, zoals kunst, cultuur, transport, gezondheid, onderwijs, natuur, politiek, sport, huisdieren, mode en curiosa. De metadata zijn beschikbaar in het Nederlands en Engels. Open Beelden bevat ook datasets van andere leveranciers en ook content (remixes) toegevoegd door gebruikers. Toegang tot het materiaal op Open Beelden wordt verleend onder het creative Commons licentiemodel. De Beeld en Geluid dataset op Open Beelden is harvestable via de Open Beelden OAI-PMH data provider. De dataset is ook beschikbaar via de europeana API."
+      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0022"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
+        }
+      ],
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "Video; Open",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://www.openbeelden.nl/users/beeldengeluid"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Open Beelden"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "7092",
+      "sdo:temporalCoverage": "1912/2018"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0003",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://natuurbeelden.openbeelden.nl/"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Een verzameling van ruwe videoregistraties van Nederlandse flora en fauna onder een Creative Commons licentie, afkomstig van Stichting Natuurbeelden. "
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0004"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://natuurbeelden.openbeelden.nl/media"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Natuurbeelden"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "2371",
+      "sdo:temporalCoverage": "1999/2020"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0005",
+      "@type": "sdo:Dataset",
+      "sdo:description": {
+        "@language": "en",
+        "@value": "The collection Radio De Brandaris contains radio broadcasts that were transmitted between 1944 and 1946 by Radio de Brandaris. The broadcasts of Radio De Brandaris were meant for Dutch allied seafarers and other ships from Holland. On July 10th, 1941 Radio De Brandaris began transmitting alongside Radio Oranje. In the beginning of november 1942 Radio de Brandaris became part of Radio Oranje. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API. "
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0012"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "Audio, Radio broadcasts, WWII",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio de Brandaris"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "14",
+      "sdo:temporalCoverage": "1941/1942"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0006",
+      "@type": "sdo:Dataset",
+      "sdo:description": {
+        "@language": "en",
+        "@value": "The collection of broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0009"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "Audio, Radio broadcasts, WWII",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio Oranje"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "76",
+      "sdo:temporalCoverage": "1940/1945"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0007",
+      "@type": "sdo:Dataset",
+      "sdo:description": {
+        "@language": "en",
+        "@value": "The collection of broadcasts from Radio Herrijzend Nederland (Radio \"The Netherlands Revived\") contains a selection of the radio broadcasts that were transmitted between 1944 and 1946. They were broadcasted by the military authorities from Eindhoven after its liberation in September 1944, to encourage and inform the people of the still occupied north of the Netherlands. After the liberation it continued to broadcast untill January 1946. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "Audio, Radio broadcasts, WWII",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Radio Herrijzend Nederland"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "79",
+      "sdo:temporalCoverage": "1944/1946"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0010",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Het Nederlands Instituut voor Beeld en Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus."
+      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0014"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0028"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0018"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
+        }
+      ],
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "http://opendatacommons.org/licenses/odbl/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://labs.beeldengeluid.nl/datasets/gtaa"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA (Gemeenschappelijke Thesaurus Audiovisuele Archieven)"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "434290"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0013",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "http://www.wikidata.org/entity/Q94482770"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Het relatief nieuwe medium film was van groot belang in de propagandamachine van de NSB. Dit wordt duidelijk aan de hand van de NSB-filmcollectie die Beeld en Geluid in samenwerking met het Netwerk Oorlogsbronnen online beschikbaar stelt binnen het project WO2 Open Data Depot."
+      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0020"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0021"
+        }
+      ],
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://www.beeldengeluid.nl/kennis/blog/propagandafilms-van-de-filmdienst-der-nsb-open-beschikbaar"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "NSB propagandafilms"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:temporalCoverage": "1941/1944"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0024",
+      "@type": "sdo:Dataset",
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Politiek, cultuur en sport, kortom alle facetten van het leven komen aan bod aan de tafel van Frits Barend en Henk van Dorp, immer bijgestaan door oud-voetballer en columnist Jan Mulder. Naast Jan Mulder zijn schrijver Boudewijn Büch en politiek verslaggever Frits Wester vaste gasten; ze schuiven regelmatig aan de tafel aan. Aanvankelijk wordt het programma in een café/restaurant in Eemnes opgenomen. Later verhuizen de opnamen naar Gooiland en sinds 2002 komen de uitzendingen vanaf het Media Park. In een gezellige sfeer, met nootjes op tafel. Spraakmakende gasten, emotionele onderwerpen en opvallende uitspraken maken dat je Barend & Van Dorp gezien moet hebben. In totaal worden er 960 afleveringen gemaakt. In 2008 dragen Frits Barend en Henk van Dorp alle afleveringen van de talkshow over aan Beeld en Geluid."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0023"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://wiki.beeldengeluid.nl/index.php/Barend_%26_Van_Dorp_(praatprogramma)"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Barend & van Dorp"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "910",
+      "sdo:temporalCoverage": "2002/2006"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0025",
+      "@type": "sdo:Dataset",
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Open Beelden items die ook op Europeana Sounds zijn gepubliceerd."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0010"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Open Beelden op Europeana Sounds"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "100",
+      "sdo:temporalCoverage": "1921/1974"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0026",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://www.muziekweb.nl/"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Muziekweb is de muziekbibliotheek van Nederland. Ons doel is om muziek en de informatie over muziek voor iedereen laagdrempelig aan te bieden. Muziekweb heeft sinds 1961 een collectie opgebouwd van 600.000 cd’s, 300.000 lp’s en 30.000 muziek-dvd’s (dat is samen goed voor zo'n zeven miljoen tracks!). De site is een bron van informatie over muziek die de afgelopen vijftig jaar in Nederland is uitgebracht, en een ideale plek om meer muziek te leren kennen. Deze dataset beschikt over de laatste linked data versie van het muziekweb. Hier vind je een linked data view waarin alle albums van het muziekweb zijn weergegeven."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0025"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/by/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://data.muziekweb.nl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekweb"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "930000"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0028",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Original concert and studio recordings made by public broadcasters. Integral recordings across many genres."
+      },
+      "sdo:distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0034"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "music, recording",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://zoeken.beeldengeluid.nl/series/urn:vme:default:series:2101608030025711131"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekopnamen Zendgemachtigden"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "79156",
+      "sdo:temporalCoverage": "1900/2023"
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q94482770",
+      "@type": "sdo:Organization",
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Filmdienst der NSB"
+      },
+      "sdo:sameAs": {
+        "@id": "https://wiki.beeldengeluid.nl/index.php/Filmdienst_der_NSB"
+      }
+    },
+    {
+      "@id": "https://natuurbeelden.openbeelden.nl/",
+      "@type": "sdo:Organization",
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Stichting Natuurbeelden"
+      }
+    },
+    {
+      "@id": "https://www.beeldengeluid.nl",
+      "@type": "sdo:Organization",
+      "sdo:alternateName": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Nederlands Instituut voor Beeld en Geluid"
+      },
+      "sdo:sameAs": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1131877"
+        },
+        {
+          "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
+        },
+        {
+          "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
+        },
+        {
+          "@id": "http://www.openbeelden.nl/users/beeldengeluid"
+        },
+        {
+          "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
+        },
+        {
+          "@id": "https://grid.ac/institutes/grid.425952.d"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.muziekweb.nl/",
+      "@type": "sdo:Organization",
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekweb"
+      },
+      "sdo:sameAs": {
+        "@id": "http://www.wikidata.org/entity/Q18088607"
+      }
+    }
+  ]
+}

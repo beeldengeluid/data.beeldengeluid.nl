@@ -8,24 +8,6 @@ export default [
     to: 'index',
   },
   {
-    icon: icons.lab,
-    title: 'labs',
-    to: 'labs',
-    color: classColors.lab,
-  },
-  {
-    icon: icons.project,
-    title: 'projects',
-    to: 'projects',
-    color: classColors.project,
-  },
-  {
-    icon: icons.topic,
-    title: 'topics',
-    to: 'topics',
-    color: classColors.topic,
-  },
-  {
     icon: icons.dataset,
     title: 'datasets',
     to: 'datasets',
@@ -38,16 +20,10 @@ export default [
     color: classColors.api,
   },
   {
-    icon: icons.blog,
-    title: 'blogs',
-    to: 'blogs',
-    color: classColors.blog,
-  },
-  {
-    icon: icons.archive,
-    title: 'archive',
-    to: 'archive',
-    color: classColors.archive,
+    icon: icons.showcase,
+    title: 'showcases',
+    to: 'showcases',
+    color: classColors.showcase,
   },
   {
     icon: icons.about,

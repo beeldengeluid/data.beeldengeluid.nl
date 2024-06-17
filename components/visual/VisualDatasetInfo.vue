@@ -81,13 +81,17 @@ const color = classColors.dataset
 const imageSrc = !props.dataset.image
   ? img(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`).src
   : props.dataset.image.includes('/uploads/')
-  ? props.dataset.image
-  : img(`~/assets/images/${props.dataset.image}?size=300`).src
+    ? props.dataset.image
+    : img(`~/assets/images/${props.dataset.image}?size=300`).src
 const imageSrcset = !props.dataset.image
-  ? generateSrcset(img, '/images/placeholders/placeholder-blog.jpg', [300, 600])
+  ? generateSrcset(
+      img,
+      '/images/placeholders/placeholder-showcase.jpg',
+      [300, 600]
+    )
   : props.dataset.image.includes('/uploads/')
-  ? props.dataset.image
-  : generateSrcset(img, `/images/${props.dataset.image}`, [300, 600])
+    ? props.dataset.image
+    : generateSrcset(img, `/images/${props.dataset.image}`, [300, 600])
 const stats = computed(() => [
   ...(props.dataset.publisher?.name || props.dataset.creator?.name
     ? [

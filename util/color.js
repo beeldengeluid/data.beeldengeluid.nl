@@ -1,4 +1,4 @@
-import colors from 'vuetify/lib/util/colors'
+import colors from 'vuetify/util/colors'
 
 export const hexToRGB = (hex) => {
   const bigint = parseInt(hex.startsWith('#') ? hex.slice(1) : hex, 16)

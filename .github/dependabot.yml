@@ -1,18 +1,22 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: '/'
-  schedule:
-    interval: daily
-  commit-message:
-    prefix: fix
-    prefix-development: chore
-    include: scope
-  ignore:
-  # Nuxt has it's own update mechanism:
-  # https://github.com/nuxt/nuxt/blob/7b35a1fe4faed49fffe3427a0db4aabae138f4ae/docs/3.api/5.commands/upgrade.md
-    - dependency-name: "nuxt"
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "weekly"
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+    allow:
+      - dependency-type: direct
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-patch']
+      # Nuxt has it's own update mechanism:
+      # https://github.com/nuxt/nuxt/blob/7b35a1fe4faed49fffe3427a0db4aabae138f4ae/docs/3.api/5.commands/upgrade.md
+      - dependency-name: 'nuxt'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'

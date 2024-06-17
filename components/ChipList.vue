@@ -6,7 +6,7 @@
       class="ma-2 color-chip text-white"
       :color="color"
       label
-      large
+      size="large"
       link
       :to="localePath('/' + path + '/' + chip.slug)"
       :style="{
@@ -52,8 +52,8 @@ const getImageSrc = (chipImage) => {
   return !chipImage
     ? ''
     : chipImage.includes('/uploads/')
-    ? chipImage
-    : img(`/images/${chipImage}`, { width: 200 })
+      ? chipImage
+      : img(`/images/${chipImage}`, { width: 200 })
 }
 </script>
 

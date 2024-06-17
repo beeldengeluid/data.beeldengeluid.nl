@@ -8,62 +8,35 @@
         </v-col>
       </v-row>
 
-      <!-- Labs -->
-      <v-row class="justify-center light-background my-3 pb-3">
-        <v-col class="limit-width px-3 py-4 mb-2">
-          <SectionHeading
-            :title="$t('labs')"
-            :description="$t('labs_description')"
-            data-class="lab"
-            :action-path="'labs'"
-            :action-title="$t('all_labs')"
-          />
-
-          <CardGrid
-            :cards="labs"
-            path="labs-slug"
-            data-class="lab"
-            row-class="justify-center justify-md-start px-5"
-          />
-        </v-col>
-      </v-row>
-
-      <!-- Projects -->
-      <v-row class="justify-center light-background my-3 pb-3">
-        <v-col class="limit-width px-3 py-4 mb-2">
-          <SectionHeading
-            :title="$t('projects')"
-            :description="$t('projects_description')"
-            data-class="project"
-            :action-path="'projects'"
-            :action-title="$t('all_projects')"
-          />
-
-          <CardGrid
-            :cards="projects"
-            path="projects-slug"
-            data-class="project"
-            row-class="justify-center justify-md-start px-5"
-          />
-        </v-col>
-      </v-row>
-
-      <!-- Blogs -->
+      <!-- Showcases -->
       <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
           <SectionHeading
-            :title="$t('blogs')"
-            :description="$t('blogs_description')"
-            data-class="blog"
-            :action-path="'blogs'"
-            :action-title="$t('all_blogs')"
+            :title="$t('showcases')"
+            :description="$t('showcases_description')"
+            data-class="showcase"
+            :action-path="'showcases'"
+            :action-title="$t('all_showcases')"
           />
           <CardGrid
-            :cards="blogs"
-            path="blogs-slug"
-            data-class="blog"
-            row-class="justify-center justify-md-start px-5"
+            :cards="showcases"
+            path="showcases-slug"
+            data-class="showcase"
           />
+        </v-col>
+      </v-row>
+
+      <!-- APIs -->
+      <v-row class="justify-center light-background pb-3">
+        <v-col class="limit-width px-3 py-3 mb-2">
+          <SectionHeading
+            :title="$t('apis')"
+            :description="$t('apis_description')"
+            data-class="api"
+            :action-path="'apis'"
+            :action-title="$t('all_apis')"
+          />
+          <CardGrid :cards="apis" path="apis-slug" data-class="api" />
         </v-col>
       </v-row>
 
@@ -132,68 +105,45 @@ const { data: aboutPage } = await useAsyncData(async () => {
   return queryContent(aboutPathLocalized.value).findOne()
 })
 
-// blogs
-const blogsPath = 'blogs'
+// showcases
+const showcasesPath = 'showcases'
 // get localizedpath
-const { data: blogsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${blogsPath}`)
+const { data: showcasesPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${showcasesPath}`)
     .find()
     .catch(() => {
       // ignore 404s
     })
   const locale =
     content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${blogsPath}`
+  return `${locale}/${showcasesPath}`
 })
 // get localized content
-const { data: blogs } = await useAsyncData(async () => {
-  return queryContent(blogsPathLocalized.value)
+const { data: showcases } = await useAsyncData(async () => {
+  return queryContent(showcasesPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .limit(4)
     .find()
 })
 
-// labs
-const labsPath = 'labs'
-// get localized path
-const { data: labsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${labsPath}`)
+// apis
+const apisPath = 'apis'
+// get localizedpath
+const { data: apisPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${apisPath}`)
     .find()
     .catch(() => {
       // ignore 404s
     })
   const locale =
     content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${labsPath}`
+  return `${locale}/${apisPath}`
 })
-const { data: labs } = await useAsyncData(async () => {
-  return queryContent(labsPathLocalized.value)
+// get localized content
+const { data: apis } = await useAsyncData(async () => {
+  return queryContent(apisPathLocalized.value)
     .where({ hidden: { $ne: true } })
-    .sort({ sortOrder: 1 })
-    .sort({ startDate: 1 })
-    .sort({ createdAt: 1 })
-    .limit(4)
-    .find()
-})
-
-// projects
-const projectsPath = 'projects'
-const { data: projectsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${projectsPath}`)
-    .find()
-    .catch(() => {
-      // ignore 404s
-    })
-  const locale =
-    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${projectsPath}`
-})
-const { data: projects } = await useAsyncData(async () => {
-  return queryContent(projectsPathLocalized.value)
-    .where({ hidden: { $ne: true } })
-    .sort({ sortOrder: 1 })
-    .sort({ startDate: 1 })
     .sort({ createdAt: 1 })
     .limit(4)
     .find()
