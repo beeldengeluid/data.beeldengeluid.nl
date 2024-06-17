@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribution of films over locations",
+  "description": "Distribution of films over locations. Note: locations are not yet standardised, so a location is counted separately for each different way of writing its name",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Location": "the netherlands","Number of films": 1356},
+      {"Location": "amsterdam","Number of films": 316},
+      {"Location": "france","Number of films": 202},
+      {"Location": "indonesia","Number of films": 154},
+      {"Location": "dutch east indies","Number of films": 144},
+      {"Location": "switzerland","Number of films": 141},
+      {"Location": "germany","Number of films": 136},
+      {"Location": "italy","Number of films": 132},
+      {"Location": "rotterdam","Number of films": 119},
+      {"Location": "china","Number of films": 107}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Location","type": "nominal","title": "Location", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Number of films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  
