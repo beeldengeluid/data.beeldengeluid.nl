@@ -1,6 +1,6 @@
 {   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Distribution of films over program genres",
-  "description": "Distribution of films over program genres (excluding the genre 'amateur recording')",
+  "title": "Top ten program genres",
+  "description": "Distribution of films over the top ten program genres (excluding the genre 'amateur recording')",
   "width": 500,
   "height": 400,
   "data": {

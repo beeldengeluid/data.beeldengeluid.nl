@@ -1,6 +1,6 @@
 {   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Distribution of films over locations",
-  "description": "Distribution of films over locations. Note: locations are not yet standardised, so a location is counted separately for each different way of writing its name",
+  "title": "Top ten locations",
+  "description": "Distribution of films over the top ten locations. Note: locations are not yet standardised, so a location is counted separately for each different way of writing its name",
   "width": 500,
   "height": 400,
   "data": {
