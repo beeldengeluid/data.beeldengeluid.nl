@@ -3,7 +3,7 @@
     "width": 500,
     "height": 600,
     "title": "Aantal concerten per locatie",
-    "description": "Aantal concerten per locatie. NB: Alleen locaties die zijn gemapt naar Wikidata zijn meegenomen",
+    "description": "Aantal concerten per locatie. NB: Alleen locaties gemapt naar Wikidata worden meegenomen",
     "layer": [
       {
         "mark": {
@@ -13,7 +13,7 @@
           "strokeWidth": 0.4
         },
         "data": {
-          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/resources/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
+          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/nl/dashboards/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
           "format": {"type": "json", "property": "features"}
           },
         "encoding": {
@@ -22,7 +22,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/resources/muziekopnamen-zendgemachtigden/location_counts.json",
+          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/nl/dashboards/muziekopnamen-zendgemachtigden/location_counts.json",
         "format": {"type": "json"}
         },
         "transform": [
@@ -45,7 +45,7 @@
             "latitude": {"field": "Latitude"},
             "longitude": {"field": "Longitude"},
             "tooltip": [
-        {"field": "Location", "type": "nominal"},
+        {"field": "Locatie", "type": "nominal"},
         {"field": "Counts", "type": "quantitative", "title":"# Concerten"}
       ],
             "size": {

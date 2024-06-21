@@ -3,7 +3,7 @@
     "width": 500,
     "height": 600,
     "title": "Number of concerts per location",
-    "description": "Number of concerts per location. Note: Only locations mapped to Wikidata are included, and only on a concert level (no locations for clips within concerts)",
+    "description": "Number of concerts per location. Note: Only locations mapped to Wikidata are included",
     "layer": [
       {
         "mark": {
