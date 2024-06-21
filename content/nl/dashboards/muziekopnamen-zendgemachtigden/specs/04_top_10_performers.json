@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "De top tien uitvoerenden, gebaseerd op aantal concerten",
+  "description": "De top tien uitvoerenden, gebaseerd op aantal concerten",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Performer": "various artists","Number of concerts": 2757},
+      {"Performer": "Metropole Orkest","Number of concerts": 2680},
+      {"Performer": "Radio Kamerorkest","Number of concerts": 2515},
+      {"Performer": "Groot Omroepkoor","Number of concerts": 2283},
+      {"Performer": "Concertgebouworkest","Number of concerts": 2045},
+      {"Performer": "Omroeporkest","Number of concerts": 1698},
+      {"Performer": "Promenade Orkest","Number of concerts": 1631},
+      {"Performer": "Dolf van der Linden","Number of concerts": 1017},
+      {"Performer": "unknown","Number of concerts": 897},
+      {"Performer": "Residentie Orkest","Number of concerts": 788}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Performer","type": "nominal","title": "Uitvoerende", "sort": "-y"},
+    "y": {
+      "field": "Number of concerts",
+      "type": "quantitative",
+      "title": "Aantal concerten"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Aantal",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 600,
+    "title": "Aantal concerten per locatie",
+    "description": "Aantal concerten per locatie. NB: Alleen locaties die zijn gemapt naar Wikidata zijn meegenomen",
+    "layer": [
+      {
+        "mark": {
+          "type": "geoshape",
+          "fill": "#ddd",
+          "stroke": "#fff",
+          "strokeWidth": 0.4
+        },
+        "data": {
+          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/resources/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
+          "format": {"type": "json", "property": "features"}
+          },
+        "encoding": {
+          "tooltip": {"field": "properties.statnaam"}
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/beeldengeluid/data.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/resources/muziekopnamen-zendgemachtigden/location_counts.json",
+        "format": {"type": "json"}
+        },
+        "transform": [
+          {
+            "filter": {
+              "and": [
+                {"field": "Latitude", "range": [50, 54]},
+                {"field": "Longitude", "range": [3, 7.5]}
+                ]
+              }
+          }
+        ],
+        "mark": {
+          "type":"circle",
+          "fill": "#0F238C",
+          "stroke": "#fff",
+          "strokeWidth": 0.4
+        },
+        "encoding": {
+            "latitude": {"field": "Latitude"},
+            "longitude": {"field": "Longitude"},
+            "tooltip": [
+        {"field": "Location", "type": "nominal"},
+        {"field": "Counts", "type": "quantitative", "title":"# Concerten"}
+      ],
+            "size": {
+              "field": "Counts",
+              "type": "quantitative",
+              "scale": {"rangeMax": 5000},
+              "legend": null
+            }        
+        }
+      }
+    ]
+  }
