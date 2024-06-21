@@ -1,37 +1,41 @@
-{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "De top tien makers, gebaseerd op aantal concerten",
   "description": "De top tien makers, gebaseerd op aantal concerten",
   "width": 500,
   "height": 400,
   "data": {
     "values": [
-      {"Creator": "Wolfgang Amadeus Mozart","Number of concerts": 3466},
-      {"Creator": "Ludwig van Beethoven","Number of concerts": 2797},
-      {"Creator": "Johann Sebastian Bach","Number of concerts": 2765},
-      {"Creator": "Johannes Brahms","Number of concerts": 2200},
-      {"Creator": "Franz Schubert","Number of concerts": 1998},
-      {"Creator": "Joseph Haydn","Number of concerts": 1719},
-      {"Creator": "Claude Debussy","Number of concerts": 1472},
-      {"Creator": "Robert Schumann","Number of concerts": 1446},
-      {"Creator": "Igor Stravinsky","Number of concerts": 1409},
-      {"Creator": "Maurice Ravel","Number of concerts": 1390}
+      { "Creator": "Wolfgang Amadeus Mozart", "Number of concerts": 3466 },
+      { "Creator": "Ludwig van Beethoven", "Number of concerts": 2797 },
+      { "Creator": "Johann Sebastian Bach", "Number of concerts": 2765 },
+      { "Creator": "Johannes Brahms", "Number of concerts": 2200 },
+      { "Creator": "Franz Schubert", "Number of concerts": 1998 },
+      { "Creator": "Joseph Haydn", "Number of concerts": 1719 },
+      { "Creator": "Claude Debussy", "Number of concerts": 1472 },
+      { "Creator": "Robert Schumann", "Number of concerts": 1446 },
+      { "Creator": "Igor Stravinsky", "Number of concerts": 1409 },
+      { "Creator": "Maurice Ravel", "Number of concerts": 1390 }
     ]
   },
-  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "mark": { "type": "bar", "binSpacing": 1, "tooltip": true },
   "encoding": {
-    "x": {"field": "Creator","type": "nominal","title": "Maker", "sort": "-y"},
+    "x": {
+      "field": "Creator",
+      "type": "nominal",
+      "title": "Maker",
+      "sort": "-y"
+    },
     "y": {
       "field": "Number of concerts",
       "type": "quantitative",
       "title": "Aantal concerten"
     },
-    "color": {"value": "#0F238C"}
+    "color": { "value": "#0F238C" }
   },
   "config": {
     "countTitle": "Aantal",
-    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
-    "axisY": {"titleColor":"grey", "labelColor":"grey"
-    }
+    "axisX": { "labelAngle": -40, "titleColor": "grey", "labelColor": "grey" },
+    "axisY": { "titleColor": "grey", "labelColor": "grey" }
   }
 }
-  

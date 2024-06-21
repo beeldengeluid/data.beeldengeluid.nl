@@ -87,13 +87,6 @@ const { data: datasetContentPage } = await useAsyncData(async () => {
 // get localized path to dashboard
 const dashboardsPath = 'dashboards'
 const { data: localizedDashboardPath } = await useAsyncData(async () => {
-  const content = await queryContent(
-    `${i18n.locale.value}/${dashboardsPath}/${slug.value}`
-  )
-    .find()
-    .catch(() => {})
-  const locale =
-    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
   return `${i18n.locale.value}/${dashboardsPath}/${slug.value}`
 })
 const { data: dashboardPage } = await useAsyncData(async () => {
@@ -107,7 +100,9 @@ const { data: dashboardPage } = await useAsyncData(async () => {
 
 // note: nuxt-content adds some content metadata prefixed by '_'
 const { data: dashboardSpecs } = await useAsyncData(async () => {
-  return queryContent(`${i18n.locale.value}/${dashboardsPath}/${slug.value}/specs`)
+  return queryContent(
+    `${i18n.locale.value}/${dashboardsPath}/${slug.value}/specs`
+  )
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })

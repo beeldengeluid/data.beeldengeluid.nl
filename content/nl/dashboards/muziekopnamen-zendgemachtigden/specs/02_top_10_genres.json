@@ -1,37 +1,44 @@
-{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Distributie concerten over muziekgenres",
   "description": "Distributie concerten over muziekgenres",
   "width": 500,
   "height": 400,
   "data": {
     "values": [
-      {"Genre": "classical music","Number of concerts": 40156},
-      {"Genre": "light music","Number of concerts": 13325},
-      {"Genre": "instrumental - orchestra","Number of concerts": 13247},
-      {"Genre": "instrumental - 1 instrument","Number of concerts": 5762},
-      {"Genre": "band of group that sings","Number of concerts": 4876},
-      {"Genre": "religious music","Number of concerts": 4687},
-      {"Genre": "jazz","Number of concerts": 3942},
-      {"Genre": "theatre music","Number of concerts": 3805},
-      {"Genre": "vocal - solo singer with accompaniment","Number of concerts": 3024},
-      {"Genre": "spoken text","Number of concerts": 2918}
+      { "Genre": "classical music", "Number of concerts": 40156 },
+      { "Genre": "light music", "Number of concerts": 13325 },
+      { "Genre": "instrumental - orchestra", "Number of concerts": 13247 },
+      { "Genre": "instrumental - 1 instrument", "Number of concerts": 5762 },
+      { "Genre": "band of group that sings", "Number of concerts": 4876 },
+      { "Genre": "religious music", "Number of concerts": 4687 },
+      { "Genre": "jazz", "Number of concerts": 3942 },
+      { "Genre": "theatre music", "Number of concerts": 3805 },
+      {
+        "Genre": "vocal - solo singer with accompaniment",
+        "Number of concerts": 3024
+      },
+      { "Genre": "spoken text", "Number of concerts": 2918 }
     ]
   },
-  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "mark": { "type": "bar", "binSpacing": 1, "tooltip": true },
   "encoding": {
-    "x": {"field": "Genre","type": "nominal","title": "Muziekgenre", "sort": "-y"},
+    "x": {
+      "field": "Genre",
+      "type": "nominal",
+      "title": "Muziekgenre",
+      "sort": "-y"
+    },
     "y": {
       "field": "Number of concerts",
       "type": "quantitative",
       "title": "Aantal concerten"
     },
-    "color": {"value": "#0F238C"}
+    "color": { "value": "#0F238C" }
   },
   "config": {
     "countTitle": "Aantal",
-    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
-    "axisY": {"titleColor":"grey", "labelColor":"grey"
-    }
+    "axisX": { "labelAngle": -40, "titleColor": "grey", "labelColor": "grey" },
+    "axisY": { "titleColor": "grey", "labelColor": "grey" }
   }
 }
-  
