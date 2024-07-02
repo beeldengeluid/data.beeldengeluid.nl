@@ -14,7 +14,7 @@ De digitale collecties en metadata van Beeld & Geluid zijn beschikbaar als linke
 
 ## Over Beeld & Geluid
 
-![Sound & Vision](/uploads/images/B&G_logo_RGB_liggend_RL.png)
+![Sound & Vision](/uploads/images/BG_logo_RGB_liggend_RL.png)
 
 [Beeld & Geluid](https://www.beeldengeluid.nl) is het toonaangevende instituut voor media. Een inspirerende, creatieve en toegankelijke ontmoetingsplek voor professionals en particulieren; online, in ons museum en soms op locatie. We zijn een van de grootste archieven ter wereld en we bewaren diverse soorten media, zoals radio- en televisieprogramma’s, video(games), geschreven pers, politieke prenten, gifjes, websites en objecten. Beeld & Geluid is één van de autoriteiten die objectief het Nederlandse medialandschap in kaart brengt en actuele ontwikkelingen belicht vanuit media-historisch perspectief. Zo laten we zien welke impact media hebben op ieders leven.
 
