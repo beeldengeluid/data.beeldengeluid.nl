@@ -38,6 +38,9 @@
               v-if="datasetPage.showDashboard"
               :dataset="dataset"
               :page="dashboardPage[0]"
+              :projects="projects"
+              :blogs="blogs"
+              :dashboard-specs="dashboardSpecs"
               :showcases="showcases"
             />
           </v-window>
@@ -84,18 +87,22 @@ const { data: datasetContentPage } = await useAsyncData(async () => {
 // get localized path to dashboard
 const dashboardsPath = 'dashboards'
 const { data: localizedDashboardPath } = await useAsyncData(async () => {
-  const content = await queryContent(
-    `${i18n.locale.value}/${dashboardsPath}/${slug.value}`
-  )
-    .find()
-    .catch(() => {})
-  const locale =
-    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
-  return `${locale}/${dashboardsPath}/${slug.value}`
+  return `${i18n.locale.value}/${dashboardsPath}/${slug.value}`
 })
 const { data: dashboardPage } = await useAsyncData(async () => {
   return queryContent(localizedDashboardPath.value)
     .where({ hidden: { $ne: true } })
+    .find()
+    .catch(() => {
+      // throw createError({ statusCode: 404, message: 'Page not found' })
+    })
+})
+
+// note: nuxt-content adds some content metadata prefixed by '_'
+const { data: dashboardSpecs } = await useAsyncData(async () => {
+  return queryContent(
+    `${i18n.locale.value}/${dashboardsPath}/${slug.value}/specs`
+  )
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
