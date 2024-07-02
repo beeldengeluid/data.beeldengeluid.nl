@@ -18,6 +18,10 @@
         </v-col>
       </v-row>
 
+      <div v-for="(spec, index) in dashboardSpecs" :key="index">
+        <VegaView :spec="spec" :vegachart-id="'vegachart' + index" />
+      </div>
+
       <!-- Description -->
       <ContentRenderer :value="page" />
 
@@ -30,13 +34,17 @@
     </section>
   </v-window-item>
 </template>
+
 <script setup>
 const i18n = useI18n()
 
-defineProps({
+const props = defineProps({
+  projects: { type: Array, required: false, default: () => [] },
+  blogs: { type: Array, required: false, default: () => [] },
   showcases: { type: Array, required: false, default: () => [] },
   page: { type: Object, required: false, default: null },
   dataset: { type: Object, required: true, default: null },
+  dashboardSpecs: { type: Object, required: true, default: () => ({}) },
 })
 
 // reactive data

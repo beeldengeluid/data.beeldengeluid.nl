@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "dataset-dashboard-refresher"
+version = "0.1.0"
+description = "Query endpoints to actualize data that is shown in the dashboards"
+authors = ["Sara Veldhoen <sveldhoen@beeldengeluid.nl>",  "Mari Wigham <mwigham@beeldengeluid.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+pandas = "^2.1.4"
+
+[tool.mypy]
+python_version = "3.10"
