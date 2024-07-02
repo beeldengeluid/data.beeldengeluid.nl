@@ -14,7 +14,7 @@ The digital collections and metadata of Sound & Vision are available as linked d
 
 ## What about Sound & Vision?
 
-![Sound & Vision](/uploads/images/B&G_logo_RGB_liggend_RL.png)
+![Sound & Vision](/uploads/images/BG_logo_RGB_liggend_RL.png)
 
 [Sound & Vision](https://www.beeldengeluid.nl/en) is the leading institute for media in the Netherlands and one of the largest audio visual archives in the world. It is an inspiring, creative and welcoming meeting place for professionals and others interested in the industry; online, in our physical museum and sometimes on location. We preserve and provide access to different types of media, including radio and television programmes, video games, written print media, political cartoons, GIFs, websites and historical objects. Sound & Vision is one of the leading authorities when it comes to providing insight into the Dutch media landscape and interpreting current developments from the perspective of media history. We do this with the aim of showing how media impacts everyday life.
 
