@@ -59,6 +59,7 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts',
     locales: ['en', 'nl'],
     defaultLocale: 'en',
+    restructureDir: 'i18n', // prepare for nuxtjs/i18n v9 and Nuxt 4
   },
   app: {
     head: {
