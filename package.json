@@ -20,7 +20,7 @@
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/i18n": "^8.5.1",
-    "@types/node": "^20.14.2",
+    "@types/node": "^22.5.4",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-nuxt": "^4.0.0",
