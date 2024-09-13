@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top tien seriesgenres",
+  "description": "Distributie van films over de top tien seriesgenres (exclusief het genre 'amateuropname')",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Genre": "familefilm","Number of films": 701},
+      {"Genre": "reisverslag","Number of films": 486},
+      {"Genre": "reportage","Number of films": 276},
+      {"Genre": "documentaire","Number of films": 221},
+      {"Genre": "speelfilm","Number of films": 47},
+      {"Genre": "animatie","Number of films": 41},
+      {"Genre": "compilatie","Number of films": 33},
+      {"Genre": "nieuws","Number of films": 27},
+      {"Genre": "bedrijfsfilm","Number of films": 21},
+      {"Genre": "korte film","Number of films": 21}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Genre","type": "nominal","title": "Seriesgenre", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Aantal films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

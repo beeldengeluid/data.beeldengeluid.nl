@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top ten subjects",
+  "description": "Distribution of films over the top ten subjects (excluding the subject 'amateur recording')",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Subject": "holiday","Number of films": 431},
+      {"Subject": "children","Number of films": 421},
+      {"Subject": "beaches","Number of films": 325},
+      {"Subject": "playing","Number of films": 260},
+      {"Subject": "street scenes","Number of films": 255},
+      {"Subject": "ships","Number of films": 204},
+      {"Subject": "harbours","Number of films": 198},
+      {"Subject": "mountains","Number of films": 191},
+      {"Subject": "marriages","Number of films": 186},
+      {"Subject": "markets","Number of films": 173}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Subject","type": "nominal","title": "Subject", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Number of films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  
