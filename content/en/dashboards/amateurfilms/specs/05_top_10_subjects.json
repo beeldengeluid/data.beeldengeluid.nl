@@ -5,16 +5,16 @@
   "height": 400,
   "data": {
     "values": [
-      {"Subject": "holiday","Number of films": 431},
-      {"Subject": "children","Number of films": 421},
-      {"Subject": "beaches","Number of films": 325},
-      {"Subject": "playing","Number of films": 260},
-      {"Subject": "street scenes","Number of films": 255},
-      {"Subject": "ships","Number of films": 204},
-      {"Subject": "harbours","Number of films": 198},
-      {"Subject": "mountains","Number of films": 191},
-      {"Subject": "marriages","Number of films": 186},
-      {"Subject": "markets","Number of films": 173}
+      {"Subject": "holiday","Number of films": 444},
+      {"Subject": "children","Number of films": 437},
+      {"Subject": "beaches","Number of films": 344},
+      {"Subject": "street scenes","Number of films": 265},
+      {"Subject": "playing","Number of films": 262},
+      {"Subject": "ships","Number of films": 207},
+      {"Subject": "harbours","Number of films": 204},
+      {"Subject": "mountains","Number of films": 196},
+      {"Subject": "tourism","Number of films": 194},
+      {"Subject": "weddings","Number of films": 190}
     ]
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},

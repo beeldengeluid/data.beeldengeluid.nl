@@ -5,16 +5,16 @@
   "height": 400,
   "data": {
     "values": [
-      {"Genre": "family film","Number of films": 482},
-      {"Genre": "reportage","Number of films": 305},
-      {"Genre": "travelogue","Number of films": 286},
-      {"Genre": "feature film","Number of films": 96},
-      {"Genre": "documentary","Number of films": 59},
-      {"Genre": "animation","Number of films": 54},
-      {"Genre": "short film","Number of films": 43},
+      {"Genre": "family film","Number of films": 505},
+      {"Genre": "reportage","Number of films": 312},
+      {"Genre": "travelogue","Number of films": 288},
+      {"Genre": "feature film","Number of films": 115},
+      {"Genre": "animation","Number of films": 70},
+      {"Genre": "documentary","Number of films": 61},
+      {"Genre": "short film","Number of films": 48},
+      {"Genre": "genre film","Number of films": 28},
       {"Genre": "corporate film","Number of films": 27},
-      {"Genre": "genre film","Number of films": 26},
-      {"Genre": "news","Number of films": 19}
+      {"Genre": "cartoon","Number of films": 20}
     ]
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},

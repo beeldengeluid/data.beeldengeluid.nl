@@ -1,6 +1,6 @@
 {   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Selected film formats",
-  "description": "Number of films per film format (for selected formats)",
+  "title": "Geselecteerde filmformaten",
+  "description": "Aantal film per filmformaat (voor geselecteerde formaten)",
   "width": 500,
   "height": 400,
   "data": {
@@ -14,16 +14,16 @@
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
   "encoding": {
-    "x": {"field": "Film format","type": "nominal","title": "Film format", "sort": "-y"},
+    "x": {"field": "Film format","type": "nominal","title": "Filmformat", "sort": "-y"},
     "y": {
       "field": "Number of films",
       "type": "quantitative",
-      "title": "Number of films"
+      "title": "Aantal films"
     },
     "color": {"value": "#0F238C"}
   },
   "config": {
-    "countTitle": "Count",
+    "countTitle": "Aantal",
     "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
     "axisY": {"titleColor":"grey", "labelColor":"grey"
     }

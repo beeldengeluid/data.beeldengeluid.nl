@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top tien onderwerpen",
+  "description": "Distributie van films over de top tien onderwerpen (exclusief het onderwerp 'amateuropname')",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Subject": "vakantie","Number of films": 444},
+      {"Subject": "kinderen","Number of films": 437},
+      {"Subject": "stranden","Number of films": 344},
+      {"Subject": "straatbeelden","Number of films": 265},
+      {"Subject": "spelen","Number of films": 262},
+      {"Subject": "schepen","Number of films": 207},
+      {"Subject": "havens","Number of films": 204},
+      {"Subject": "bergen","Number of films": 196},
+      {"Subject": "toerisme","Number of films": 194},
+      {"Subject": "huwelijken","Number of films": 190}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Subject","type": "nominal","title": "Onderwerp", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Aantal films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Aantal",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

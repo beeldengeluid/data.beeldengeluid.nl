@@ -5,16 +5,16 @@
   "height": 400,
   "data": {
     "values": [
-      {"Organisation": "St Nicholas","Number of films": 90},
-      {"Organisation": "Christmas","Number of films": 67},
-      {"Organisation": "Second world war","Number of films": 67},
-      {"Organisation": "Royal family","Number of films": 63},
-      {"Organisation": "Black Pete","Number of films": 38},
-      {"Organisation": "Artis","Number of films": 31},
+      {"Organisation": "Subject Nicholas","Number of films": 94},
+      {"Organisation": "Christmas","Number of films": 70},
+      {"Organisation": "Second world war","Number of films": 69},
+      {"Organisation": "Royal family","Number of films": 65},
+      {"Organisation": "Black Pete","Number of films": 42},
+      {"Organisation": "Artis","Number of films": 33},
+      {"Organisation": "Efteling","Number of films": 28},
       {"Organisation": "Premier League","Number of films": 28},
-      {"Organisation": "Madurodam","Number of films": 26},
-      {"Organisation": "Efteling","Number of films": 25},
-      {"Organisation": "Carnival","Number of films": 24}
+      {"Organisation": "Madurodam","Number of films": 27},
+      {"Organisation": "Carnival","Number of films": 25}
     ]
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},

@@ -5,16 +5,16 @@
   "height": 400,
   "data": {
     "values": [
-      {"Genre": "familiefilm","Number of films": 482},
-      {"Genre": "reportage","Number of films": 305},
-      {"Genre": "reisverslag","Number of films": 286},
-      {"Genre": "speelfilm","Number of films": 96},
-      {"Genre": "documentaire","Number of films": 59},
-      {"Genre": "animatie","Number of films": 54},
-      {"Genre": "korte film","Number of films": 43},
+      {"Genre": "familiefilm","Number of films": 505},
+      {"Genre": "reportage","Number of films": 312},
+      {"Genre": "reisverslag","Number of films": 288},
+      {"Genre": "speelfilm","Number of films": 115},
+      {"Genre": "animatie","Number of films": 70},
+      {"Genre": "documentaire","Number of films": 61},
+      {"Genre": "korte film","Number of films": 48},
+      {"Genre": "genrefilm","Number of films": 28},
       {"Genre": "bedrijfsfilm","Number of films": 27},
-      {"Genre": "genrefilm","Number of films": 26},
-      {"Genre": "nieuws","Number of films": 19}
+      {"Genre": "tekenfilm","Number of films": 20}
     ]
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
@@ -28,7 +28,7 @@
     "color": {"value": "#0F238C"}
   },
   "config": {
-    "countTitle": "Count",
+    "countTitle": "Aantal",
     "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
     "axisY": {"titleColor":"grey", "labelColor":"grey"
     }

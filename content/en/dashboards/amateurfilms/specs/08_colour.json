@@ -5,9 +5,9 @@
   "height": 400,
   "data": {
     "values": [
-      {"Colour": "colour", "Number of films": 1975, "color":"#05c8f0"},
-      {"Colour": "black-and-white", "Number of films": 2072, "color":"#0F238C"},
-      {"Colour": "black-and-white and colour", "Number of films": 264, "color":"#ff00bc"}
+      {"Colour": "black-and-white", "Number of films": 2207, "color":"#0F238C"},
+      {"Colour": "colour", "Number of films": 2106, "color":"#05c8f0"},
+      {"Colour": "black-and-white and colour", "Number of films": 275, "color":"#ff00bc"}
     ]
   },
   "mark": {"type":"arc", "tooltip": true},

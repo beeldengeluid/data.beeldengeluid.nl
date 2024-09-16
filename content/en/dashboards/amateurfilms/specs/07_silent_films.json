@@ -5,8 +5,8 @@
   "height": 400,
   "data": {
     "values": [
-      {"Silent": "silent", "Number of films": 840, "color":"#0F238C"},
-      {"Silent": "sound", "Number of films": 67, "color":"#05c8f0"}
+      {"Silent": "silent", "Number of films": 3814, "color":"#0F238C"},
+      {"Silent": "sound", "Number of films": 899, "color":"#05c8f0"}
     ]
   },
   "mark": {"type":"arc", "tooltip": true},

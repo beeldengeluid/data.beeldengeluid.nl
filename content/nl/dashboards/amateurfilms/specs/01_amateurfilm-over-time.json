@@ -1,6 +1,6 @@
 {   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Number of films in the Amateurfilm collection per year",
-  "description": "Number of films per year",
+  "title": "Aantal films in de Amateurfilm collectie per jaar",
+  "description": "Aantal films per jaar",
   "width": 500,
   "height": 400,
   "data": {
@@ -125,16 +125,16 @@
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
   "encoding": {
-    "x": {"field": "Year","type": "temporal","title": "Year","timeUnit":"year"},
+    "x": {"field": "Year","type": "temporal","title": "Jaar","timeUnit":"year"},
     "y": {
       "field": "count",
       "type": "quantitative",
-      "title": "Number of films"
+      "title": "Aantal films"
     },
     "color": {"value": "#0F238C"}
   },
   "config": {
-    "countTitle": "Count",
+    "countTitle": "Aantal",
     "axisX": {"labelAngle": -40, "grid":false, "tickCount":{"interval":"year","step":1
     }, "titleColor":"grey", "labelColor":"grey"},
     "axisY": {"titleColor":"grey", "labelColor":"grey"

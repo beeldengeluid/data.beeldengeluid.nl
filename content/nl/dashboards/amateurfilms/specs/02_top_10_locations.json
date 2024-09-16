@@ -5,16 +5,16 @@
   "height": 400,
   "data": {
     "values": [
-      {"Location": "nederland","Number of films": 1356},
-      {"Location": "amsterdam","Number of films": 316},
-      {"Location": "frankrijk","Number of films": 202},
+      {"Location": "nederland","Number of films": 1507},
+      {"Location": "amsterdam","Number of films": 336},
+      {"Location": "frankrijk","Number of films": 207},
       {"Location": "indonesië","Number of films": 154},
-      {"Location": "nederlands-indië","Number of films": 144},
-      {"Location": "zwitserland","Number of films": 141},
-      {"Location": "duitsland","Number of films": 136},
-      {"Location": "italië","Number of films": 132},
-      {"Location": "rotterdam","Number of films": 119},
-      {"Location": "china","Number of films": 107}
+      {"Location": "nederlands-indië","Number of films": 150},
+      {"Location": "duitsland","Number of films": 148},
+      {"Location": "zwitserland","Number of films": 146},
+      {"Location": "italië","Number of films": 137},
+      {"Location": "rotterdam","Number of films": 124},
+      {"Location": "the hague","Number of films": 112}
     ]
   },
   "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
@@ -23,12 +23,12 @@
     "y": {
       "field": "Number of films",
       "type": "quantitative",
-      "title": "Number of films"
+      "title": "Aantal films"
     },
     "color": {"value": "#0F238C"}
   },
   "config": {
-    "countTitle": "Count",
+    "countTitle": "Aantal",
     "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
     "axisY": {"titleColor":"grey", "labelColor":"grey"
     }

@@ -28,7 +28,7 @@
     "color": {"value": "#0F238C"}
   },
   "config": {
-    "countTitle": "Count",
+    "countTitle": "Aantal",
     "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
     "axisY": {"titleColor":"grey", "labelColor":"grey"
     }
