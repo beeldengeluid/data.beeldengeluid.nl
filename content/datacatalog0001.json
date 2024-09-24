@@ -35,40 +35,40 @@
       "@type": "sdo:DataCatalog",
       "sdo:dataset": [
         {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+        },
+        {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0025"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0029"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
@@ -711,6 +711,7 @@
       "sdo:contentUrl": {
         "@id": "https://cat.apis.beeldengeluid.nl/sparql"
       },
+      "sdo:dateModified": "-",
       "sdo:description": {
         "@language": "nl",
         "@value": "Selection from the Sound & Vision open data catalog that is registered under the series Music recordings broadcasting agents (MOZ). This selection can be queried from the contentUrl using this query: PREFIX%20sdo%3A%20<https%3A%2F%2Fschema.org%2F>%0A%0ASELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%0AWHERE%0A%7B%0A%20%3FprogramUri%20sdo%3ApartOfSeason%2Fsdo%3ApartOfSeries%20<http%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fseries%2F2101608030025711131>%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20sdo%3Aname%20%3FprogramName%20.%20%0A%7D%20ORDER%20BY%20%3FprogramName"
@@ -736,7 +737,7 @@
       },
       "sdo:description": {
         "@language": "nl",
-        "@value": "Selection of amateur films from the Sound & Vision catalog This selection can be queried from the contentUrl using this query: PREFIX%20sdo%3A%20<https%3A%2F%2Fschema.org%2F>%0A%0ASELECT%20DISTINCT%20%3Fprogram_id%20%3Ftitle%0AWHERE%20%7B%0A%20%20GRAPH%20<http%3A%2F%2Fdata.rdlabs.beeldengeluid.nl%2Fcat%2F>%20%7B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%3Fprogram_id%20sdo%3ApartOfSeries%2Fsdo%3AadditionalType%20\"Bewegend%20beeld%20-%20Smalfilm\"%5E%5Esdo%3AText%20.%0A%20%20%20%20%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%3Fprogram_id%20sdo%3AadditionalType%20\"Bewegend%20beeld%20-%20Smalfilm\"%5E%5Esdo%3AText%20.%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%3Fprogram_id%20a%20sdo%3ACreativeWork%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fprogram_id%20sdo%3Aname%20%3Fprogram_title%0A%20%20%7D%0A%20%20BIND(STR(COALESCE(%3Fprogram_title%2C%20'Untitled'%5E%5Exsd%3Astring))%20AS%20%3Ftitle)%0A%7D"
+        "@value": "Selection of amateur films from the Sound & Vision catalog This selection can be queried from the contentUrl using this query (url encoding needed): PREFIX sdo: <https://schema.org/>"
       },
       "sdo:encodingFormat": "application/sparql-query",
       "sdo:name": {
@@ -745,6 +746,53 @@
       },
       "sdo:usageInfo": {
         "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0036",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "1.2G",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/gtaa/persons/nisv_thes_gtaa_person_skos20240829.nt"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Dump van Persoonsnamenas uit de GTAA in N-triples formaat. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "GTAA Persoonsnamen"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0037",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/amateurfilm/lod_exporter_amateurfilm_sdo_20240917_dedup.nt"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selectie van amateurfilms uit de Beeld & Geluid catalogus. De download locatie voor de data dump kan worden gevonden in de contentUrl property."
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Amateurfilms"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
       }
     },
     {
@@ -797,10 +845,10 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0022"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0022"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -813,10 +861,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://www.openbeelden.nl/users/beeldengeluid"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden"
+          "@id": "https://www.openbeelden.nl/users/beeldengeluid"
         }
       ],
       "sdo:name": {
@@ -851,10 +899,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/natuurbeelden"
+          "@id": "https://natuurbeelden.openbeelden.nl/media"
         },
         {
-          "@id": "https://natuurbeelden.openbeelden.nl/media"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/natuurbeelden"
         }
       ],
       "sdo:name": {
@@ -887,10 +935,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-de-brandaris"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
         },
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-de-brandaris"
         }
       ],
       "sdo:name": {
@@ -923,10 +971,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-oranje"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
         },
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-oranje"
         }
       ],
       "sdo:name": {
@@ -948,10 +996,10 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -964,10 +1012,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-herrijzend-nederland"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
         },
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-herrijzend-nederland"
         }
       ],
       "sdo:name": {
@@ -992,46 +1040,49 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0028"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0014"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0018"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0036"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -1043,10 +1094,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/datasets/gtaa"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/gtaa"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/gtaa"
+          "@id": "https://data.beeldengeluid.nl/datasets/gtaa"
         }
       ],
       "sdo:name": {
@@ -1070,10 +1121,10 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0021"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0020"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0020"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0021"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -1119,10 +1170,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://wiki.beeldengeluid.nl/index.php/Barend_%26_Van_Dorp_(praatprogramma)"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/barend-en-van-dorp"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/barend-en-van-dorp"
+          "@id": "https://wiki.beeldengeluid.nl/index.php/Barend_%26_Van_Dorp_(praatprogramma)"
         }
       ],
       "sdo:name": {
@@ -1154,10 +1205,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden-op-europeana-sounds"
+          "@id": "https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"
         },
         {
-          "@id": "https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden-op-europeana-sounds"
         }
       ],
       "sdo:name": {
@@ -1225,10 +1276,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://zoeken.beeldengeluid.nl/series/urn:vme:default:series:2101608030025711131"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/muziekopnamen-zendgemachtigden"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/muziekopnamen-zendgemachtigden"
+          "@id": "https://zoeken.beeldengeluid.nl/series/urn:vme:default:series:2101608030025711131"
         }
       ],
       "sdo:name": {
@@ -1251,9 +1302,14 @@
         "@language": "nl",
         "@value": "Samenvatting: De amateurfilmcollectie bevat films gemaakt vanaf de jaren 1910 tot nu. Het bevat familiefilms, reisfilms, fictiefilms en animatie. De films waren bedoeld voor vertoningen thuis of op de filmclubs in Nederland. Inmiddels zijn het geliefde onderwerpen voor historici en mediamakers."
       },
-      "sdo:distribution": {
-        "@id": "http://data.beeldengeluid.nl/id/datadownload/0035"
-      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0037"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0035"
+        }
+      ],
       "sdo:inLanguage": "nl-NL",
       "sdo:includedInDataCatalog": {
         "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
@@ -1304,19 +1360,19 @@
       },
       "sdo:sameAs": [
         {
-          "@id": "http://www.wikidata.org/entity/Q1131877"
-        },
-        {
-          "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
-        },
-        {
           "@id": "http://www.openbeelden.nl/users/beeldengeluid"
         },
         {
           "@id": "https://grid.ac/institutes/grid.425952.d"
         },
         {
+          "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
+        },
+        {
           "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q1131877"
         },
         {
           "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
