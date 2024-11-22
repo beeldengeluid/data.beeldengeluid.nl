@@ -60,7 +60,7 @@
               </div>
 
               <!-- Button -->
-              <v-btn :to="localePath('datasets')" color="primary">
+              <v-btn :to="$localePath('datasets')" color="primary">
                 {{ $t('all_datasets') }}
               </v-btn>
             </div>

@@ -8,7 +8,7 @@
     link
     :v-ripple="{ class: rippleClass }"
     :to="
-      localePath({
+      $localePath({
         name: path,
         params: { slug: card.slug },
       })

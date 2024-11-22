@@ -68,7 +68,7 @@
                 :value="aboutPage"
                 :excerpt="true"
               />
-              <v-btn color="primary" :to="localePath('about')">
+              <v-btn color="primary" :to="$localePath('about')">
                 {{ $t('read_more') }}
               </v-btn>
             </v-col>
