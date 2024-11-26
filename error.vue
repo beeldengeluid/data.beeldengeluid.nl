@@ -2,7 +2,7 @@
   <v-app>
     <h1>{{ error.statusCode }}</h1>
     <p>{{ error.message }}</p>
-    <NuxtLink :to="localePath('/')">Home page</NuxtLink>
+    <NuxtLink :to="$localePath('/')">Home page</NuxtLink>
   </v-app>
 </template>
 
