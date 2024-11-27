@@ -4,7 +4,7 @@ These are the sources for the B&G Data Website, including the content (md) and w
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v20.x.
+- [Node.js](https://nodejs.org/) v22.x.
 
 If you use [`nvm`](https://github.com/nvm-sh/nvm) to manage different Node versions, running `nvm use` will activate the required version through `.nvmrc`.
 
