@@ -2,9 +2,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
+import { includeIgnoreFile } from "@eslint/compat";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, ".gitignore");
 const compat = new FlatCompat({
     baseDirectory: __dirname,
     recommendedConfig: js.configs.recommended,
@@ -24,7 +26,7 @@ export default [
     "plugin:prettier/recommended",
 ), {
     languageOptions: {
-        ecmaVersion: "2022",
+        ecmaVersion: 2022,
         sourceType: "module",
     },
 

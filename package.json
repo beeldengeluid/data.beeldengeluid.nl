@@ -7,12 +7,13 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint:js": "eslint --ignore-path .gitignore .",
+    "lint:js": "eslint .",
     "lint": "npm run lint:js",
     "fetch:datacatalog": "node scripts/fetch-datacatalog.mjs",
     "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.3",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.15.0",
     "@mdi/font": "^7.4.47",
