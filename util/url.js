@@ -10,7 +10,7 @@ export const isUrl = (string) => {
 
   try {
     url = new URL(string)
-  } catch (_) {
+  } catch {
     return false
   }
 

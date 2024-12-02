@@ -25,6 +25,8 @@ export const isLinkArray = (value) => {
 export const filterUndefined = (article) => {
   return Object.entries(article).filter(
     ([, value]) =>
-      value !== undefined && value !== '' && value !== [] && value !== {}
+      value !== undefined &&
+      value.length > 0 &&
+      Object.getOwnPropertyNames(value).length > 0
   )
 }
