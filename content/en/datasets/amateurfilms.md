@@ -19,7 +19,7 @@ See [below for more details](#details) about this collection.
 Get to know the Amateurfilms dataset via:
 
 <ul>
-<!-- <li>- the <a href="https://mediasuite.clariah.nl/tool/single-search?queryId=xxx">Media Suite</a> (metadata available for everyone, audio/video available for users with an account)</li> -->
+<li>- the <a href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a> (metadata available for everyone, audio/video partially available for everyone, fully available for users with an account)</li>
 <li>- the <a href="https://cat.apis.beeldengeluid.nl/sparql#transientDatasources=https%3A%2F%2Fcat.apis.beeldengeluid.nl%2Fsparql&query=PREFIX%20sdo%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fprogram_id%20%3Ftitle%0AWHERE%20%7B%0A%20%20GRAPH%20%3Chttp%3A%2F%2Fdata.rdlabs.beeldengeluid.nl%2Fcat%2F%3E%20%7B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%3Fprogram_id%20sdo%3ApartOfSeries%2Fsdo%3AadditionalType%20%22Bewegend%20beeld%20-%20Smalfilm%22%5E%5Esdo%3AText%20.%0A%20%20%20%20%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%3Fprogram_id%20sdo%3AadditionalType%20%22Bewegend%20beeld%20-%20Smalfilm%22%5E%5Esdo%3AText%20.%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%3Fprogram_id%20a%20sdo%3ACreativeWork%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fprogram_id%20sdo%3Aname%20%3Fprogram_title%0A%20%20%7D%0A%20%20BIND(STR(COALESCE(%3Fprogram_title%2C%20'Untitled'%5E%5Exsd%3Astring))%20AS%20%3Ftitle)%0A%7D">SPARQL endpoint</a> (metadata)</li>
 <li>- the <a href="/apis/nisv-media-catalog#search">Search API</a> (metadata)</li>
 </ul>
