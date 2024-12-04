@@ -44,6 +44,6 @@ The collection contains a few thousand amateur films and also a number of videos
 
 This dataset is part of the dataset [Sound & Vision catalog Open Data](/nl/datasets/nisv-media-catalog).
 This collection has been made available as Linked Data, with support from [DC4EU](https://www.dc4eu.eu/) and [CLARIAH](https://clariah.nl/). 
-<!-- It can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=xxx">Media Suite</a> -->
+It can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a>
 
 Don't forget to take a look at the 'Facts' tab on this page.

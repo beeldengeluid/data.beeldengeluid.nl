@@ -43,6 +43,8 @@ De collectie amateurfilms van Beeld & Geluid laat een geschiedenis zien van het 
 
 De collectie bevat een paar duizend smalfilms en ook een aantal video’s. 
 
+Deze dataset is onderdeel van de dataset [Sound & Vision catalog Open Data](/nl/datasets/nisv-media-catalog).
 Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit [DC4EU](https://www.dc4eu.eu/) en [CLARIAH](https://clariah.nl/).
+De collectie kan ook bekeken worden in de <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a>
 
 Kijk ook eens naar het 'Facts' tab op deze pagina.
