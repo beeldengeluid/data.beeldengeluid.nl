@@ -5,7 +5,7 @@ subtitle: Familiefilms, reisfilms, fictiefilms en animatie
 color: ''
 image: /uploads/amateurfilms-1.jpg
 tags: []
-showDashboard: false
+showDashboard: true
 ---
 
 ### Samenvatting
