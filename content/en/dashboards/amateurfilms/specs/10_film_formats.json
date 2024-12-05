@@ -1,0 +1,32 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Selected film formats",
+  "description": "Number of films per film format (for selected formats)",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Film format": "8 mm","Number of films": 4256},
+      {"Film format": "16 mm","Number of films": 1466},
+      {"Film format": "9,5 mm","Number of films": 509},
+      {"Film format": "35 mm","Number of films":16},
+      {"Film format": "17,5 mm","Number of films": 13}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Film format","type": "nominal","title": "Film format", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Number of films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

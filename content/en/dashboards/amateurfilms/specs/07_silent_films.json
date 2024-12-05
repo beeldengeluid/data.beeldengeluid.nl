@@ -1,0 +1,28 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Proportion silent films",
+  "description": "Proportion of silent films and films with sound",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Silent": "silent", "Number of films": 3814, "color":"#0F238C"},
+      {"Silent": "sound", "Number of films": 899, "color":"#05c8f0"}
+    ]
+  },
+  "mark": {"type":"arc", "tooltip": true},
+  "encoding": {
+    "color": {"field": "Silent", "title":"Silent/sound", "type": "nominal", "scale": {"range": {"field": "color"}}},
+    "theta": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Number of films"
+    }
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

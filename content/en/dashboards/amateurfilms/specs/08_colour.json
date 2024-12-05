@@ -1,0 +1,29 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Proportion colour films",
+  "description": "Proportion of films in colour and films in black-and-white",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Colour": "black-and-white", "Number of films": 2207, "color":"#0F238C"},
+      {"Colour": "colour", "Number of films": 2106, "color":"#05c8f0"},
+      {"Colour": "black-and-white and colour", "Number of films": 275, "color":"#ff00bc"}
+    ]
+  },
+  "mark": {"type":"arc", "tooltip": true},
+  "encoding": {
+    "color": {"field": "Colour", "title":"Colour/black-and-white", "type": "nominal", "scale": {"range": {"field": "color"}}},
+    "theta": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Number of films"
+    }
+  },
+  "config": {
+    "countTitle": "Count",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

@@ -1,0 +1,32 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Geselecteerde dragertypes",
+  "description": "Aantal films per dragertype (voor geselecteerde dragertypes)",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Carrier type": "VHS","Number of films": 297},
+      {"Carrier type": "hi8","Number of films": 29},
+      {"Carrier type": "video8","Number of films": 10},
+      {"Carrier type": "Umatic","Number of films": 2},
+      {"Carrier type": "DVD","Number of films": 8}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Carrier type","type": "nominal","title": "Dragertype", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Aantal films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Aantal",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

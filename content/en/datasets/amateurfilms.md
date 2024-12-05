@@ -5,7 +5,7 @@ subtitle: Family films, travelogues, fiction films and animation
 color: ''
 image: /uploads/amateurfilms-1.jpg
 tags: []
-showDashboard: false
+showDashboard: true
 ---
 
 ### Summary

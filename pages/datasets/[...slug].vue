@@ -38,6 +38,9 @@
               v-if="datasetPage.showDashboard"
               :dataset="dataset"
               :page="dashboardPage[0]"
+              :projects="projects"
+              :blogs="blogs"
+              :dashboard-specs="dashboardSpecs"
               :showcases="showcases"
             />
           </v-window>
@@ -96,6 +99,15 @@ const { data: localizedDashboardPath } = await useAsyncData(async () => {
 const { data: dashboardPage } = await useAsyncData(async () => {
   return queryContent(localizedDashboardPath.value)
     .where({ hidden: { $ne: true } })
+    .find()
+    .catch(() => {
+      // throw createError({ statusCode: 404, message: 'Page not found' })
+    })
+})
+
+// note: nuxt-content adds some content metadata prefixed by '_'
+const { data: dashboardSpecs } = await useAsyncData(async () => {
+  return queryContent(`${i18n.locale.value}/dashboards/${slug.value}/specs`)
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })

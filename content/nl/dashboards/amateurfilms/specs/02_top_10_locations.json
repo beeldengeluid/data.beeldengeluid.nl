@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top ten locaties",
+  "description": "Distributie van films over de top tien locaties. NB: locaties zijn nog niet gestandardiseerd, dus een locatie wordt per schrijfwijze geteld",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Location": "nederland","Number of films": 1507},
+      {"Location": "amsterdam","Number of films": 336},
+      {"Location": "frankrijk","Number of films": 207},
+      {"Location": "indonesië","Number of films": 154},
+      {"Location": "nederlands-indië","Number of films": 150},
+      {"Location": "duitsland","Number of films": 148},
+      {"Location": "zwitserland","Number of films": 146},
+      {"Location": "italië","Number of films": 137},
+      {"Location": "rotterdam","Number of films": 124},
+      {"Location": "the hague","Number of films": 112}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Location","type": "nominal","title": "Locatie", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Aantal films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Aantal",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  

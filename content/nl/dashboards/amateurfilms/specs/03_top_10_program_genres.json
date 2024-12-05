@@ -1,0 +1,37 @@
+{   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top tien programmagenres",
+  "description": "Distributie van films over de top tien programmagenres (exclusief het genre 'amateuropname')",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "values": [
+      {"Genre": "familiefilm","Number of films": 505},
+      {"Genre": "reportage","Number of films": 312},
+      {"Genre": "reisverslag","Number of films": 288},
+      {"Genre": "speelfilm","Number of films": 115},
+      {"Genre": "animatie","Number of films": 70},
+      {"Genre": "documentaire","Number of films": 61},
+      {"Genre": "korte film","Number of films": 48},
+      {"Genre": "genrefilm","Number of films": 28},
+      {"Genre": "bedrijfsfilm","Number of films": 27},
+      {"Genre": "tekenfilm","Number of films": 20}
+    ]
+  },
+  "mark": {"type": "bar","binSpacing": 1, "tooltip": true},
+  "encoding": {
+    "x": {"field": "Genre","type": "nominal","title": "Programmagenre", "sort": "-y"},
+    "y": {
+      "field": "Number of films",
+      "type": "quantitative",
+      "title": "Aantal films"
+    },
+    "color": {"value": "#0F238C"}
+  },
+  "config": {
+    "countTitle": "Aantal",
+    "axisX": {"labelAngle": -40, "titleColor":"grey", "labelColor":"grey"},
+    "axisY": {"titleColor":"grey", "labelColor":"grey"
+    }
+  }
+}
+  
