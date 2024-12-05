@@ -57,7 +57,6 @@ function rectPack(circles, width, height) {
   b.next = a.previous = c
   c.next = b.previous = a
   // Attempt to place each remaining circle
-  // eslint-disable-next-line
   pack: for (let i = 3; i < n; ++i) {
     c = circles[i]
     place(a._, b._, c)
@@ -77,7 +76,6 @@ function rectPack(circles, width, height) {
           a.next = b
           b.previous = a
           --i
-          // eslint-disable-next-line
           continue pack
         }
         sj += j._.r
@@ -88,7 +86,6 @@ function rectPack(circles, width, height) {
           a.next = b
           b.previous = a
           --i
-          // eslint-disable-next-line
           continue pack
         }
         sk += k._.r
