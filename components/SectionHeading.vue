@@ -5,7 +5,7 @@
         <h1>
           <component
             :is="actionPath ? 'NuxtLink' : 'span'"
-            :to="localePath(actionPath)"
+            :to="$localePath(actionPath)"
             class="text-decoration-none text-grey-darken-4"
           >
             {{ title }}&nbsp;<span :class="`text-${color}`">/</span>
@@ -16,7 +16,7 @@
         <slot name="actions">
           <v-btn
             v-if="actionTitle && actionPath"
-            :to="localePath(actionPath)"
+            :to="$localePath(actionPath)"
             variant="plain"
           >
             {{ actionTitle }}

@@ -8,7 +8,7 @@
       label
       size="large"
       link
-      :to="localePath('/' + path + '/' + chip.slug)"
+      :to="$localePath('/' + path + '/' + chip.slug)"
       :style="{
         backgroundImage: getImageOverlayCSS(
           getImageSrc(chip.image),

@@ -49,7 +49,7 @@
         <v-btn
           color="primary"
           :to="
-            localePath({
+            $localePath({
               name: 'datasets-slug',
               params: { slug: dataset.slug },
             })

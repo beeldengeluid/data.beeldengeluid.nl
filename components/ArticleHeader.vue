@@ -9,7 +9,7 @@
       <section>
         <div class="d-flex justify-space-between align-center">
           <h3>
-            <NuxtLink class="category" :to="localePath(path)">
+            <NuxtLink class="category" :to="$localePath(path)">
               {{ $t(dataClass) }}
             </NuxtLink>
           </h3>
