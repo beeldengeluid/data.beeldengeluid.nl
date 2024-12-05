@@ -16,7 +16,7 @@ Zie [hieronder voor meer details](#details) over deze collectie.
 
 ### Toegang
 
-Leer de Amateurfilm Colectie kennen via:
+Leer de Amateurfilm Collectie kennen via:
 
 <ul>
 <li>- de <a href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a> (metadata beschikbaar voor iedereen, audio/video deels beschikbaar voor iedereen, volledig beschikbaar voor gebruikers met een account)</li>
