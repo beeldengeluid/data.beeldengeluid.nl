@@ -13,7 +13,7 @@
     "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.3",
+    "@eslint/compat": "^1.2.4",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.15.0",
     "@mdi/font": "^7.4.47",
@@ -31,11 +31,11 @@
     "eslint-plugin-vue": "^9.31.0",
     "eslint-plugin-vuetify": "^2.5.1",
     "nuxt": "^3.13.2",
-    "prettier": "3.4.1",
+    "prettier": "3.4.2",
     "sass": "^1.81.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vue-panzoom": "^1.1.6",
-    "vuetify": "^3.7.4"
+    "vuetify": "^3.7.5"
   },
   "engines": {
     "node": "22.x"
