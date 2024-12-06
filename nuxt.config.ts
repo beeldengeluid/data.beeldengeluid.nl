@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     inlineSSRStyles: false,
   },
   vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
     ssr: {
       noExternal: ['vuetify'],
     },

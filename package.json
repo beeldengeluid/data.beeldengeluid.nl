@@ -33,6 +33,7 @@
     "nuxt": "^3.13.2",
     "prettier": "3.4.1",
     "sass": "^1.81.0",
+    "sass-embedded": "^1.82.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vue-panzoom": "^1.1.6",
     "vuetify": "^3.7.4"
