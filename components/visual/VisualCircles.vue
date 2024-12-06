@@ -87,7 +87,7 @@ const layout = computed(() =>
 
 <style lang="scss">
 /*! purgecss start ignore */
-@import '~/assets/scss/vuetify/customizations';
+@use '~/assets/scss/vuetify/customizations';
 
 .circles {
   font-family: 'Assistant';
