@@ -33,7 +33,7 @@ De metadata (beschrijvende informatie) voor deze dataset is gepubliceerd met geb
 <ul>
 <li> - Bekijk deze dataset in het <a href="https://datasetregister.netwerkdigitaalerfgoed.nl/show.php?lang=nl&uri=http%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fdataset%2F0028">NDE dataregister</a></li>
 <li> - Ontdek enkele statistieken over deze dataset in deze <a href="https://colab.research.google.com/github/mwigham/linked_data_notebooks/blob/main/MOZ%20Linked%20Data%20visualisations.ipynb">interactieve notebook</a>
-<li> - Ontdek meer over de MOZ collectie in <a href="/nl/showcases//moz-dataset-blog">dit artikel</a></li>
+<li> - Ontdek meer over de MOZ collectie in <a href="/nl/showcases/moz-dataset-blog">dit artikel</a></li>
 </ul>
 <br>
 
