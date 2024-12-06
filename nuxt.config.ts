@@ -114,4 +114,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
+  future: {
+    compatibilityVersion: 4,
+  },
 })
