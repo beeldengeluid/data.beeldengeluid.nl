@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top tien namen",
+    "description": "Distributie van films over de top tien namen (exclusief 'namen' die een tijdsaanduiding representeren)",
+    "width": 500,
+    "height": 400,
+    "data": {
+        "values": [
+            {
+                "Organisation": "sinterklaas",
+                "Number of films": 94
+            },
+            {
+                "Organisation": "kerstmis",
+                "Number of films": 70
+            },
+            {
+                "Organisation": "tweede wereldoorlog",
+                "Number of films": 69
+            },
+            {
+                "Organisation": "koninklijk huis",
+                "Number of films": 65
+            },
+            {
+                "Organisation": "zwarte piet",
+                "Number of films": 42
+            },
+            {
+                "Organisation": "artis",
+                "Number of films": 33
+            },
+            {
+                "Organisation": "efteling",
+                "Number of films": 28
+            },
+            {
+                "Organisation": "eredivisie",
+                "Number of films": 28
+            },
+            {
+                "Organisation": "madurodam",
+                "Number of films": 27
+            },
+            {
+                "Organisation": "carnaval",
+                "Number of films": 25
+            }
+        ]
+    },
+    "mark": {
+        "type": "bar",
+        "binSpacing": 1,
+        "tooltip": true
+    },
+    "encoding": {
+        "x": {
+            "field": "Organisation",
+            "type": "nominal",
+            "title": "Naam",
+            "sort": "-y"
+        },
+        "y": {
+            "field": "Number of films",
+            "type": "quantitative",
+            "title": "Aantal films"
+        },
+        "color": {
+            "value": "#0F238C"
+        }
+    },
+    "config": {
+        "countTitle": "Aantal",
+        "axisX": {
+            "labelAngle": -40,
+            "titleColor": "grey",
+            "labelColor": "grey"
+        },
+        "axisY": {
+            "titleColor": "grey",
+            "labelColor": "grey"
+        }
+    }
+}
