@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top ten names featured",
+    "description": "Distribution of films over the top ten names featured (excluding 'names' that are a time indication)",
+    "width": 500,
+    "height": 400,
+    "data": {
+        "values": [
+            {
+                "Organisation": "St Nicholas",
+                "Number of films": 94
+            },
+            {
+                "Organisation": "Christmas",
+                "Number of films": 70
+            },
+            {
+                "Organisation": "Second world war",
+                "Number of films": 69
+            },
+            {
+                "Organisation": "Royal family",
+                "Number of films": 65
+            },
+            {
+                "Organisation": "Black Pete",
+                "Number of films": 42
+            },
+            {
+                "Organisation": "Artis",
+                "Number of films": 33
+            },
+            {
+                "Organisation": "Efteling",
+                "Number of films": 28
+            },
+            {
+                "Organisation": "Premier League",
+                "Number of films": 28
+            },
+            {
+                "Organisation": "Madurodam",
+                "Number of films": 27
+            },
+            {
+                "Organisation": "Carnival",
+                "Number of films": 25
+            }
+        ]
+    },
+    "mark": {
+        "type": "bar",
+        "binSpacing": 1,
+        "tooltip": true
+    },
+    "encoding": {
+        "x": {
+            "field": "Organisation",
+            "type": "nominal",
+            "title": "Name",
+            "sort": "-y"
+        },
+        "y": {
+            "field": "Number of films",
+            "type": "quantitative",
+            "title": "Number of films"
+        },
+        "color": {
+            "value": "#0F238C"
+        }
+    },
+    "config": {
+        "countTitle": "Count",
+        "axisX": {
+            "labelAngle": -40,
+            "titleColor": "grey",
+            "labelColor": "grey"
+        },
+        "axisY": {
+            "titleColor": "grey",
+            "labelColor": "grey"
+        }
+    }
+}
