@@ -13,7 +13,7 @@
     "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.4",
+    "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.16.0",
     "@mdi/font": "^7.4.47",
@@ -22,12 +22,12 @@
     "@nuxt/eslint-config": "^0.7.5",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/i18n": "^9.1.1",
-    "@types/node": "^22.10.5",
+    "@nuxtjs/i18n": "^9.1.2",
+    "@types/node": "^22.10.7",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-vue": "^9.32.0",
     "eslint-plugin-vuetify": "^2.5.1",
     "nuxt": "^3.13.2",
@@ -36,7 +36,7 @@
     "sass-embedded": "^1.82.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vue-panzoom": "^1.1.6",
-    "vuetify": "^3.7.6"
+    "vuetify": "^3.7.7"
   },
   "engines": {
     "node": "22.x"
