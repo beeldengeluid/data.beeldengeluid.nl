@@ -13,7 +13,7 @@
           "strokeWidth": 0.4
         },
         "data": {
-          "url": "https://raw.githubusercontent.com/beeldengeluid/labs.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
+          "url": "/uploads/dashboard-data/muziekopnamen-zendgemachtigden/gemeentes_NL_prec5_epgs4326.geojson",
           "format": {"type": "json", "property": "features"}
           },
         "encoding": {
@@ -22,7 +22,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/beeldengeluid/labs.beeldengeluid.nl/512-native-MOZ-dashboard-visualizations-main/content/en/dashboards/muziekopnamen-zendgemachtigden/location_counts.json",
+          "url": "/uploads/dashboard-data/muziekopnamen-zendgemachtigden/location_counts.json",
         "format": {"type": "json"}
         },
         "transform": [
