@@ -1,68 +1,68 @@
 ---
-title: Nederland door het oog van de amateur
-subtitle: Een bijzondere collectie van familiefilms, reisverslagen, speelfilms en animaties
-image: articles/amateurfilms-1.jpg
-imageCaption: "Still van een amateurfilm uit de collectie **Valentine, kan je zeggen welke?**"
-tags: smalfilm, amateur
+title: The Netherlands through the eyes of the amateur cinematographer
+subtitle: A special collection of family films, travelogues, fiction films and animations
+image: articles/zomer_wouter_kuyck.png
+imageCaption: "Still from 'Zomer', a film by Wouter Kuyck (1939)'"
+tags: narrow-gauge film, amateur
 lab: opendatalab
-publishedOn: '2025-01-24'
+publishedOn: '2025-02-24'
 datasets: []
 ---
 
-**De amateurfilmcollectie bevat films gemaakt vanaf de jaren 1910 tot nu. Het bevat familiefilms, reisfilms, fictiefilms en animatie. De films waren bedoeld voor vertoningen thuis of op de filmclubs in Nederland. Inmiddels zijn het geliefde onderwerpen voor historici en mediamakers.**
+**The amateur film collection contains films made between 1910 and the present day. It consists of family films, travelogues, fiction films and animations. The films were intended to be shown at home or at film clubs in the Netherlands. They have become a much-loved subject for historians and media makers.**
 
-De collectie spant meer dan 100 jaar, met pieken in de jaren 1930, 1960 en 1970.  ***Valentine, worden er nog meer films toegevoegd? En zijn deze pieken te verklaren?***
+The collection spans more than 100 years, with peaks in the 1930s, 1960s and 1970s. In the thirties the smaller 8mm film format came onto the market. This made filming cheaper and easier. As a result, the number of amateur cinematographers increased dramatically in those years. During the Second World War film stock was scarce, but the last roll of film was often saved to record the liberation. From the eind of the sixties onwards a new format came onto the market: super8 film. The film was in the form of a cassette, was easier to use and became even more popular. By this time few amateur film makers filmed with the more expensive 16mm film. This format was adopted by professional documentary and television film makers who wanted to film outdoors with a smaller camera. The use of super8 declined after the eighties. You can see this in the statistics. People switched to video (VHS and video8). The collection contains few analogue or digital videos. The collection continues to grow, but mostly films from the period 1930-1980 are donated. 
 
 <iframe src='https://flo.uri.sh/visualisation/21078557/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21078557/?utm_source=embed&utm_campaign=visualisation/21078557' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Aantal films per jaar_
+_Number of films per year_
 
 <br>
 
-De eerste amateurfilmer in Nederland was kinderboekenschrijver <a target="_blank" href="https://nl.wikipedia.org/wiki/Dick_Laan">Dick Laan</a>. Hij maakte fictiefilmpjes in de jaren 10 over onder andere <a target="_blank" href="https://mediasuite.clariah.nl/tool/resource-viewer?id=2101608050034752431&cid=daan-catalogue-smalfilm">de padvinderij</a> (niet afspeelbaar), en documentaires, zoals over <a target="_blank" href="https://mediasuite.clariah.nl/tool/resource-viewer?id=2101608050034750631&cid=daan-catalogue-smalfilm">het verdwijnen van de Zaanse molens</a>. 
+The first amateur film maker in the Netherlands was the children's book author <a target="_blank" href="https://nl.wikipedia.org/wiki/Dick_Laan">Dick Laan</a>. He made films in the 1910s and 1920s, in which children mostly played the leading role. Dick Laan also made films commissioned by Scouting and various documentaries, such as about <a target="_blank" href="https://mediasuite.clariah.nl/tool/resource-viewer?id=2101608050034750631&cid=daan-catalogue-smalfilm">the disappearance of Zaanse windmills</a>. 
 
 <div style="text-align: center;">
     <img src="/images/articles/484px-Portret_van_Dick_Laan,_c._1940.jpg">
 </div>
 
-_Dick Laan (By Anonymous - Laan Dick (1939 - 1941), Noord-Hollands Archief, Beeldcollectie van de gemeente Heemstede, Inventarisnummer: 4912, Public Domain, https://commons.wikimedia.org/w/index.php?curid=122290271)_
+_Dick Laan (By Anonymous - Laan Dick (1939 - 1941), North Holland Archive, Image collection of Heemstede, Inventory number: 4912, Public Domain, https://commons.wikimedia.org/w/index.php?curid=122290271)_
 
 <br>
 
-Maar smalfilm begint pas echt in de jaren 20 met de komst van de kleinere filmformaten 9,5mm en 16mm en later in de jaren 30 met het 8mm-formaat.
+But amateur film only really got started in the 1920s with the arrival of the smaller 9.5mm and 16mm formats, and later in the 1930s the 8mm format.
 
 <iframe src='https://flo.uri.sh/visualisation/21078111/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21078111/?utm_source=embed&utm_campaign=visualisation/21078111' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Aantal films in 8, 9,5 en 16mm formaat over tijd_
+_Number of films in 8, 9.5 en 16mm format over time_
 
 <br>
 
-De collectie amateurfilms van Beeld & Geluid laat een geschiedenis zien van het huiselijke leven in Nederland en zijn voormalige koloniën, maar geeft ook een inkijk in andere landen. 
+The collection of amateur films from Sound & Vision doesn't just reveal a history of domestic life in the Netherlands and its former colonies. The amateur cinematographer also went on excursions in the Netherlands, and sometimes to far-off destinations.
 
 <iframe src='https://flo.uri.sh/visualisation/21090674/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21090674/?utm_source=embed&utm_campaign=visualisation/21090674' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Aantal films per locatie voor de top tien locaties_
+_Number of films per location for the top ten locations_
 
 <br>
 
-De collectie bevat grotendeels familiefilms, reisverslagen, speelfilms en animaties, maar ook andere genres, zoals bedrijfsfilm.
+The collection consists mostly of family films, travelogues, fiction films and animations, but also other genres, such as corporate films.
 
 <iframe src='https://flo.uri.sh/visualisation/21090877/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21090877/?utm_source=embed&utm_campaign=visualisation/21090877' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Aantal films per programmagenre voor de top tien genres (Genre 'amateuropname' wordt weggelaten omdat het overbodig is)_
+_Number of films per programme genre for the top ten genres (Genre 'amateuropname' is excluded because it is redundant)_
 
 <br>
 
-De meest vaak voorkomende onderwerpen reflecteren de karakter van deze genres. Er zijn ook verrassende onderwerpen, zoals 'paranormale geneeswijzen' (<a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=6b186832-9c7e-4fa1-92aa-42cba8ac2f53">ongeveer 20 films uit de jaren 1960 van Gerard Croiset</a>). 
+The most frequently occuring subjects reflect the character of these genres. There are also surprising subjects, such as 'paranormal healing' (<a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=6b186832-9c7e-4fa1-92aa-42cba8ac2f53">approximately 20 films from the 1960s by Gerard Croiset</a>). 
 
 <iframe src='https://flo.uri.sh/visualisation/21090984/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21090984/?utm_source=embed&utm_campaign=visualisation/21090984' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Aantal films per onderwerp voor de top tien onderwerpen (Onderwerp 'amateuropnamen' wordt weggelaten omdat het overbodig is)_
+_Number of films per subject for the top ten subjects (Subject 'amateuropnamen' is excluded because it is redundant)_
 
 <br>
 
-Het zijn vaak beelden die nooit met de professionele camera zijn vastgelegd en nu zo waardevol blijken voor onze geschiedenis. De collectie bevat ook films gemaakt door de filmhobbyist. Het zijn films die vooraf met een scenario en draaiboek zijn bedacht en vaak met titels of muziek voorzien. Meestal waren deze filmers aangesloten bij één van de vele filmclubs in het land. 
+They are often images that were never recorded by professional cameras and now turn out to be so valuable for our history. The collection also contains films made by hobby film makers. These are films that were planned in advance with a scenario and script, and were often given title cards or music. Most of these film makers were members of one of the many film clubs in the country.
 
-De collectie bevat een paar duizend smalfilms en ook een aantal video’s. Ongeveer de helft zijn in kleur. De meerderheid zijn zonder geluid.
+The collection contains a few thousand amateur films and also a number of videos. Approximately half are in colour. Most are silent.
 
-Deze dataset is onderdeel van de dataset <a target="_blank" href="https://data.beeldengeluid.nl/nl/datasets/nisv-media-catalog">Sound & Vision catalog Open Data</a>. Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit <a target="_blank" href="https://dc4eu.nl/">DC4EU</a> en <a target="_blank" href="https://clariah.nl/">CLARIAH</a>. De collectie kan ook bekeken worden in de <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a> 
+This dataset is part of the <a target="_blank" href="https://data.beeldengeluid.nl/nl/datasets/nisv-media-catalog">Sound & Vision catalog Open Data</a> dataset. This colllection has been made available as Linked Data, with the support of <a target="_blank" href="https://dc4eu.nl/">DC4EU</a> and <a target="_blank" href="https://clariah.nl/">CLARIAH</a>. The collection can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=a66581b0-509c-4527-8bd0-559cb513ec58">Media Suite</a>. A number of films can be played without needing to log in. 
