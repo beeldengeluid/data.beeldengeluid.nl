@@ -2,7 +2,7 @@
 title: The Netherlands through the eyes of the amateur cinematographer
 subtitle: A special collection of family films, travelogues, fiction films and animations
 image: articles/zomer_wouter_kuyck.png
-imageCaption: "Still from 'Zomer', a film by Wouter Kuyck (1939)'"
+imageCaption: "Still from 'Zomer', a film by Wouter Kuyck (1939)"
 tags: narrow-gauge film, amateur
 lab: opendatalab
 publishedOn: '2025-02-24'
@@ -11,7 +11,7 @@ datasets: []
 
 **The amateur film collection contains films made between 1910 and the present day. It consists of family films, travelogues, fiction films and animations. The films were intended to be shown at home or at film clubs in the Netherlands. They have become a much-loved subject for historians and media makers.**
 
-The collection spans more than 100 years, with peaks in the 1930s, 1960s and 1970s. In the thirties the smaller 8mm film format came onto the market. This made filming cheaper and easier. As a result, the number of amateur cinematographers increased dramatically in those years. During the Second World War film stock was scarce, but the last roll of film was often saved to record the liberation. From the eind of the sixties onwards a new format came onto the market: super8 film. The film was in the form of a cassette, was easier to use and became even more popular. By this time few amateur film makers filmed with the more expensive 16mm film. This format was adopted by professional documentary and television film makers who wanted to film outdoors with a smaller camera. The use of super8 declined after the eighties. You can see this in the statistics. People switched to video (VHS and video8). The collection contains few analogue or digital videos. The collection continues to grow, but mostly films from the period 1930-1980 are donated. 
+The collection spans more than 100 years, with peaks in the 1930s, 1960s and 1970s. In the thirties the smaller 8mm film format came onto the market. This made filming cheaper and easier. As a result, the number of amateur cinematographers increased dramatically in those years. During the Second World War film stock was scarce, but the last roll of film was often saved to record the liberation. From the end of the sixties onwards a new format came onto the market: super8 film. The film was in the form of a cassette, was easier to use and became even more popular. By this time few amateur film makers filmed with the more expensive 16mm film. This format was adopted by professional documentary and television film makers who wanted to film outdoors with a smaller camera. The use of super8 declined after the eighties. You can see this in the statistics. People switched to video (VHS and video8). The collection contains few analogue or digital videos. The collection continues to grow, but mostly films from the period 1930-1980 are donated. 
 
 <iframe src='https://flo.uri.sh/visualisation/21572045/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/21572045/?utm_source=embed&utm_campaign=visualisation/21572045' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
@@ -19,7 +19,7 @@ _Number of films per year_
 
 <br>
 
-The first amateur film maker in the Netherlands was the children's book author <a target="_blank" href="https://nl.wikipedia.org/wiki/Dick_Laan">Dick Laan</a>. He made films in the 1910s and 1920s, in which children mostly played the leading role. Dick Laan also made films commissioned by Scouting and various documentaries, such as about <a target="_blank" href="https://mediasuite.clariah.nl/tool/resource-viewer?id=2101608050034750631&cid=daan-catalogue-smalfilm">the disappearance of Zaanse windmills</a>. 
+The first amateur film maker in the Netherlands was the children's book author <a target="_blank" href="https://en.wikipedia.org/wiki/Dick_Laan">Dick Laan</a>. He made films in the 1910s and 1920s, in which children mostly played the leading role. Dick Laan also made films commissioned by Scouting and various documentaries, such as about <a target="_blank" href="https://mediasuite.clariah.nl/tool/resource-viewer?id=2101608050034750631&cid=daan-catalogue-smalfilm">the disappearance of Zaanse windmills</a>. 
 
 <div style="text-align: center;">
     <img src="/images/articles/484px-Portret_van_Dick_Laan,_c._1940.jpg">

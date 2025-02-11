@@ -2,7 +2,7 @@
 title: Nederland door het oog van de amateurfilmer
 subtitle: Een bijzondere collectie van familiefilms, reisverslagen, speelfilms en animaties
 image: articles/zomer_wouter_kuyck.png
-imageCaption: "Still van 'Zomer', een film van Wouter Kuyck (1939)'"
+imageCaption: "Still van 'Zomer', een film van Wouter Kuyck (1939)"
 tags: smalfilm, amateur
 lab: opendatalab
 publishedOn: '2025-02-24'
