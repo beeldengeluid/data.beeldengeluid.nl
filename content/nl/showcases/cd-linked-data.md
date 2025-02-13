@@ -5,7 +5,7 @@ image: articles/cds_depot.jpg
 imageCaption: "Opslag van cd's bij Beeld & Geluid. Foto: Margot Knijn"
 tags: linked data
 lab: opendatalab
-publishedOn: '2025-02-15'
+publishedOn: '2025-02-13'
 datasets: []
 ---
 
