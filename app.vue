@@ -47,7 +47,9 @@
       <!-- Locales -->
       <v-list>
         <v-list-item
-          v-for="locale of $i18n.locales.filter((l) => l !== $i18n.locale)"
+          v-for="locale of i18n.locales.value.filter(
+            (l) => l !== i18n.locale.value
+          )"
           :key="locale"
           :to="switchLocalePath(locale)"
           router
@@ -113,7 +115,9 @@
       <!-- Language selector -->
       <div class="language-selector d-none d-lg-block">
         <v-btn
-          v-for="locale of $i18n.locales.filter((l) => l !== $i18n.locale)"
+          v-for="locale of i18n.locales.value.filter(
+            (l) => l !== i18n.locale.value
+          )"
           :key="locale"
           :to="switchLocalePath(locale)"
           class="bg-nisvdarkblue text-decoration-none text-grey-lighten-1 text-uppercase"
@@ -249,10 +253,10 @@ useHead({
 @use 'vuetify/settings';
 
 /* upgradefixup: Set Vuetify 2 margin we used before upgrade to Vuetify 3
-> Global styles previously included as .v-application p or .v-application 
+> Global styles previously included as .v-application p or .v-application
 > ul are no longer included. If you need margin for p, or padding-left for
 > ul and ol, set it manually in your root component’s <style> tag.
-https://vuetifyjs.com/en/getting-started/upgrade-guide/#layout 
+https://vuetifyjs.com/en/getting-started/upgrade-guide/#layout
 */
 p {
   margin-bottom: 16px;

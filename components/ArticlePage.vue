@@ -6,7 +6,7 @@
       <!-- Published date -->
       <p v-if="article.publishedOn" class="text-overline">
         {{ $t('published_on') }}:
-        {{ formatDate(article.publishedOn, $i18n.locale) }}
+        {{ formatDate(article.publishedOn, i18n.locale.value) }}
       </p>
 
       <figure>
@@ -63,7 +63,7 @@
         - https://github.com/nuxt/content/issues/1797
         - https://github.com/beeldengeluid/labs.beeldengeluid.nl/issues/526
       <p v-if="article.updatedAt" class="caption">
-        {{ $t('last_update') }}: {{ formatDate(article.updatedAt, $i18n.locale) }}
+        {{ $t('last_update') }}: {{ formatDate(article.updatedAt, i18n.locale) }}
       </p>
       -->
 
@@ -85,6 +85,7 @@ import { formatDate } from '~/util/date'
 import { generateSrcset } from '~/util/srcset'
 import { filterUndefined } from '~/util/frontmatter'
 
+const i18n = useI18n()
 const img = useImage()
 
 const props = defineProps({
