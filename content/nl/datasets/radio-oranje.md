@@ -13,4 +13,6 @@ De collectie uitzendingen van Radio Oranje bevat een selectie van de radio-uitze
 
 Volgens de Nederlandse wet behoren deze opnamen tot het publiek domein, en kunnen zij dus door iedereen worden hergebruikt.
 
+Items uit deze dataset worden gebruikt in de podcastserie [Podcast Herrijzend Nederland: Radio in Oorlogstijd](https://www.beeldengeluid.nl/herrijzendnederland)"
+
 De set kan worden benaderd en gedownload via de [Soundcloud API](https://developers.soundcloud.com/docs/api/guide). Maar ook op [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Radio_Broadcasts_by_Radio_Oranje), of via de Wikimedia Commons API.
