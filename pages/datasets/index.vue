@@ -40,7 +40,7 @@ const cardPath = `${dataClass}s-slug`
 
 const pagesPath = dataClass + 's'
 const { data: pagesPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${pagesPath}`)
+  const content = await queryCollection(`${i18n.locale.value}/${pagesPath}`)
     .find()
     .catch(() => {
       // ignore 404s
@@ -50,7 +50,7 @@ const { data: pagesPathLocalized } = await useAsyncData(async () => {
   return `${locale}/${pagesPath}`
 })
 const { data: datasetPages } = await useAsyncData(async () => {
-  return queryContent(pagesPathLocalized.value)
+  return queryCollection(pagesPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .find()
     .catch(() => {
@@ -60,7 +60,7 @@ const { data: datasetPages } = await useAsyncData(async () => {
 
 const definitionPath = 'dataset-definition'
 const { data: definitionPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${definitionPath}`)
+  const content = await queryCollection(`${i18n.locale.value}/${definitionPath}`)
     .find()
     .catch(() => {
       // ignore 404s
@@ -70,7 +70,7 @@ const { data: definitionPathLocalized } = await useAsyncData(async () => {
   return `${locale}/${definitionPath}`
 })
 const { data: definition } = await useAsyncData(async () => {
-  return queryContent(definitionPathLocalized.value)
+  return queryCollection(definitionPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .findOne()
     .catch(() => {

@@ -17,7 +17,7 @@ const slug = computed(() =>
 )
 
 const { data: articlePath } = await useAsyncData(async () => {
-  const content = await queryContent(
+  const content = await queryCollection(
     `${i18n.locale.value}/${source}/${slug.value}`
   )
     .find()
@@ -28,7 +28,7 @@ const { data: articlePath } = await useAsyncData(async () => {
 })
 
 const { data: article } = await useAsyncData(() =>
-  queryContent(articlePath.value)
+  queryCollection(articlePath.value)
     .where({ hidden: { $ne: true } })
     .findOne()
     .catch((reason) => {

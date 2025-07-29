@@ -91,8 +91,8 @@ const img = useImage()
 // get localized path
 const aboutPath = 'about'
 const { data: aboutPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${aboutPath}`)
-    .find()
+  const content = await queryCollection(`${i18n.locale.value}/${aboutPath}`)
+    .first()
     .catch(() => {
       // ignore 404s
     })
@@ -102,15 +102,15 @@ const { data: aboutPathLocalized } = await useAsyncData(async () => {
 })
 // get localized content
 const { data: aboutPage } = await useAsyncData(async () => {
-  return queryContent(aboutPathLocalized.value).findOne()
+  return queryCollection(aboutPathLocalized.value).path(route.path).first()
 })
 
 // showcases
 const showcasesPath = 'showcases'
 // get localizedpath
 const { data: showcasesPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${showcasesPath}`)
-    .find()
+  const content = await queryCollection(`${i18n.locale.value}/${showcasesPath}`)
+    .first()
     .catch(() => {
       // ignore 404s
     })
@@ -120,19 +120,19 @@ const { data: showcasesPathLocalized } = await useAsyncData(async () => {
 })
 // get localized content
 const { data: showcases } = await useAsyncData(async () => {
-  return queryContent(showcasesPathLocalized.value)
+  return queryCollection(showcasesPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .limit(4)
-    .find()
+    .first()
 })
 
 // apis
 const apisPath = 'apis'
 // get localizedpath
 const { data: apisPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${apisPath}`)
-    .find()
+  const content = await queryCollection(`${i18n.locale.value}/${apisPath}`)
+    .first()
     .catch(() => {
       // ignore 404s
     })
@@ -142,18 +142,18 @@ const { data: apisPathLocalized } = await useAsyncData(async () => {
 })
 // get localized content
 const { data: apis } = await useAsyncData(async () => {
-  return queryContent(apisPathLocalized.value)
+  return queryCollection(apisPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .limit(4)
-    .find()
+    .first()
 })
 
 // datasets (markdown content)
 const datasetsPath = 'datasets'
 const { data: datasetsPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${datasetsPath}`)
-    .find()
+  const content = await queryCollection(`${i18n.locale.value}/${datasetsPath}`)
+    .first()
     .catch(() => {
       // ignore 404s
     })
@@ -162,10 +162,10 @@ const { data: datasetsPathLocalized } = await useAsyncData(async () => {
   return `${locale}/${datasetsPath}`
 })
 const { data: datasetPages } = await useAsyncData(async () => {
-  return queryContent(datasetsPathLocalized.value)
+  return queryCollection(datasetsPathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ size: -1 })
-    .find()
+    .first()
     .catch(() => {
       // ignore error of missing page
     })
@@ -174,7 +174,7 @@ const { data: datasetPages } = await useAsyncData(async () => {
 // datasets from Datacatalog are not localized (yet)
 const dataPath = 'datacatalog0001'
 const { data: datacatalogData } = await useAsyncData(async () => {
-  return queryContent(dataPath).findOne()
+  return queryCollection(dataPath).path(route.path).first()
 })
 const datacatalog = datacatalogData.value['@graph']
 const datasetsRaw = datacatalog.filter(

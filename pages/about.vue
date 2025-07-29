@@ -19,7 +19,7 @@ const i18n = useI18n()
 
 const aboutPath = 'about'
 const { data: aboutPathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${aboutPath}`)
+  const content = await queryCollection(`${i18n.locale.value}/${aboutPath}`)
     .find()
     .catch(() => {
       // ignore 404s
@@ -30,7 +30,7 @@ const { data: aboutPathLocalized } = await useAsyncData(async () => {
 })
 
 const { data: page } = await useAsyncData(async () => {
-  return queryContent(aboutPathLocalized.value).findOne()
+  return queryCollection(aboutPathLocalized.value).findOne()
 })
 
 defineI18nRoute({

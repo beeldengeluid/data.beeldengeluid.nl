@@ -16,7 +16,7 @@ const cardPath = `${dataClass}s-slug`
 
 const path = dataClass + 's'
 const { data: pathLocalized } = await useAsyncData(async () => {
-  const content = await queryContent(`${i18n.locale.value}/${path}`)
+  const content = await queryCollection(`${i18n.locale.value}/${path}`)
     .find()
     .catch(() => {
       // ignore 404s
@@ -26,7 +26,7 @@ const { data: pathLocalized } = await useAsyncData(async () => {
   return `${locale}/${path}`
 })
 const { data: cards } = await useAsyncData(async () => {
-  return queryContent(pathLocalized.value)
+  return queryCollection(pathLocalized.value)
     .where({ hidden: { $ne: true } })
     .sort({ createdAt: 1 })
     .find()

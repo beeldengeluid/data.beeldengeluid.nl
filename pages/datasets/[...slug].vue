@@ -67,7 +67,7 @@ const slug = computed(() =>
 // get localized path to datasets
 const datasetsPath = 'datasets'
 const { data: localizedDatasetPath } = await useAsyncData(async () => {
-  const content = await queryContent(
+  const content = await queryCollection(
     `${i18n.locale.value}/${datasetsPath}/${slug.value}`
   )
     .find()
@@ -76,7 +76,7 @@ const { data: localizedDatasetPath } = await useAsyncData(async () => {
   return `${locale.value}/${datasetsPath}/${slug.value}`
 })
 const { data: datasetContentPage } = await useAsyncData(async () => {
-  return queryContent(localizedDatasetPath.value)
+  return queryCollection(localizedDatasetPath.value)
     .where({ hidden: { $ne: true } })
     .findOne()
     .catch(() => {
@@ -87,7 +87,7 @@ const { data: datasetContentPage } = await useAsyncData(async () => {
 // get localized path to dashboard
 const dashboardsPath = 'dashboards'
 const { data: localizedDashboardPath } = await useAsyncData(async () => {
-  const content = await queryContent(
+  const content = await queryCollection(
     `${i18n.locale.value}/${dashboardsPath}/${slug.value}`
   )
     .find()
@@ -97,7 +97,7 @@ const { data: localizedDashboardPath } = await useAsyncData(async () => {
   return `${locale}/${dashboardsPath}/${slug.value}`
 })
 const { data: dashboardPage } = await useAsyncData(async () => {
-  return queryContent(localizedDashboardPath.value)
+  return queryCollection(localizedDashboardPath.value)
     .where({ hidden: { $ne: true } })
     .find()
     .catch(() => {
@@ -107,7 +107,7 @@ const { data: dashboardPage } = await useAsyncData(async () => {
 
 // note: nuxt-content adds some content metadata prefixed by '_'
 const { data: dashboardSpecs } = await useAsyncData(async () => {
-  return queryContent(`${i18n.locale.value}/dashboards/${slug.value}/specs`)
+  return queryCollection(`${i18n.locale.value}/dashboards/${slug.value}/specs`)
     .find()
     .catch(() => {
       // throw createError({ statusCode: 404, message: 'Page not found' })
@@ -117,7 +117,7 @@ const { data: dashboardSpecs } = await useAsyncData(async () => {
 const dataPath = 'datacatalog0001'
 const { data: datacatalogData } = await useAsyncData(() => {
   // datasets from Datacatalog are not localized (yet)
-  return queryContent(dataPath).findOne()
+  return queryCollection(dataPath).findOne()
 })
 
 // enrich datasets with helper properties
@@ -142,7 +142,7 @@ const datasetPage = computed(() => {
 // showcases that refer to this dataset
 const showcasesPath = 'showcases'
 const { data: localizedShowcasesPath } = await useAsyncData(async () => {
-  const content = await queryContent(
+  const content = await queryCollection(
     `${i18n.locale.value}/${showcasesPath}/${slug.value}`
   )
     .find()
@@ -151,7 +151,7 @@ const { data: localizedShowcasesPath } = await useAsyncData(async () => {
   return `${locale.value}/${showcasesPath}/${slug.value}`
 })
 const { data: showcases } = await useAsyncData(async () => {
-  return queryContent(localizedShowcasesPath.value)
+  return queryCollection(localizedShowcasesPath.value)
     .where({ datasets: { $contains: dataset['@id'] } })
     .find()
 })
