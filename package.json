@@ -42,7 +42,6 @@
     "node": "22.x"
   },
   "dependencies": {
-    "sass-embedded-linux-arm64": "^1.87.0",
     "vega-embed": "^6.29.0"
   }
 }
