@@ -4,6 +4,8 @@ updates:
     directory: '/'
     schedule:
       interval: daily
+    cooldown:
+      default-days: 10
     commit-message:
       prefix: fix
       prefix-development: chore
@@ -22,3 +24,5 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    cooldown:
+      default-days: 7
