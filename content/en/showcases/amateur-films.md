@@ -5,7 +5,7 @@ image: articles/zomer_wouter_kuyck.png
 imageCaption: "Still from 'Zomer', a film by Wouter Kuyck (1939)"
 tags: narrow-gauge film, amateur
 lab: opendatalab
-publishedOn: '2025-02-24'
+publishedOn: '2026-02-17'
 datasets: []
 ---
 
