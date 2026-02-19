@@ -5,7 +5,7 @@ image: articles/zomer_wouter_kuyck.png
 imageCaption: "Still van 'Zomer', een film van Wouter Kuyck (1939)"
 tags: smalfilm, amateur
 lab: opendatalab
-publishedOn: '2025-02-24'
+publishedOn: '2026-02-17'
 datasets: []
 ---
 
