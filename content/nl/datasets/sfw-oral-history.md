@@ -4,8 +4,8 @@ title: SFW Oral History
 
 
 subtitle: Een Beeld & Geluid verzameling audiovisueel materiaal met Oral History interviews afkomstig van het archief van Stichting Film en Wetenschap. De metadata is beschikbaar onder een cc0 licentie, de content zelf is alleen afspeelbaar via het platform Onsland.
-color: orange.base
-image: /uploads/BlogOnsLand.jpg
+color: ''
+image: '/uploads/BlogOnsLand.jpg'
 tags:
   - Audio
   - Metadata
