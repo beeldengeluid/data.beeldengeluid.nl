@@ -35,43 +35,49 @@
       "@type": "sdo:DataCatalog",
       "sdo:dataset": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0029"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0025"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0030"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0031"
         }
       ],
       "sdo:description": {
@@ -92,11 +98,14 @@
       "sdo:contentUrl": {
         "@id": "https://cat.apis.beeldengeluid.nl/sparql"
       },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-06-26"
+      },
       "sdo:description": {
         "@language": "nl",
         "@value": "Bevraag de Beeld en Geluid media catalogus in schema.org formaat in SPARQL."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
@@ -106,7 +115,7 @@
         "@value": "Beeld en Geluid Catalogus als Open Data"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -119,7 +128,6 @@
         "@language": "en",
         "@value": "Creative Commons licensed audiovisual heritage from the Netherlands Institute for Sound and Vision"
       },
-      "sdo:encodingFormat": "text/xml",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
@@ -129,7 +137,7 @@
         "@value": "Beeld en Geluid op Open Beelden"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.openbeelden.nl/api/"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -152,7 +160,7 @@
         "@value": "Natuurbeelden op Open Beelden"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.openbeelden.nl/api/"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -290,7 +298,7 @@
         "@value": "GTAA Persoonsnamen"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -313,7 +321,7 @@
         "@value": "GTAA Namen"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -336,7 +344,7 @@
         "@value": "GTAA Onderwerpen"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -359,7 +367,7 @@
         "@value": "GTAA Genres"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -405,7 +413,7 @@
         "@value": "GTAA Classificatie"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -428,7 +436,7 @@
         "@value": "GTAA OnderwerpenBenG"
       },
       "sdo:usageInfo": {
-        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+        "@id": "http://www.openarchives.org/pmh/"
       }
     },
     {
@@ -531,7 +539,6 @@
         "@language": "nl",
         "@value": "Bevraag Muziekweb via SPARQL."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/by/"
@@ -541,7 +548,7 @@
         "@value": "Muziekweb als linked data"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -554,7 +561,6 @@
         "@language": "nl",
         "@value": "Persoonsnamenas uit de GTAA. Elke persoonsnaam, inclusief labels en notes, is een SKOS Concept."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -564,7 +570,7 @@
         "@value": "GTAA Persoonsnamen"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -577,7 +583,6 @@
         "@language": "nl",
         "@value": "Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -587,7 +592,7 @@
         "@value": "GTAA Classificatie"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -600,7 +605,6 @@
         "@language": "nl",
         "@value": "Genres en programmasoorten: deze termen geven een typering of aanduiding van de productie als geheel, ze verwijzen naar de vorm, het genre of het type programma (bijvoorbeeld: 'korte film', 'lifestyleprogramma', 'hoorspel', 'politieserie'). Elk genre, inclusief labels, notes en relaties, is een SKOS Concept."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -610,7 +614,7 @@
         "@value": "GTAA Genres"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -623,7 +627,6 @@
         "@language": "nl",
         "@value": "As met geografische namen in de GTAA. Bevat namen van steden, gemeenten, provincies, snelwegen, landen, enz. Elke geografische naam, inclusief labels en notes, is een SKOS Concept en is gegroepeerd in een ConceptScheme."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -633,7 +636,7 @@
         "@value": "GTAA Geografische namen"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -646,7 +649,6 @@
         "@language": "nl",
         "@value": "As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -656,7 +658,7 @@
         "@value": "GTAA Namen"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -669,7 +671,6 @@
         "@language": "nl",
         "@value": "Onderwerpen of wel begrippen (bijv. 'zwemmen', 'daklozen', 'binnenvaartschepen', 'audiovisuele archieven'). Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -679,7 +680,7 @@
         "@value": "GTAA Onderwerpen"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -692,7 +693,6 @@
         "@language": "nl",
         "@value": "As voor onderwerpstermen, bevat naast de begrippen uit de as Onderwerpen toegevoegde concepten voor specifiek beeld (shots en stockshots) en geluid. Voorbeelden: 'dorpsbeelden', 'blaffen', 'begroetingen', 'gapen', enz. Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept."
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://opendatacommons.org/licenses/odbl/"
@@ -702,7 +702,7 @@
         "@value": "GTAA OnderwerpenBenG"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -711,12 +711,10 @@
       "sdo:contentUrl": {
         "@id": "https://cat.apis.beeldengeluid.nl/sparql"
       },
-      "sdo:dateModified": "-",
       "sdo:description": {
         "@language": "nl",
         "@value": "Selection from the Sound & Vision open data catalog that is registered under the series Music recordings broadcasting agents (MOZ). This selection can be queried from the contentUrl using this query: PREFIX%20sdo%3A%20<https%3A%2F%2Fschema.org%2F>%0A%0ASELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%0AWHERE%0A%7B%0A%20%3FprogramUri%20sdo%3ApartOfSeason%2Fsdo%3ApartOfSeries%20<http%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fseries%2F2101608030025711131>%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20sdo%3Aname%20%3FprogramName%20.%20%0A%7D%20ORDER%20BY%20%3FprogramName"
       },
-      "sdo:encodingFormat": "application/sparql-query",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
         "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
@@ -726,7 +724,7 @@
         "@value": "Muziekopnamen Zendgemachtigden"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -737,15 +735,18 @@
       },
       "sdo:description": {
         "@language": "nl",
-        "@value": "Selection of amateur films from the Sound & Vision catalog This selection can be queried from the contentUrl using this query (url encoding needed): PREFIX sdo: <https://schema.org/>"
+        "@value": "Selection of amateur films from the Sound & Vision catalog This selection can be queried from the contentUrl using this query: PREFIX%20sdo%3A%20<https%3A%2F%2Fschema.org%2F>%20SELECT%20DISTINCT%20%3Fs%20%0AWHERE%20%7B%20%0A%20%20GRAPH%20<http%3A%2F%2Fdata.rdlabs.beeldengeluid.nl%2Fcat%2F>%20%7B%20%0A%20%20%20%20%7B%20%3Fs%20sdo%3ApartOfSeries%2Fsdo%3AadditionalType%20\"Bewegend%20beeld%20-%20Smalfilm\"%5E%5Esdo%3AText%20.%20%7D%20%20%20%20%20%0A%20%20%20%20UNION%20%7B%20%3Fs%20sdo%3AadditionalType%20\"Bewegend%20beeld%20-%20Smalfilm\"%5E%5Esdo%3AText%20.%20%7D%20%0A%20%20%7D%0A%7D%0A"
       },
-      "sdo:encodingFormat": "application/sparql-query",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
       "sdo:name": {
         "@language": "nl",
-        "@value": "Amateurfilms"
+        "@value": "Amateurfilm collectie"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
       }
     },
     {
@@ -754,6 +755,10 @@
       "sdo:contentSize": "1.2G",
       "sdo:contentUrl": {
         "@id": "https://data.beeldengeluid.nl/files/gtaa/persons/nisv_thes_gtaa_person_skos20240829.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2024-08-29"
       },
       "sdo:description": {
         "@language": "nl",
@@ -775,12 +780,17 @@
     {
       "@id": "http://data.beeldengeluid.nl/id/datadownload/0037",
       "@type": "sdo:DataDownload",
+      "sdo:contentSize": "17M",
       "sdo:contentUrl": {
-        "@id": "https://data.beeldengeluid.nl/files/amateurfilm/lod_exporter_amateurfilm_sdo_20240917_dedup.nt"
+        "@id": "https://data.beeldengeluid.nl/files/amateurfilm/lod_amateurfilm_sdo_20251204_clean.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2025-12-04"
       },
       "sdo:description": {
         "@language": "nl",
-        "@value": "Selectie van amateurfilms uit de Beeld & Geluid catalogus. De download locatie voor de data dump kan worden gevonden in de contentUrl property."
+        "@value": "Metadata in schema.org model voor selectie van online afspeelbare amateurfilms uit de Beeld & Geluid catalogus. De download locatie voor de data dump kan worden gevonden in de contentUrl property."
       },
       "sdo:encodingFormat": "application/n-triples",
       "sdo:inLanguage": "nl-NL",
@@ -789,7 +799,275 @@
       },
       "sdo:name": {
         "@language": "nl",
-        "@value": "Amateurfilms"
+        "@value": "Amateurfilms data dump"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0038",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "583M",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/moz/lod_exporter_moz_rda_20250228_dedup.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2024-07-19"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "RDA metadata for the series 'Muziekopnamen Zendgemachtigden' (MOZ) coming from the B&G media catalog. Also published on podiumkunst.net: https://podiumkunst.triply.cc/beeld-en-geluid/MOZ-Muziekopnamen-Zendgemachtigden-RDA"
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Muziekopnamen Zendgemachtigden in RDA"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0039",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "14M",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/amateurfilm/loda_amateurfilm_edm_20260202.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-02-02"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Metadata in EDM voor selectie van online afspeelbare amateurfilms uit de Beeld & Geluid catalogus. Deze data download bevat een data dump in n-triples formaat in de contentUrl."
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Amateurfilms EDM dump"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0040",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-06-03"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection of item identifiers for Amateurfilm items in the Sound & Vision open data catalog that are available on Peertube. This selection can be queried from the contentUrl using this query:"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Selectie amateurfilms op Peertube"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0042",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-06-05"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection from the Sound & Vision open data catalog that is registered under the series 'Wordende wereld' and is available on Peertube. This selection can be queried from the contentUrl using this query:"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Selectie Wordende wereld op Peertube"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0043",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "955k",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/wordendewereld/lod_export_wordende_wereld_sdo_20260831_clean.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-08-31"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-06-05"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection from the Sound & Vision open data catalog that is registered under the series 'Wordende wereld' and is available on Peertube. This distribution contains a dump of schema.org formatted open data in n-triples format."
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Selectie Wordende wereld op Peertube"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0044",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-07-06"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-07-06"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection of open data from the Netherlands Institute for Sound & Vision media catalogue that is published on the Open Images (Open Beelden) platform"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Selectie Beeld & Geluid catalogus op Open Beelden"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0045",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "20M",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/openbeelden/lod_export_openbeelden_sdo_20260831_clean.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-08-31"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-07-06"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection of open data from the Netherlands Institute for Sound & Vision media catalogue that is published on the Open Images (Open Beelden) platform compiled in a data dump"
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Beeld & Geluid catalogus op Open Beelden data dump"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf12-n-triples/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0046",
+      "@type": "sdo:DataDownload",
+      "sdo:contentUrl": {
+        "@id": "https://cat.apis.beeldengeluid.nl/sparql"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection from the Sound & Vision open data catalog of SFW oral history interviews that are available on Peertube. This selection can be queried from the contentUrl using this query:"
+      },
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "SFW Oral History op Peertube"
+      },
+      "sdo:usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0047",
+      "@type": "sdo:DataDownload",
+      "sdo:contentSize": "404k",
+      "sdo:contentUrl": {
+        "@id": "https://data.beeldengeluid.nl/files/sfw_oral_history/lod_export_sfw_oral_history_sdo_20260831_clean.nt"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-08-31"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-08-31"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Selection from the Sound & Vision open data catalog that is registered under the series 'Wordende wereld' and is available on Peertube. This distribution contains a dump of schema.org formatted open data in n-triples format."
+      },
+      "sdo:encodingFormat": "application/n-triples",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "SFW Oral History op Peertube"
       },
       "sdo:usageInfo": {
         "@id": "https://www.w3.org/TR/rdf12-n-triples/"
@@ -845,10 +1123,16 @@
       },
       "sdo:distribution": [
         {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
+        },
+        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0022"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0044"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0045"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -899,10 +1183,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://natuurbeelden.openbeelden.nl/media"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/natuurbeelden"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/natuurbeelden"
+          "@id": "https://natuurbeelden.openbeelden.nl/media"
         }
       ],
       "sdo:name": {
@@ -935,10 +1219,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-de-brandaris"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-de-brandaris"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
         }
       ],
       "sdo:name": {
@@ -971,10 +1255,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-oranje"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-oranje"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
         }
       ],
       "sdo:name": {
@@ -996,10 +1280,10 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -1012,10 +1296,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-herrijzend-nederland"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/radio-herrijzend-nederland"
+          "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
         }
       ],
       "sdo:name": {
@@ -1040,25 +1324,22 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0028"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0014"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0018"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
@@ -1067,22 +1348,25 @@
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0036"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0028"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0036"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -1094,10 +1378,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/gtaa"
+          "@id": "https://data.beeldengeluid.nl/datasets/gtaa"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/datasets/gtaa"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/gtaa"
         }
       ],
       "sdo:name": {
@@ -1205,10 +1489,10 @@
       },
       "sdo:mainEntityOfPage": [
         {
-          "@id": "https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"
+          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden-op-europeana-sounds"
         },
         {
-          "@id": "https://data.beeldengeluid.nl/nl/datasets/open-beelden-op-europeana-sounds"
+          "@id": "https://www.europeana.eu/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=COUNTRY%3A%22Netherlands%22&query=%2A%3A%2A&view=grid"
         }
       ],
       "sdo:name": {
@@ -1261,18 +1545,23 @@
       },
       "sdo:description": {
         "@language": "nl",
-        "@value": "Original concert and studio recordings made by public broadcasters. Integral recordings across many genres."
+        "@value": "De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnamen van concerten in de 20e en 21e eeuw, bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio."
       },
-      "sdo:distribution": {
-        "@id": "http://data.beeldengeluid.nl/id/datadownload/0034"
-      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0034"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0038"
+        }
+      ],
       "sdo:inLanguage": "nl-NL",
       "sdo:includedInDataCatalog": {
         "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
       },
       "sdo:keywords": "music, recording",
       "sdo:license": {
-        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
       },
       "sdo:mainEntityOfPage": [
         {
@@ -1290,7 +1579,7 @@
         "@id": "https://www.beeldengeluid.nl"
       },
       "sdo:size": "79156",
-      "sdo:temporalCoverage": "1900/2023"
+      "sdo:temporalCoverage": "1900/2024"
     },
     {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0029",
@@ -1304,10 +1593,19 @@
       },
       "sdo:distribution": [
         {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0035"
+        },
+        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0037"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0035"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0039"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0040"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0041"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -1318,6 +1616,9 @@
       "sdo:license": {
         "@id": "http://rightsstatements.org/vocab/InC/1.0/"
       },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://data.beeldengeluid.nl/nl/datasets/amateurfilms"
+      },
       "sdo:name": {
         "@language": "nl",
         "@value": "Amateurfilm collectie"
@@ -1325,8 +1626,104 @@
       "sdo:publisher": {
         "@id": "https://www.beeldengeluid.nl"
       },
-      "sdo:size": "6134",
+      "sdo:size": "9360",
       "sdo:temporalCoverage": "1910/2024"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0030",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "http://www.wikidata.org/entity/Q84322891"
+      },
+      "sdo:dateCreated": {
+        "@type": "xsd:date",
+        "@value": "2026-06-03"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Wordende Wereld was een filmjournaal gemaakt in Nederlands-Indië van 1947 tot 1950. Wordende Wereld werd geproduceerd door Gouvernementsfilmbedrijf Multifilm Batavia in opdracht van de Rijksvoorlichtingsdienst. Directeur van het filmbedrijf was de Nederlandse filmer Jan Mol. Een van de cameramensen was Charles Breijer. Vanaf november 1947 werden 133 journaals uitgebracht, die met name waren bedoeld voor de Nederlandse markt, maar die overigens niet erg populair waren bij Nederlandse bioscopen. De journaals waren een propagandamiddel van de Nederlandse overheid in de gewelddadige tijd van de politionele acties: in de onderwerpkeuze lag de nadruk op de opbouw van de economie en inlandse cultuur."
+      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0042"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0043"
+        }
+      ],
+      "sdo:genre": "nieuws",
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:license": {
+        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sdo:mainEntityOfPage": {
+        "@id": "https://peertube.beeldengeluid.nl/c/wordendewereld/videos"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "Wordende wereld"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "104",
+      "sdo:spatialCoverage": "Nederlands Indië",
+      "sdo:temporalCoverage": "1947/1950"
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0031",
+      "@type": "sdo:Dataset",
+      "sdo:creator": {
+        "@id": "https://isni.org/isni/0000000093969427"
+      },
+      "sdo:dateCreated": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-08-31"
+      },
+      "sdo:datePublished": {
+        "@type": "xsd:date",
+        "@value": "2026-07-24"
+      },
+      "sdo:description": {
+        "@language": "nl",
+        "@value": "Interviews met betrekking tot Nederlands Indië, in het kader van het project Onsland beschikbaar gesteld."
+      },
+      "sdo:distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0046"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0047"
+        }
+      ],
+      "sdo:inLanguage": "nl-NL",
+      "sdo:includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001"
+      },
+      "sdo:keywords": "oral history",
+      "sdo:license": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "sdo:name": {
+        "@language": "nl",
+        "@value": "SFW Oral History"
+      },
+      "sdo:publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "sdo:size": "57",
+      "sdo:spatialCoverage": "Nederlands Indië"
     },
     {
       "@id": "http://www.wikidata.org/entity/Q94482770",
@@ -1363,19 +1760,25 @@
           "@id": "http://www.openbeelden.nl/users/beeldengeluid"
         },
         {
-          "@id": "https://grid.ac/institutes/grid.425952.d"
+          "@id": "http://www.wikidata.org/entity/Q1131877"
         },
         {
           "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
         },
         {
+          "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
+        },
+        {
           "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
         },
         {
-          "@id": "http://www.wikidata.org/entity/Q1131877"
+          "@id": "https://grid.ac/institutes/grid.425952.d"
         },
         {
-          "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
+          "@id": "https://isni.org/isni/0000000106949805"
+        },
+        {
+          "@id": "https://ror.org/025ae8628"
         }
       ]
     },
